@@ -1,9 +1,9 @@
-PWD /Users/deveshrajpal/My Drive/CMI
+PWD /Users/deveshrajpal/Desktop/devesh-sudo.github.io
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.tex
-OUTPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.log
+INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex
+OUTPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
@@ -94,16 +94,16 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.aux
-INPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.aux
-OUTPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.aux
+INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux
+INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux
+OUTPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-OUTPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.pdf
+OUTPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.pdf
 INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -153,7 +153,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
-INPUT /Users/deveshrajpal/My Drive/CMI/Today I learned.aux
+INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
