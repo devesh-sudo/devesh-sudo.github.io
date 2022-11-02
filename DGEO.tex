@@ -1,0 +1,306 @@
+\PassOptionsToPackage{usenames,svgnames,dvipsnames,table}{xcolor}
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[english]{babel}
+% Named colors
+\usepackage[dvipsnames, table, xcdraw]{xcolor}
+
+% Math stuff
+\usepackage{amsmath, amsthm,  amsfonts, amssymb}
+\usepackage{tikz, tikz-cd, graphicx}
+\usepackage{mathrsfs, mathtools, bm}
+\usepackage{halloweenmath}
+\usepackage{enumerate}
+% Refer
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue,bookmarks=false,hypertexnames=true]{hyperref} 
+\usepackage[capitalize]{cleveref}
+
+% Change numbering in enumerate
+\usepackage[shortlabels]{enumitem}
+\crefname{enumi}{part}{parts}
+\crefname{figure}{Figure}{Figures}
+
+
+% pagesetup
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\setlength{\headheight}{0.75in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\voffset}{-1.0in}
+\setlength{\headsep}{10pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\headwidth}{6.5in}
+\setlength{\textheight}{8.75in}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\setlength{\footskip}{0.3in}
+\fancyhead[L]{\textbf{Devesh Rajpal}}
+\fancyhead[R]{\nouppercase\leftmark}
+\usepackage{multicol, titletoc, bookmark, parskip}
+
+
+% Colored boxes
+\usepackage{thmtools}
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em}
+
+\theoremstyle{definition}
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{ForestGreen!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=ForestGreen, backgroundcolor=ForestGreen!5,
+    }
+]{greenbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{NavyBlue!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=NavyBlue, backgroundcolor=NavyBlue!5,
+    }
+]{bluebox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Mulberry!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Mulberry, backgroundcolor=Mulberry!5,
+    }
+]{purplebox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{RawSienna!70!black}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=RawSienna, backgroundcolor=RawSienna!5,
+    }
+]{redbox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{CadetBlue!70!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=CadetBlue, backgroundcolor=CadetBlue!4,
+    },
+    qed=\qedsymbol
+]{proofbox}
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{CadetBlue!70!black}, bodyfont =\normalfont, 
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=CadetBlue, backgroundcolor=CadetBlue!10,
+    }
+]{CadetBluebox}
+
+
+\renewenvironment{proof}[1][\proofname]{\vspace{-15pt}\begin{myproof}}{\end{myproof}}
+\declaretheorem[style = CadetBluebox, name = Theorem, numberwithin=section]{thm}
+\declaretheorem[style = proofbox, name=Proof, numbered=no]{myproof}
+\declaretheorem[style = greenbox, name = Definition, numberwithin=section]{defn}
+\declaretheorem[style = greenbox, name = Notation]{notation}
+\declaretheorem[style = redbox, name = Proposition,sibling=thm]{proposition}
+
+\declaretheorem[style = CadetBluebox, name = Lemma, sibling=thm]{lemma}
+\declaretheorem[style = redbox, name = Corollary, numbered = no]{corollary}
+\declaretheorem[style = bluebox, name = Observation, numbered = no]{observation}
+\declaretheorem[style = bluebox, name = Example, numbered = no]{example}
+\declaretheorem[style = bluebox, name = Remark, numbered = no]{remark}
+\declaretheorem[style = purplebox, name = Problem, numbered = no]{problem}
+\declaretheorem[style = purplebox, name = Exercise, numbered = no]{exercise}
+\theoremstyle{greenbox}
+\newtheorem*{motivation}{Motivation}
+\newtheorem*{recall}{Recall}
+\newtheorem*{note}{Note}
+
+
+% Figure support.
+\usepackage{pdfpages}
+\usepackage{transparent}
+\graphicspath{{figures/}{images/}} %typical directories
+
+%math
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\dou}{\partial}
+\newcommand{\half}{\ensuremath{\frac{1}{2}}}
+\newcommand{\pt}{\partial_t}
+\newcommand{\dt}{\frac{\partial}{\partial_t}}
+\newcommand{\define}{\doteqdot}
+\newcommand{\dohi}{\frac{\partial}{\partial x^i}}
+\newcommand{\dohj}{\frac{\partial}{\partial x^j}}
+\newcommand{\dohk}{\frac{\partial}{\partial x^k}}
+\newcommand{\dohl}{\frac{\partial}{\partial x^l}}
+\newcommand{\doha}{\frac{\partial}{\partial x^a}}
+\newcommand{\dohb}{\frac{\partial}{\partial x^b}}
+\newcommand{\nj}{\text{inj}}
+\newcommand{\Rn}{\mathbb{R}^{n+1}}
+
+
+\title{\LARGE Differential Geometry}
+\author{\large Devesh Rajpal}
+\date{}
+\pdfsuppresswarningpagegroup=1
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section{Oct 13, 2022}
+    \subsection*{Levi-Civita connection}
+    \bigskip
+    \begin{thm}
+        Let $ (M,g) $  be a Riemannian manifold. There exists a unique connection $ \nabla $ on $ M $ which satisfies the following for any vector fields $ X,Y,Z \in \Gamma(TM)$ 
+        \begin{enumerate}
+            \item Compatibility with metric : \[ Xg(Y,Z)  = g(\nabla_{X}Y, Z)+ g(Y, \nabla_{X}Z)\]
+            \item Torsion-free : \[ \nabla_{X}Y - \nabla_{Y}X = [X,Y] \]
+        \end{enumerate}
+        Such a connection is called the \textbf{Levi-Civita} connection on $ M $.
+    \end{thm}
+    \begin{proof}
+        Assume such a connection exists, then 
+    \begin{equation}
+        Xg(Y,Z) = g(\nabla_{X}Y,Z)+ g(Y,\nabla_{X}Z) \label{eq1}
+    \end{equation}
+    \begin{equation}
+        Yg(Z,X) = g(\nabla_{Y}Z,X)+ g(Z,\nabla_{Y}X) \label{eq2}
+    \end{equation}
+    \begin{equation}
+        Zg(X,Y) = g(\nabla_{Z}X,Y)+ g(X,\nabla_{Z}Y) \label{eq3}
+    \end{equation}
+    Adding \cref{eq1} and \cref{eq2} and subtracting \cref{eq3} from the sum 
+    \[ Xg(Y,Z)+ Yg(Z,Z)- Zg(X,Y) = g(Y,[X,Z])+ g(X,[Y,Z]) + 2g(\nabla_{X}Y,Z) - g(Z,[X,Y])\]
+    Or 
+    \begin{equation}
+        2g(\nabla_{X}Y,Z) = Xg(Y,Z)+ Yg(Z,Z)- Zg(X,Y) + g(Z,[X,Y]) - g(Y,[X,Z])- g(X,[Y,Z])
+    \end{equation}
+    This gives us a formula for determining the connection $ \nabla $ which proves the existence and uniqueness. Further it can be proved that properties 1. and 2. are satisfied with this formula.
+    \end{proof}
+
+
+    Let $ \gamma : (\R, \delta) \to (M,g) $ be a smooth curve on $ M $. Let $ X \in \Gamma(TM) $ be a vector field. Define $ X_{\gamma}(t) = X(\gamma(t))$ to be its restriction on $ \gamma $. Then 
+    \[ \frac{D}{dt} X(t) \define \nabla_{\gamma'(t)}X|_{\gamma(t)}  \]
+    
+    which is called covariant differentiation along the curve $ \gamma $. 
+    \begin{defn}
+        A curve $ \gamma :(a,b) \to M$ is called a \textbf{geodesic}  if 
+        \[ \nabla_{\gamma'(t)}\gamma'(t) = 0 \qquad \forall t \in (a,b) \]
+    \end{defn}
+
+    \section{Oct 18, 2022}
+
+    \subsection*{Parallel Transport along a curve}  
+
+    Let $ (M,g) $ be a smooth Riemannian manifold. Let $ \gamma : \R \to M $ be a smooth curve and $ X \in \Gamma(TM) $ is a vector field. Restricting $ X $ to $ \gamma $ we get a vector field along $ \gamma $ which we define by $ X(t) \define X|_{\gamma(t)} $. Let 
+    \[ \frac{D}{dt} X(t) \define (\nabla_{\gamma'(t)}X)|_{\gamma(t)} \]
+    \begin{defn}
+        A vector field $ X $ along $ \gamma $ is called \textbf{parallel}  along $ \gamma  $ if $ \frac{D}{dt} X(t)  =0$. If $ t_{0}< t_{1} $, we say that $ X(t_{1}) $ is obtained from $ X(t_{0}) $ by parallel transport along $ \gamma $. 
+    \end{defn}
+    In a local chart $ \{x^{i}\} $, let $ \gamma  $ be given by $ \gamma(t) = (\gamma^{1}(t), \dots, \gamma^{n}(t)) $ and $ X|_{\gamma(t)} = X^{i} \frac{ \partial}{ \partial x^{i}}\big|_{\gamma(t)} $ or 
+    \[ X(t) = X^{i}(t) \frac{ \partial}{ \partial x^{i}}\bigg|_{\gamma(t)}\]
+
+    The equation for parallel transport in local coordinates becomes 
+    \begin{align}
+        \frac{D}{dt} X(t) & =0 \\
+        \left( \nabla_{\gamma_{*}( \frac{ \partial}{ \partial t})}X \right)\bigg|_{\gamma(t)} & = 0 \\
+        \nabla_{\gamma'(t)}\left( X^{i} \dohi \right)\bigg|_{\gamma(t)} & =0\\ 
+        \frac{dX^{i}}{dt} \dohi\bigg|_{\gamma(t)} + X^{i}\nabla_{\gamma'(t)}\dohi\bigg|_{\gamma(t)} & = 0\\ 
+        \frac{dX^{i}}{dt} \dohi\bigg|_{\gamma(t)} +X^{i} \frac{d\gamma^{k}(t)}{dt} \nabla_{\frac{ \partial}{ \partial x^{k}}}\frac{ \partial}{ \partial x^{i}} & = 0\\
+        \frac{dX^{i}}{dt} \dohi\bigg|_{\gamma(t)} +X^{i} \frac{d\gamma^{k}(t)}{dt} \Gamma_{ki}^{l} \frac{ \partial}{ \partial x^{l}}\bigg|_{\gamma(t)} &  = 0\\ 
+        \left( \frac{dX^{l}}{dt} +X^{i} \frac{d\gamma^{k}(t)}{dt} \Gamma_{ki}^{l}\right)\frac{ \partial}{ \partial x^{l}}\bigg|_{\gamma(t)} & =0 \label{parallel}
+    \end{align}
+    which is a system of linear equations hence there exits a unique solution for all the time it is defined. 
+    
+    If $ g = (g_{ij}) $ in the chart $ \{x^{i}\} $, then from the compatibility of $ \nabla $, we get 
+    \begin{align*}
+        \dohi g_{jk} &= g\left(\nabla_{\dohi} \dohj, \dohk\right)+ g\left(\dohj, \nabla_{\dohi}\dohk\right)\\ 
+        & = \Gamma_{ij}^{l}g_{kl}+ \Gamma_{ik}^{l}g_{lj}
+    \end{align*}
+    Using other cyclic relations, we get 
+    \[ \Gamma_{ij}^{k} = g^{kl}\left(\frac{ \partial g_{lj}}{ \partial x^{i}} + \frac{ \partial g_{il}}{ \partial x^{j}} - \frac{ \partial g_{ij}}{ \partial x^{l}}\right) \]
+    
+    \subsection*{Geometric interpretation of torsion}   
+    
+    For any connection $ \nabla $, the torsion tensor is defined by 
+    \[ \tau(X,Y) = \nabla_{X}Y - \nabla_{Y}X - [X,Y]\]
+    
+    Let $ \gamma(s,t) $ be variation of a curve. Then 
+    \[ \left[ \frac{D}{ds}, \frac{D}{dt}\right] = 0 \Longleftrightarrow \tau \equiv 0 \]
+    
+    \section{Oct 20, 2022}
+
+    \subsection*{Geodesics and the Exponential map}
+    Let $ (M,g) $ be a smooth Riemannian manifold and $ \gamma : [0, \tau] \to M $ be a smooth curve on $ M $. Then 
+
+    \[ \frac{d}{dt}g\left(\gamma'(t), \gamma'(t)\right) = 2g\left( \frac{D}{dt}(\gamma'(t)), \gamma'(t)\right) \]
+    If $ \gamma $ is a geodesic, then parallel transport along $ \gamma $ is denoted by $ P_{\gamma(t_{0}) \to \gamma(t_{1})} X(t) $ for $ X \in \Gamma(TM) $. Now we want to find an expression of $ P $ in local coordinates. Let $ X = X^{i}\dohi $ be a vector at $ \gamma(0) $. We want to solve the differential equation 
+    \[ \frac{D}{dt}X(t) = 0 \]
+    along $ \gamma $ where $ \frac{D}{dt} = \nabla_{\gamma'(t)} $.  This was done in \cref{parallel} which is a linear system of equation and the solution exists for while we are in a coordinate patch. To get a general solution, we cover the image of $ \gamma $ by finitely many coordinate patches and repeat the process (since the image is compact, we can cover it by finitely many patches). 
+
+    Now we use this to define the exponential map at a point. 
+    \begin{proposition}[Do Carmo Proposition 2.7]
+        Given $ p \in M $, there exists a neighborhood $ V $ of $ p \in M $, a number $ \epsilon >0 $ and a $ C^{\infty} $ mapping $ \gamma :(-2,2) \times U \to M $, $ U = \{(q,w) \in TM |\, q \in V, w \in T_{q}M, |w| < \epsilon\} $ such that $ \gamma(t,p,w) , t \in (-2,2) $ is the unique geodesic of $ M $ which at the instant $ t=0 $, passes through $ q $ with velocity $ w $, for which $ q \in V $ and for every $ w \in T_{q}M $, with $ |w| < \epsilon $. 
+
+    \end{proposition}
+    \begin{defn}   
+        Let $ p \in M $ and $ V, \epsilon, U $ as defined in the previous proposition, then the \textbf{exponential map} is defined by 
+        \[  \exp (p,v) = \gamma\left(1,p, \frac{v}{|v|}\right), \quad \text{ for all }(p,v) \in U\]
+         
+    \end{defn} 
+    So exponential map sends a vector $ v $ to a point  which is obtained by going out the length $ |v| $ in the direction of $ v $ by the unique geodesic. Using this we can write exponential map as 
+    \[ \exp_{p} : B_{\epsilon}(0) \subset T_{p}M \to M \]
+    by $ \exp_{p}(v) = \exp(p,v) $ where $ B_{\epsilon} $ the open ball with center at origin $ 0 $ of $ T_{p}M $ and of radius $ \epsilon $.     
+    \begin{defn}   
+        The \textbf{injectivity radius} at point $ p $ of the manifold $ (M,g) $ is defined to be the supremum of $ \epsilon $'s for which the exponential map  $\exp_{p} : B_{\epsilon}(0) \to M$ is a diffeomorphism. It is denoted by $ \text{inj}_{M}(p) $.
+    \end{defn} 
+    Further, define injectivity radius of $ M $ to be the infimum of $\nj_{M}(p) $ among all the points, 
+    \[ \nj M \define \inf_{p \in M} \nj_{M}(p) \]
+    \begin{example}
+        1. The injectivity radius of $ n $-sphere of radius $ R $ is $ \pi R $. \\
+        2. The injectivity radius of $ \R^{n} $ is $ \infty $. 
+    \end{example}
+    \begin{remark}
+        There exists a complete Riemannian manifold with $ \nj(M) = 0 $. For sphere of radius $ R $ we know that $ \nj(p) = \pi R $. Attach a sphere of radius $ \frac{1}{2n} $  at each point $ (n,0) $ on the plane $ \R^{2} $ by cutting out a small open set at south pole. Then we get a (geodesic/metric) complete manifold where the infimum of the injectivity radius at the north pole of the attached spheres is $ 0 $. 
+    \end{remark}
+    \section{November 1, 2022}
+    Let $ (M^{n},g) \hookrightarrow (\Rn, \delta) $ be an isometric embedding. Let $ N $ be a local normal field, and define the shape operator by
+    \[ S(X) \define - D_{X}N \]
+    To define a connection on $ M^{n} $, we project the Levi-Civita connection of $ \Rn $ into the tangent space of the hypersurface. Let $ X_{p} \in T_{p}M^{n} $ and $ Y \in \Gamma(TM^{n}|_{U}) $, define 
+    \[ \nabla_{X}Y \define (D_{X}Y)^{T} = D_{X}Y - \left< D_{X}Y,N \right>N \]
+    From the relation $ 0 = X \left< Y,N \right> = \left< D_{X}Y,N \right> + \left< Y,D_{X}N \right> $ we can also write 
+    \[ \nabla_{X}Y = D_{X}Y - \left< S(X),Y \right>N \]
+    
+    It is easy to prove that $ \nabla $ is the unique Levi-Civita connection on $ M^{n} $.
+    
+    Now we define curvature on a Riemannian manifold. Riemannian curvature is a tensor defined by 
+    \begin{align*}
+        R(X,Y)Z & \define \nabla_{X} \nabla_{Y}Z - \nabla_{Y}\nabla_{X}Z - \nabla_{[X,Y]}Z\\
+        & = [\nabla_{X},\nabla_{Y}]Z - \nabla_{[X,Y]}Z
+    \end{align*}
+    for vectors $ X,Y,Z \in T_{p}M^{n} $ (prove that it is independent of the local extension).
+    
+    For hypersurfaces another formula holds, 
+    \[ R(X,Y)Z = \left< S(Y),Z \right>S(X) - \left< S(X),Z \right>S(Y) \]
+    which can be remembered mnemonically, 
+    \begin{align*}
+        \left< R(X,Y)Z,W \right> &= \det \begin{bmatrix}
+            \left< S(Y),Z \right> & \left< S(Y),W \right>\\ 
+            \left< S(X),Z \right> & \left< S(X),W \right>
+        \end{bmatrix} 
+    \end{align*}
+    The Riemann curvature tensor $ \left< R(X,Y)Z,W \right> $ is a $ (0,4) $ tensor which satisfies the following properties   
+    \begin{enumerate}
+        
+        \item $ \left< R(X,Y)Z,W \right> = - \left< R(Y,X)Z,W \right> $
+        \item $ \left< R(X,Y)Z,W \right> = - \left< R(X,Y)W,Z \right> $
+        \item $ \left< R(X,Y)Z,W \right> = \left< R(Z,W)X,Y \right> $
+    \end{enumerate}
+    
+\end{document}
