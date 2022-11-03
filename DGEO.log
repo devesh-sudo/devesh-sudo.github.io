@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.16)  3 NOV 2022 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.16)  3 NOV 2022 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,7 +22,18 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip49
+\afterepigraphskip=\skip50
+\epigraphwidth=\skip51
+\epigraphrule=\skip52
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
  (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/03/22 3.42 Babel switching mechanism
@@ -59,12 +70,12 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \ar@mcellbox=\box45
 \extrarowheight=\dimen137
 \NC@list=\toks15
-\extratabsurround=\skip49
-\backup@length=\skip50
+\extratabsurround=\skip53
+\backup@length=\skip54
 \ar@cellbox=\box46
 )
 \everycr=\toks16
-\minrowclearance=\skip51
+\minrowclearance=\skip55
 )
 \rownum=\count177
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -82,7 +93,7 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip56
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -129,8 +140,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \totwidth@=\dimen145
 \lineht@=\dimen146
 \@envbody=\toks20
-\multlinegap=\skip53
-\multlinetaggap=\skip54
+\multlinegap=\skip57
+\multlinetaggap=\skip58
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
@@ -141,9 +152,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks24
 \thm@notefont=\toks25
 \thm@headpunct=\toks26
-\thm@preskip=\skip55
-\thm@postskip=\skip56
-\thm@headsep=\skip57
+\thm@preskip=\skip59
+\thm@postskip=\skip60
+\thm@headsep=\skip61
 \dth@everypar=\toks27
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -200,7 +211,7 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yc=\dimen158
 \pgf@xd=\dimen159
 \pgf@yd=\dimen160
-\w@pgf@writea=\write3
+\w@pgf@writea=\write4
 \r@pgf@reada=\read3
 \c@pgf@counta=\count190
 \c@pgf@countb=\count191
@@ -373,12 +384,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count278
 \calc@Adimen=\dimen259
 \calc@Bdimen=\dimen260
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count279
-\calc@Cskip=\skip60
+\calc@Cskip=\skip64
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
@@ -388,7 +399,7 @@ LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_MT_multlinerow_int=\count280
 \l_MT_multwidth_dim=\dimen261
-\origjot=\skip61
+\origjot=\skip65
 \l_MT_shortvdotswithinadjustabove_dim=\dimen262
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen263
 \l_MT_above_intertext_sep=\dimen264
@@ -421,7 +432,7 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 \@arcrad=\dimen270
 \@tempdimd=\dimen271
 )
-\@HwM@arrowfill@skip=\skip62
+\@HwM@arrowfill@skip=\skip66
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks42
@@ -524,7 +535,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip63
+\Hy@SectionHShift=\skip67
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -543,7 +554,7 @@ Package cleveref Info: always capitalise cross-reference names on input line 783
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip64
+\labelindent=\skip68
 \enit@outerparindent=\dimen276
 \enit@toks=\toks43
 \enit@inbox=\box61
@@ -551,15 +562,15 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count292
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
-\f@nch@headwidth=\skip65
-\f@nch@O@elh=\skip66
-\f@nch@O@erh=\skip67
-\f@nch@O@olh=\skip68
-\f@nch@O@orh=\skip69
-\f@nch@O@elf=\skip70
-\f@nch@O@erf=\skip71
-\f@nch@O@olf=\skip72
-\f@nch@O@orf=\skip73
+\f@nch@headwidth=\skip69
+\f@nch@O@elh=\skip70
+\f@nch@O@erh=\skip71
+\f@nch@O@olh=\skip72
+\f@nch@O@orh=\skip73
+\f@nch@O@elf=\skip74
+\f@nch@O@erf=\skip75
+\f@nch@O@olf=\skip76
+\f@nch@O@orf=\skip77
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \c@tracingmulticols=\count293
@@ -574,8 +585,8 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \page@free=\dimen279
 \premulticols=\dimen280
 \postmulticols=\dimen281
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
+\multicolsep=\skip78
+\multicolbaselineskip=\skip79
 \partial@page=\box63
 \last@line=\box64
 \maxbalancingoverflow=\dimen282
@@ -694,47 +705,47 @@ Package zref Info: New property: abspage on input line 66.
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip76
+\mdf@templength=\skip80
 \c@mdf@globalstyle@cnt=\count312
-\mdf@skipabove@length=\skip77
-\mdf@skipbelow@length=\skip78
-\mdf@leftmargin@length=\skip79
-\mdf@rightmargin@length=\skip80
-\mdf@innerleftmargin@length=\skip81
-\mdf@innerrightmargin@length=\skip82
-\mdf@innertopmargin@length=\skip83
-\mdf@innerbottommargin@length=\skip84
-\mdf@splittopskip@length=\skip85
-\mdf@splitbottomskip@length=\skip86
-\mdf@outermargin@length=\skip87
-\mdf@innermargin@length=\skip88
-\mdf@linewidth@length=\skip89
-\mdf@innerlinewidth@length=\skip90
-\mdf@middlelinewidth@length=\skip91
-\mdf@outerlinewidth@length=\skip92
-\mdf@roundcorner@length=\skip93
-\mdf@footenotedistance@length=\skip94
-\mdf@userdefinedwidth@length=\skip95
-\mdf@needspace@length=\skip96
-\mdf@frametitleaboveskip@length=\skip97
-\mdf@frametitlebelowskip@length=\skip98
-\mdf@frametitlerulewidth@length=\skip99
-\mdf@frametitleleftmargin@length=\skip100
-\mdf@frametitlerightmargin@length=\skip101
-\mdf@shadowsize@length=\skip102
-\mdf@extratopheight@length=\skip103
-\mdf@subtitleabovelinewidth@length=\skip104
-\mdf@subtitlebelowlinewidth@length=\skip105
-\mdf@subtitleaboveskip@length=\skip106
-\mdf@subtitlebelowskip@length=\skip107
-\mdf@subtitleinneraboveskip@length=\skip108
-\mdf@subtitleinnerbelowskip@length=\skip109
-\mdf@subsubtitleabovelinewidth@length=\skip110
-\mdf@subsubtitlebelowlinewidth@length=\skip111
-\mdf@subsubtitleaboveskip@length=\skip112
-\mdf@subsubtitlebelowskip@length=\skip113
-\mdf@subsubtitleinneraboveskip@length=\skip114
-\mdf@subsubtitleinnerbelowskip@length=\skip115
+\mdf@skipabove@length=\skip81
+\mdf@skipbelow@length=\skip82
+\mdf@leftmargin@length=\skip83
+\mdf@rightmargin@length=\skip84
+\mdf@innerleftmargin@length=\skip85
+\mdf@innerrightmargin@length=\skip86
+\mdf@innertopmargin@length=\skip87
+\mdf@innerbottommargin@length=\skip88
+\mdf@splittopskip@length=\skip89
+\mdf@splitbottomskip@length=\skip90
+\mdf@outermargin@length=\skip91
+\mdf@innermargin@length=\skip92
+\mdf@linewidth@length=\skip93
+\mdf@innerlinewidth@length=\skip94
+\mdf@middlelinewidth@length=\skip95
+\mdf@outerlinewidth@length=\skip96
+\mdf@roundcorner@length=\skip97
+\mdf@footenotedistance@length=\skip98
+\mdf@userdefinedwidth@length=\skip99
+\mdf@needspace@length=\skip100
+\mdf@frametitleaboveskip@length=\skip101
+\mdf@frametitlebelowskip@length=\skip102
+\mdf@frametitlerulewidth@length=\skip103
+\mdf@frametitleleftmargin@length=\skip104
+\mdf@frametitlerightmargin@length=\skip105
+\mdf@shadowsize@length=\skip106
+\mdf@extratopheight@length=\skip107
+\mdf@subtitleabovelinewidth@length=\skip108
+\mdf@subtitlebelowlinewidth@length=\skip109
+\mdf@subtitleaboveskip@length=\skip110
+\mdf@subtitlebelowskip@length=\skip111
+\mdf@subtitleinneraboveskip@length=\skip112
+\mdf@subtitleinnerbelowskip@length=\skip113
+\mdf@subsubtitleabovelinewidth@length=\skip114
+\mdf@subsubtitlebelowlinewidth@length=\skip115
+\mdf@subsubtitleaboveskip@length=\skip116
+\mdf@subsubtitlebelowskip@length=\skip117
+\mdf@subsubtitleinneraboveskip@length=\skip118
+\mdf@subsubtitleinnerbelowskip@length=\skip119
  (/usr/local/texlive/2020/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
@@ -743,33 +754,33 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@splitbox@one=\box111
 \mdf@splitbox@two=\box112
 \mdf@splitbox@save=\box113
-\mdfsplitboxwidth=\skip116
-\mdfsplitboxtotalwidth=\skip117
-\mdfsplitboxheight=\skip118
-\mdfsplitboxdepth=\skip119
-\mdfsplitboxtotalheight=\skip120
-\mdfframetitleboxwidth=\skip121
-\mdfframetitleboxtotalwidth=\skip122
-\mdfframetitleboxheight=\skip123
-\mdfframetitleboxdepth=\skip124
-\mdfframetitleboxtotalheight=\skip125
-\mdffootnoteboxwidth=\skip126
-\mdffootnoteboxtotalwidth=\skip127
-\mdffootnoteboxheight=\skip128
-\mdffootnoteboxdepth=\skip129
-\mdffootnoteboxtotalheight=\skip130
-\mdftotallinewidth=\skip131
-\mdfboundingboxwidth=\skip132
-\mdfboundingboxtotalwidth=\skip133
-\mdfboundingboxheight=\skip134
-\mdfboundingboxdepth=\skip135
-\mdfboundingboxtotalheight=\skip136
-\mdf@freevspace@length=\skip137
-\mdf@horizontalwidthofbox@length=\skip138
-\mdf@verticalmarginwhole@length=\skip139
-\mdf@horizontalspaceofbox=\skip140
-\mdfsubtitleheight=\skip141
-\mdfsubsubtitleheight=\skip142
+\mdfsplitboxwidth=\skip120
+\mdfsplitboxtotalwidth=\skip121
+\mdfsplitboxheight=\skip122
+\mdfsplitboxdepth=\skip123
+\mdfsplitboxtotalheight=\skip124
+\mdfframetitleboxwidth=\skip125
+\mdfframetitleboxtotalwidth=\skip126
+\mdfframetitleboxheight=\skip127
+\mdfframetitleboxdepth=\skip128
+\mdfframetitleboxtotalheight=\skip129
+\mdffootnoteboxwidth=\skip130
+\mdffootnoteboxtotalwidth=\skip131
+\mdffootnoteboxheight=\skip132
+\mdffootnoteboxdepth=\skip133
+\mdffootnoteboxtotalheight=\skip134
+\mdftotallinewidth=\skip135
+\mdfboundingboxwidth=\skip136
+\mdfboundingboxtotalwidth=\skip137
+\mdfboundingboxheight=\skip138
+\mdfboundingboxdepth=\skip139
+\mdfboundingboxtotalheight=\skip140
+\mdf@freevspace@length=\skip141
+\mdf@horizontalwidthofbox@length=\skip142
+\mdf@verticalmarginwhole@length=\skip143
+\mdf@horizontalspaceofbox=\skip144
+\mdfsubtitleheight=\skip145
+\mdfsubsubtitleheight=\skip146
 \c@mdfcountframes=\count313
 
 ****** mdframed patching \endmdf@trivlist
@@ -785,36 +796,36 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=ForestGreen, backgroundcolor=ForestGreen!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=greenbox' on input line 56.
+(thmtools)             that uses `style=greenbox' on input line 60.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=NavyBlue!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=bluebox' on input line 65.
+(thmtools)             that uses `style=bluebox' on input line 69.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=Mulberry, backgroundcolor=Mulberry!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=purplebox' on input line 74.
+(thmtools)             that uses `style=purplebox' on input line 78.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=RawSienna, backgroundcolor=RawSienna!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=redbox' on input line 83.
+(thmtools)             that uses `style=redbox' on input line 87.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=proofbox' on input line 94.
+(thmtools)             that uses `style=proofbox' on input line 98.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=CadetBlue, backgroundcolor=CadetBlue!4, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=proofbox' on input line 94.
+(thmtools)             that uses `style=proofbox' on input line 98.
 Package thmtools Info: Key `qed' (with value `\qedsymbol ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=proofbox' on input line 94.
+(thmtools)             that uses `style=proofbox' on input line 98.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=CadetBlue, backgroundcolor=CadetBlue!10, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=CadetBluebox' on input line 102.
-Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 106.
+(thmtools)             that uses `style=CadetBluebox' on input line 106.
+Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 110.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2019/12/22 v68
 )
@@ -844,22 +855,22 @@ Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 ) (/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.aux)
 \openout1 = `DGEO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count323
@@ -880,7 +891,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box117
-Package hyperref Info: Link coloring ON on input line 153.
+Package hyperref Info: Link coloring ON on input line 157.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -890,9 +901,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 153.
-LaTeX Info: Redefining \pageref on input line 153.
-LaTeX Info: Redefining \nameref on input line 153.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
@@ -900,85 +911,93 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 159.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 159.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 155.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 159.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.toc)
-\tf@toc=\write4
-\openout4 = `DGEO.toc'.
+\tf@toc=\write5
+\openout5 = `DGEO.toc'.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 160.
-Package hyperref Info: bookmark level for unknown thm defaults to 0 on input line 160.
+(mdframed)              on input line 164.
+Package hyperref Info: bookmark level for unknown thm defaults to 0 on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 168.
-Package hyperref Info: bookmark level for unknown myproof defaults to 0 on input line 168.
+(mdframed)              on input line 172.
+Package hyperref Info: bookmark level for unknown myproof defaults to 0 on input line 172.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 185.
+(mdframed)              on input line 189.
  [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 193.
-Package hyperref Info: bookmark level for unknown defn defaults to 0 on input line 193.
+(mdframed)              on input line 197.
+Package hyperref Info: bookmark level for unknown defn defaults to 0 on input line 197.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 204.
+(mdframed)              on input line 208.
  [2] [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 248.
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 248.
+(mdframed)              on input line 252.
+Package hyperref Info: bookmark level for unknown proposition defaults to 0 on input line 252.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 253.
+(mdframed)              on input line 257.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 261.
-Package mdframed Info: Not enough space on this page on input line 262.
+(mdframed)              on input line 265.
+Package mdframed Info: Not enough space on this page on input line 266.
  [4]
-Package mdframed Info: Not enough space on this page on input line 262.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 266.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 266.
+Package mdframed Info: Not enough space on this page on input line 266.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 270.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 270.
+Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 270.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 274.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 274.
  [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 311.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 311.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 320.
+Package mdframed Info: Not enough space on this page on input line 324.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 326.
+ [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
  (/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 311.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 311.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 311.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 333.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
  ) 
 Here is how much of TeX's memory you used:
- 25030 strings out of 480608
- 484449 string characters out of 5903630
- 788325 words of memory out of 5000000
- 40337 multiletter control sequences out of 15000+600000
- 547608 words of font info for 82 fonts, out of 8000000 for 9000
+ 25147 strings out of 480608
+ 486443 string characters out of 5903630
+ 791564 words of memory out of 5000000
+ 40436 multiletter control sequences out of 15000+600000
+ 547955 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,15n,86p,957b,1120s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.pdf (6 pages, 177251 bytes).
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.pdf (7 pages, 190333 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

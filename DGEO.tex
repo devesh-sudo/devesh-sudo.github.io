@@ -1,6 +1,10 @@
 \PassOptionsToPackage{usenames,svgnames,dvipsnames,table}{xcolor}
 \documentclass[12pt,a4paper]{article}
 
+
+
+\usepackage{epigraph}
+\usepackage{comment}
 \usepackage[english]{babel}
 % Named colors
 \usepackage[dvipsnames, table, xcdraw]{xcolor}
@@ -24,7 +28,7 @@
 % pagesetup
 \usepackage{graphicx}
 \usepackage{fancyhdr}
-%\pagestyle{fancy}
+\pagestyle{fancy}
 \setlength{\headheight}{0.75in}
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
@@ -305,7 +309,25 @@
 
     With the help of first two properties we can also define curvature as a map on the wedge product $ Rm : \wedge^{2}TM^{n} \to \wedge^{2}T^{*}M^{n}  $ by the formula 
     \[ (Rm(X \wedge Y))(Z \wedge W) = \left<  R(X,Y)Z,W\right>  \]
-    It is more standard to the curvature operator as the map $ Rm : \wedge^{2}T^{*}M^{n} \to \wedge^{2}T^{*}M^{n}$ after lowering/raising appropriate indices. In the case of surfaces, the wedge product is one-dimensional, so the map is determined by a scalar which will be equal to the Gaussian curvature/sectional curvature. 
+    It is more standard to the curvature operator as the map $ Rm : \wedge^{2}T^{*}M^{n} \to \wedge^{2}T^{*}M^{n}$ after lowering/raising appropriate indices. In the case of surfaces, the wedge product is one-dimensional, so the map is determined by a scalar which is equal to the Gaussian curvature/sectional curvature. 
+
+    \section{November 3, 2022}
+
+    Let $ (M^{n},g)  \hookrightarrow (\Rn, \delta)$ be a smooth hypersurface in $ \Rn $. We are going to define the Gauss map on the hypersurface, under the assumption that $ M^{n} $  is compact and without boundary. Given any point $ p \in M^{n} $, let $ N_{p} \in \Rn $ denote \textit{a} (there are two choices) unit normal at $ p $. Define the \textbf{Gauss map}, $ \mathcal{G} : M^{n} \to S^{n} $ by 
+    \[ \mathcal{G} : p \mapsto N_{p}  \]
+    As hypersurfaces are oriented, we can have a smooth choice of normal throughout the manifold. Given a map from oriented, compact manifold to sphere, one has a notion of degree of the map. The definition comes from differential topology and is also equal to the degree of the top homology map. 
+    \newpage
+    \begin{thm}[Gauss-Bonnet]
+        Let $ M^2 $ be an embedded surface in $ \R^{3} $. Then the degree of the Gauss map is equal to 
+        \[ \deg( \mathcal{G}) = \frac{1}{2 \pi} \int_{M^{2}}K dV  = \chi(M^{2}) = 2-2g\]
+        for a genus $ g $ surface.
+    \end{thm}
+    \begin{remark}
+        This proves that the integral of curvature (metric dependent) is an integer which depends only on the topology of the surface.
+    \end{remark}
+    Note : Exam may contain simple applications of Gauss-Bonnet.
+    Another reference : Problems in Geometry and Topology.
+
     
     
 \end{document}

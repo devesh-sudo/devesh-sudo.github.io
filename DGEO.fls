@@ -10,6 +10,12 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epigraph/epigraph.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/epigraph/epigraph.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/nextpage/nextpage.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/nextpage/nextpage.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
@@ -378,6 +384,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.aux
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -393,5 +400,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
