@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{fullpage}
+%\usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
@@ -8,6 +8,25 @@
 \usepackage[colorlinks,citecolor=blue,urlcolor=blue,bookmarks=false,hypertexnames=true]{hyperref} 
 \usepackage{graphicx}
 \usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\setlength{\headheight}{0.75in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\voffset}{-1.0in}
+\setlength{\headsep}{10pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\headwidth}{6.5in}
+\setlength{\textheight}{8.75in}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\setlength{\footskip}{0.3in}
+%\fancyhead[L]{\textbf{Devesh Rajpal}}
+%\fancyhead[R]{\nouppercase\leftmark}
+\usepackage{multicol, titletoc, bookmark, parskip}
+%\usepackage{parskip}
+\setlength{\parindent}{0.5cm}
 \newtheorem{thm}{Theorem}
 \newtheorem{defn}{Definition}
 \newtheorem{lemma}{Lemma}
@@ -25,12 +44,12 @@
 \begin{document}
 
 \maketitle
-\textbf{April 2019}
+\subsection*{April 2019}
 
 
-(11/4/19) Today I learned a way of defining integration of differential form over a continuous path and how the definition will match with piece-wise differentiable path. I also learned about properties of Index of a path with respect to a point and why it is a locally constant function.
+\quad (11/4/19) Today I learned a way of defining integration of differential form over a continuous path and how the definition will match with piece-wise differentiable path. I also learned about properties of Index of a path with respect to a point and why it is a locally constant function.
 
-(12/4/19) Today I learned about Laurent expansion in complex analysis and the proof of the theorem that Laurent expansion of holomorphic function in an annulus exists and is unique.The proof involved a way of sneaking Cauchy integral formula in the annulus by applying it to a null-homotopic but information giving path and things as you expect them to be nicely.
+(12/4/19) Today I learned about Laurent expansion in complex analysis and the proof of the theorem that Laurent expansion of holomorphic function in an annulus exists and is unique. The proof involved a way of sneaking Cauchy integral formula in the annulus by applying it to a null-homotopic but information giving path and things as you expect them to be nicely.
 
 (13/4/19) Today I learned about continuous dependence of initial points/data of a differential equation which is $C^1$ and Lipschitz in phase variable, the proof relied on inequality called fundamental estimate and Picard-Lindelof theorem, it also introduced something informally called butterfly region in phase space and why because of conditions of Picard-Lindelof the solution stayed in that region, I think the condition of Lipschitz is pretty important here because nature of butterfly region coming together with Picard-Lindelof conditions.
 
@@ -48,23 +67,16 @@
 
 (20/4/19) Today I finally learned what Clebsch-Gordan coefficients mean, pure moment of joy. Wikipedia article on it helped a lot
 
-(21/4/19-27/4/19) Exam week
-\\
+(21/4/19-27/4/19) Exam week. 
 
+\subsection*{June 2019} 
 
-\maketitle\textbf{June 2019} 
-\\
+\quad(7/6/19) Today I learned that connection forms are skew-symmetric with respect to an orthonormal frame and Riemannian connection and how structural equation proves that curvature forms are also skew symmetric with same conditions.
+The second structural equation in metric form is $$\Omega =d\omega+\omega\wedge \omega.$$
 
+\subsection*{August 2019}
 
-(7/6/19) Today I learned that connection forms are skew-symmetric with respect to an orthonormal frame and Riemannian connection and how structural equation proves that curvature forms are also skew symmetric with same conditions.
-The second structural equation in metric form is $$\Omega =d\omega+\omega\wedge \omega$$
-
-
-\maketitle\textbf{August 2019}
-\\
-
-
-(10/8/19) Today I (re)learned how to think of Hilbert Nullstellensatz as theorem of the kind 'The only obstructions are the obvious obstructions', this kind of theorems may be more prevalent in mathematics than I used to think and will look for them in future since it is powerful and ingenious way to think. I also learned about $L^2$ and $L^{\infty}$ estimates of linear first-order PDE and definition of Weak solutions of linear first-order PDE.
+\quad (10/8/19) Today I (re)learned how to think of Hilbert Nullstellensatz as theorem of the kind `The only obstructions are the obvious obstructions', this kind of theorems may be more prevalent in mathematics than I used to think and will look for them in future since it is powerful and ingenious way to think. I also learned about $L^2$ and $L^{\infty}$ estimates of linear first-order PDE and definition of Weak solutions of linear first-order PDE.
 
 (16/8/19) Today I learned of an idea of tangent space with minimal structure on the given space, the setting is in a locally ringed space. Given $x\in X$ let $m_x$ be the maximal ideal of the local ring $R_x$ at $x$, then $R_x/m_x$ is a field and the tangent space is defined to be dual of the vector space $m_x/m_x^2$ over field $R_x/m_x$. The motivation to do so is explained in the Wikipedia article on locally ringed space. In a way it also displays how Algebraic Geometry will need much more powerful tools to study than differential geometry since you almost need to throw away analysis.
 
@@ -76,54 +88,40 @@ $$\langle \text{grad}f, X_p \rangle = X_pf = (df)(X_p)$$
 (19/8/19) Today I learned about tensor product of sheaves and about fine sheaves. I got some idea how paracompactness will be needed for partitions of unity to work.
 
 (26/8/19) Today I learned about method of characteristics in quasi-linear PDE's. One has complete local description of existence/non-existence of  solutions in terms of transversality conditions. 
-\\
 
+\subsection*{September 2019} 
 
-\maketitle\textbf{September 2019} 
-\\
-
-
-(2/9/19) Today I learned about Riesz Representation theorem and how space of compactly supported continuous functions on $\mathbf{R}$ is not a Banach space. A generic example comes from sequence approximating a function tending to zero for large values say $f=e^{-|x|}$ via compactly supported functions such that the compact supports are unbounded.
+\quad (2/9/19) Today I learned about Riesz Representation theorem and how space of compactly supported continuous functions on $\mathbf{R}$ is not a Banach space. A generic example comes from sequence approximating a function tending to zero for large values say $f=e^{-|x|}$ via compactly supported functions such that the compact supports are unbounded.
 
 (20/9/19) Today I learned about maximum principle of Laplace equation solution and their Mean Value Property. There are two maximum principle one strong and other weak. The weak one requires bounded domain in hypothesis while the strong one requires connected domain. The book remarked that Weak maximum principle can be extended to general elliptic operators.
-\\
 
+\subsection*{October 2019}
 
-\maketitle\textbf{October 2019}
-\\
-
-
-(10/10/19) Today I learned something about non-vanishing holomorphic function on simply connected set. The theorem is as follows :
+\quad (10/10/19) Today I learned something about non-vanishing holomorphic function on simply connected set. The theorem is as follows :
 
 Let $U$ be simply connected and open and $f : U \rightarrow \mathbf{C}$ is holomorphic and nowhere vanishing. Then there exists a holomorphic function $h: U \rightarrow \mathbf{C}$ such that $$f(z)=\exp{h(z)}$$
-for all $z\in U$.\\
+for all $z\in U$.
 
-This theorem allows us to define logarithm of a function on simply connected domains.\\
+This theorem allows us to define logarithm of a function on simply connected domains.
 I also learned a proof of Riemann mapping theorem, idea of getting a desired function was solving an extremal problem with derivative of function. I got to know that this idea will be used in other problems as well.
 
-(14/10/19) Today I learned one important result in commutative algebra:\\
+(14/10/19) Today I learned one important result in commutative algebra:
 (Zariski lemma) Let $k$ be a field, $R$ a finitely generated $k$-algebra. Suppose $R$ is a field. Then $R$ is algebraic over $k$.
 
 (20/10/19) Today I learned about elementary Hilbert space theory. The approach of Rudin to prove Parseval identity and completeness of trigonometric system is seamless and intuitive. 
-\\
 
+\subsection*{November 2019}
 
-\maketitle\textbf{November 2019}
-\\
-
-
-(5/11/19) Recently I saw two very beautiful applications of Zorn's lemma both very similar in approach, almost the same; one in Analysis and one in Field Theory. First one was a proof of Hahn-Banach Theorem and second one was result that field homomorphisms to algebraically closed fields can be extended to algebraic extensions of domain.
+\quad (5/11/19) Recently I saw two very beautiful applications of Zorn's lemma both very similar in approach, almost the same; one in Analysis and one in Field Theory. First one was a proof of Hahn-Banach Theorem and second one was result that field homomorphisms to algebraically closed fields can be extended to algebraic extensions of domain.
 
 (12/11/19) Today I learned about inverse limits and for the first time saw a use of snake lemma. It was from book Atiyah-Macdonald book chapter 11 - Completions.
 
 (13/11/19) Today I learned more about completions. I have intuition that inverse limits are algebraic analogue of successive approximations like a Taylor series expansion. Take for example the filtration 
 \[ \mathbf{Z} \supset p\mathbf{Z} \supset p^2\mathbf{Z} \supset ... \] Now a coherent sequence in this is like a number with elements of the sequence representing approximations of it modulo $p^n\mathbf{Z}$. 
-\\
 
-\maketitle\textbf{December 2019}
-\\
+\subsection*{December 2019}
 
-(8/12/19) Today I learned something about lifting of covering maps. If $p: Y \to X$ is covering map and $Z$ is a simply connected space with a continuous map $f: Z \to X$ then for ANY $y_0$ in the fibre $p^{-1}(f(z_0))$ there exits a unique lift $\tilde{f} : Z \to Y$ such that $\tilde{f}(z_0)=y_0$. The construction of the map is by lifts of $f$ on paths and simply connectedness ensures that that is independent of path. 
+\quad (8/12/19) Today I learned something about lifting of covering maps. If $p: Y \to X$ is covering map and $Z$ is a simply connected space with a continuous map $f: Z \to X$ then for ANY $y_0$ in the fibre $p^{-1}(f(z_0))$ there exits a unique lift $\tilde{f} : Z \to Y$ such that $\tilde{f}(z_0)=y_0$. The construction of the map is by lifts of $f$ on paths and simply connectedness ensures that that is independent of path. 
 
 (11/12/19) Today I learned about sheaves and topological space associated to a presheaf (sheafication). An interesting example of sheaves came up - Suppose $X$ is a Riemann surface. For $U\subset X$ open, let
  \[ \mathcal{F}(U)=\mathcal{O^*(U)}/ \exp  \mathcal{O(U)} \]
@@ -161,12 +159,10 @@ One interesting consequence of this is that one can view DeRham cohomology as sh
 either way we have $$\dim H^0(X,\mathcal{O}_D) - \dim H^1(X,\mathcal{O}_D) = \dim H^0(X,\mathcal{O}_{D+P}) - \dim H^1(X,\mathcal{O}_{D+P}) - 1$$ implying 
 $$ \dim H^0(X,\mathcal{O}_D) - \dim H^1(X,\mathcal{O}_D) - \deg D = \dim H^0(X,\mathcal{O}_{D+P}) - \dim H^1(X,\mathcal{O}_{D+P}) - \deg (D+P)$$
 So this quantity is invariant of divisor and for $D=0$ it is $1-g$.
-\\
 
-\maketitle\textbf{January 2020}
-\\
+\subsection*{January 2020}
 
-(2/1/20) Today I learned about Serre's duality theorem and Hodge star operator. Serre's duality result is hinged (for now) on a bilinear map \[ H^0(X,\Omega_{-D}) \times H^1(X,\mathcal{O}_D) \to  H^0(X,\Omega) \xrightarrow{Res} \mathbb{C} \] which induces a map \[ i_D : H^0(X,\Omega_{-D} )\to H^1(X,\mathcal{O}_D)^*\]
+\quad (2/1/20) Today I learned about Serre's duality theorem and Hodge star operator. Serre's duality result is hinged (for now) on a bilinear map \[ H^0(X,\Omega_{-D}) \times H^1(X,\mathcal{O}_D) \to  H^0(X,\Omega) \xrightarrow{Res} \mathbb{C} \] which induces a map \[ i_D : H^0(X,\Omega_{-D} )\to H^1(X,\mathcal{O}_D)^*\]
 Serre's duality asserts that this map is an isomorphism. So we get $ \dim  H^0(X,\Omega_{-D})=\dim H^1(X,\mathcal{O}_D)$ and for $D=0$, $g= \dim  H^0(X,\Omega)=\dim H^1(X,\mathcal{O})$ thus genus of a compact Riemann surface $X$ is also the number of linearly independednt meromorphic 1-forms on it. Let $K=(\omega)$ be a canonical divisor, then we have an isomorphism of sheaves $\mathcal{O}_{D+K} \cong \Omega_D$ $(f\mapsto f\cdot \omega)$, this fact along with Serre's duality has many many applications. 
 
 Hodge star operator introduces an inner product on $\mathcal{E}^{(1)}(X)$ in which the subspaces \linebreak $d'\mathcal{E}(X),d''\mathcal{E}(X),\Omega(X)$ and $\overline{\Omega}(X)$ are pairwise orthogonal which has some interesting applications.
@@ -182,12 +178,10 @@ Hodge star operator introduces an inner product on $\mathcal{E}^{(1)}(X)$ in whi
 (28/1/20) Today I learned about gluing of sheaves, given an open covering $\{U_i\}_{i\in I}$ of topological space $X$ with corresponding collection of sheaves $\{\mathcal{F}_i\}_{i \in I}$ along with gluing data of isomorphisms $\{\varphi_{ij} : \mathcal{F}_i\vert_{U_i \cap U_j} \to \mathcal{F}_j\vert_{U_i \cap U_j} \}$ with $\varphi_{jk} \circ \varphi_{ij} = \varphi_{ik}$ on $\mathcal{F}_i\vert_{U_i \cap U_j \cap U_k}$ then there exists a sheaf $\mathcal{F}$ on $X$ with isomoprhisms $\{\varphi_i :  \mathcal{F}\vert_{U_i} \to \mathcal{F}_i\}$ such that $\varphi_j = \varphi_{ij} \circ \varphi_i$ on $\mathcal{F}\vert_{U_i \cap U_j}$. One solution to construct such sheaf is to think that we are gluing sheaves from definition. For any open set $Y$ our definition of elements of $\mathcal{F}(Y)$ will be a collection of sheaf elements $\{s_i \in \mathcal{F}_i(U_i\cap Y)\}$ such that $\varphi_{ij} (s_i\vert_{U_i\cap U_j \cap Y})= (s_j\vert_{U_i\cap U_j \cap Y})$. Using this one defines gluing of schemes.
 
 (29/1/20) Today I learned some applications of structure theorem in Linear Algebra. For a field $F$, given a finite dimensional vector space over $F$ and a linear operator $T : V \to V$, $V$ can be considered as a finitely generated $R=F[X]$ module with $X\cdot v=T(v)$. Applying structure theorem we get \[ V \cong \frac{F[X]}{(d_1(X))} \oplus \cdot \cdot\cdot \oplus \frac{F[X]}{(d_k(X))} \] From here using suitable bases from right hand side we can get matrix of $T$ in Rational canonical form and Jordan canonical form.
-\\
 
-\maketitle\textbf{February 2020}
-\\
+\subsection*{February 2020}
 
-(4/2/20) More about gluing of sheaves - The construction of a global sheaf does not require cocycle condition, rather we require it for restriction isomorphism $\{\varphi_i :  \mathcal{F}\vert_{U_i} \to \mathcal{F}_i\}$.
+\quad (4/2/20) More about gluing of sheaves - The construction of a global sheaf does not require cocycle condition, rather we require it for restriction isomorphism $\{\varphi_i :  \mathcal{F}\vert_{U_i} \to \mathcal{F}_i\}$.
 
 (15/2/20) Today I learned about equivalence of categories. The word naturally isomorphic is attached to the notion of natural transformation of functor and should be seen in the light of categories.
 
@@ -196,12 +190,10 @@ Hodge star operator introduces an inner product on $\mathcal{E}^{(1)}(X)$ in whi
 (23/2/20) Today I learned definition of homolorphic function in several complex variables (SCV).
 
 (26/2/20) Today I learned about triangulations of topological surface. A topological surface $X$ is called a polyhedron if there exists a simplicial complex $K$ and a homeomorphism $h : |K| \to X$, where $|K|$ is the geometric realization of the simplicial complex. Let $\Delta^n$ denotes standard $n$-simplex, then its skeleton, say $K$, is homotopic to $S^{n-1}$, so $S^{n-1}$ is a polyhedron. With the help of this fact and simiplicial approximation we can prove that for $m<n$, any continuous map $f: S^m \to S^n$ is null homotopic, proving that the homotopy groups $\pi_m(S^n) = 0$ for $m<n$.
-\\
 
-\maketitle\textbf{March 2020}
-\\
+\subsection*{March 2020}
 
-(1/3/20) Today I learned a proof of homotopy axiom of singular homology. The proof in Rotman's \textit{An Introduction to Algebraic Topology} involved prism maps construction by induction to get chain homotopy beteen chain complexes $\{S_\bullet(X)\}$ and $\{S_\bullet(X \times I)\}$
+\quad (1/3/20) Today I learned a proof of homotopy axiom of singular homology. The proof in Rotman's \textit{An Introduction to Algebraic Topology} involved prism maps construction by induction to get chain homotopy beteen chain complexes $\{S_\bullet(X)\}$ and $\{S_\bullet(X \times I)\}$
 
 (22/3/20) Today I learned about CW complexes from Hatcher's \textit{Algebraic Topology}. The construction is inductively based on attaching cells.
 
@@ -211,12 +203,11 @@ A major tool used in proof of excision is barycentric division of simplicial com
 
 Excision has many wonderful consequences and it makes some homology groups computable.One result is Mayer-Vietoris sequence in homology which can be used to compute homology groups of space which have good covers. $S^n$ is an example and for $n\ge 2$ because of its non-trivial homology group, we get an example of a simply connected space which is not contractible.
 
-(24/3/20) Today I learned about degree of a map $f : S^n \to S^n$. As $H_n(S^n) = \mathbb{Z}$, the group morphism $H_n(f) : H_n(S^n) \to H_n(S^n)$ is determined by an integer (as any group homomorphism $g: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $g(1)$) which is defined to the degree of $f$. One can prove that the antipodal map $a: S^n \to S^n$ has degree $(-1)^{n+1}$. A consequence of this theorem is the Hairy ball theorem about $S^{2n}$.\\
-\\	
-\maketitle\textbf{April 2020}
-\\
+(24/3/20) Today I learned about degree of a map $f : S^n \to S^n$. As $H_n(S^n) = \mathbb{Z}$, the group morphism $H_n(f) : H_n(S^n) \to H_n(S^n)$ is determined by an integer (as any group homomorphism $g: \mathbb{Z} \to \mathbb{Z}$ is multiplication by $g(1)$) which is defined to the degree of $f$. One can prove that the antipodal map $a: S^n \to S^n$ has degree $(-1)^{n+1}$. A consequence of this theorem is the Hairy ball theorem about $S^{2n}$.
+	
+\subsection*{April 2020}
 
-(1/4/20) Today I learned about relation between simplicial and singular homology. If $K$ is a finite simplicial complex, $|K|$ it's geometric realization then we have an inclusion map $j^K : C_\bullet(K) : \to S_\bullet(|K|) $ which induces isomorphism in the reduced/augmented homology. Since singular homology is independent of the siplicial structure of the complex, it tells a great deal about the invariants of polyhedrons. Like Euler-Poincare characteristic of a polyhedron is independent of the triangulation.
+\quad (1/4/20) Today I learned about relation between simplicial and singular homology. If $K$ is a finite simplicial complex, $|K|$ it's geometric realization then we have an inclusion map $j^K : C_\bullet(K) : \to S_\bullet(|K|) $ which induces isomorphism in the reduced/augmented homology. Since singular homology is independent of the siplicial structure of the complex, it tells a great deal about the invariants of polyhedrons. Like Euler-Poincare characteristic of a polyhedron is independent of the triangulation.
 
 (4/4/20) Today I learned about a description of fundamental group of polyhedra in terms of generators and relations. We can prove the existence of a maximal tree for any simplicial complex which occupies every vertex and given this the group generated by all edges with quotient by normal group generated by edges of the maximal tree and obvious the homotopy equivalences gives us fundamental group of the simplicial complex. This description can be very efficient for computation.
 
@@ -242,12 +233,10 @@ Sard's theorem used Fubini's theorem and very surprisingly induction.  It involv
 where sign $df_x$ is $\pm 1$ depending on whether $df_x$ preserve or reverse the orientation. Again deg is a locally constant function of regular value $y$ and is independent of the regular value. The proof is similar to that of mod 2 degree.
 
 (28/4/20) Today I learned about index of a vector field at an isolated zero. Brouwer degree can be used to define degree of a vector field near an isolated zero normalizing it and restricting it to a small sphere near the zero. To prove it is well defined, we need to prove it is invariant under diffeomorphism and the proof involved a useful lemma which states that any orientation preserving diffeomorphism $f: \mathbb{R}^n \to \mathbb{R}^n$ is smoothly isotopic to identity. 
-\\
 
-\maketitle\textbf{May 2020}
-\\
+\subsection*{May 2020}
 
-(4/5/20) Today I wrote a proof of fact that $B_n$ is manifold with boundary as it was asked on stackexchange. Since the post was deleted, I am dumping my proof here because my precious Latexed effort should not be wasted.
+\quad (4/5/20) Today I wrote a proof of fact that $B_n$ is manifold with boundary as it was asked on stackexchange. Since the post was deleted, I am dumping my proof here because my precious Latexed effort should not be wasted.
 
 Using stereographic projection from the north pole $N=(0,...,1)$, we have a function $\psi :S^n\setminus N \to \{x \in \mathbb{R}^{n+1} : x_{n+1}=0\}$ defined by $$\psi (x_1,...,x_{n+1}) = \left( \frac{x_1}{1-x_{n+1}},...,\frac{x_n}{1-x_{n+1}},0\right) $$
 
@@ -282,14 +271,13 @@ I am learning spectra of Laplacian from the text \textit{Eigenvalues in Riemanni
 
 (17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From Akhil Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
 
-(26/5/20) Today I learned something really interesting in Riemannian geometry. Let $M$ be a smooth manifold, then the scalar curvature functional from the set of all riemannian metrics (normalised to unital volume) to reals given by  $g \mapsto \int_M R(g)dV_g$ recovers Einstein equations through Euler-Lagrange equations. This was discovered by Hilbert. % The name Einstein manifolds comes from Einstein equations which says Ricci curvature is propotional to metric curvature. 
-  I do not have much knowledge in the subject but I will look into more.
-\\
+(26/5/20) Today I learned something very interesting in Riemannian geometry. Let $M$ be a smooth manifold, then the scalar curvature functional from the set of all riemannian metrics (normalised to unital volume) to reals given by  $g \mapsto \int_M R(g)dV_g$ recovers Einstein equations through Euler-Lagrange equations. This was discovered by Hilbert. % The name Einstein manifolds comes from Einstein equations which says Ricci curvature is propotional to metric curvature. 
+I do not have much knowledge in the subject but I will look into more.
 
-\maketitle\textbf{June 2020}
-\\
 
-(4/6/20) Today I learned about various forms of Hahn-Banach Theorem. One is the general extension of linear functional on a subspace to the whole space and the others are geometric seperation of convex sets by hyperplanes.
+\subsection*{June 2020}
+
+\quad (4/6/20) Today I learned about various forms of Hahn-Banach Theorem. One is the general extension of linear functional on a subspace to the whole space and the others are geometric seperation of convex sets by hyperplanes.
 
 (7/6/20) As suspected I have had wrong definition of inner product of tensors on Riemannian manifold in my mind all along. The correct definition is there is John Lee's book. Let $h = h_{ij}dx^i \otimes dx^j$ and $k = k_{ij}dx^i \otimes dx^j$ in local coordinates, then the inner product is defined be 
 \[ (h|k) = g(h,s) = h_{mn}k_{st} \, g(dx^m \otimes dx^n, dx^s \otimes dx^t) = g(dx^m,dx^s) g(dx^n,dx^t) h_{mn}k_{st}  = g^{ms}g^{nt} h_{mn}k_{st} \]
@@ -312,10 +300,10 @@ In the weak embedding theorem there is a lemma about reducing the dimension of t
 \item If the manifold admits a smooth embedding into $\mathbb{R}^N$, for some $N$, then it admits a \textcolor{red}{proper} smooth embedding into $\mathbb{R}^{2n+1}$, where $n$ is the dimension of the manifold.
 \end{enumerate}
 
-\maketitle\textbf{July 2020}
-\\
+\subsection*{July 2020}
 
-(3/7/20) Today I learned about weak topology on Banach spaces. One really strange fact about weak topology is that the closure of unit sphere in weak topology is the whole closed unit ball! Like the weak topology does not repect norms at all. But still there are few limiting properties on the behavior of weak convergence with respect to norm. For example if $x_n \rightharpoonup x$  weakly in $\sigma(E,E^{\star})$, then $(||x_n||)$ is bounded and $||x|| \le \liminf||x_n||$.
+
+\quad (3/7/20) Today I learned about weak topology on Banach spaces. One really strange fact about weak topology is that the closure of unit sphere in weak topology is the whole closed unit ball! Like the weak topology does not repect norms at all. But still there are few limiting properties on the behavior of weak convergence with respect to norm. For example if $x_n \rightharpoonup x$  weakly in $\sigma(E,E^{\star})$, then $(||x_n||)$ is bounded and $||x|| \le \liminf||x_n||$.
 
 
 (4/7/20) Today I learned about Banach-Alaoglu-Bourbaki theorem on the compactness of closed unit ball in weak$^\star$ topology. Surprisingly the proof was easy to understand but hard to come up with. Not to mention how unexpected the result was.
@@ -351,29 +339,29 @@ A theorem of Schauder states that $T \in \mathcal{K}(E,F)$ if and only if $T^\st
 
 (30/07/20) Today I learned that smooth functions are dense in Sobolev spaces $W^{1,p}$, quite an interesting fact. This might be the motivation for developing Sobolev spaces because derivative take a part in the norm. 
 
-\maketitle\textbf{August 2020}
-\\
+\subsection*{August 2020}
 
-(1/08/20) Today I learned some absolutely brilliant applications of Lax-Milgram theorem. The theorem is so powerful when equipped with appropriate Sobolev spaces. For good enough differential equations after proving existence of a unique solution the derivative itself lends its continuity implying sufficient differentiability of the solution and converting it to a strong solution. It was magnificent to learn about it, you can just crush differential equations with it.
+
+\quad (1/08/20) Today I learned some absolutely brilliant applications of Lax-Milgram theorem. The theorem is so powerful when equipped with appropriate Sobolev spaces. For good enough differential equations after proving existence of a unique solution the derivative itself lends its continuity implying sufficient differentiability of the solution and converting it to a strong solution. It was magnificent to learn about it, you can just crush differential equations with it.
 
 (9/08/20) Today I learned about Hodge decomposition theorem. Assuming regularity of the laplacian, the theorem yields such important results. First and foremost, for compact oriented smooth manifold, the deRham cohomology spaces are finite dimensional and secondly every cohomology class can be represented by an unique harmonic form. 
 
-At the end it seems like ``All roads leads to complex geometry".\\
+At the end it seems like ``All roads leads to complex geometry".
 
-\maketitle\textbf{September 2020}
-\\
+\subsection*{September 2020}
 
-(23/09/20) Today I learned about compactly generated topological spaces. A compactly generated topological space is a topological space whose topology is coherent with compact sets, so a set $A$ is closed iff $A \cap K$ is closed for all compact sets $K$. A very important fact is that any Hausdorff locally compact space is compactly generated. This fact is very useful when dealing with proper maps.\\ 
+
+\quad (23/09/20) Today I learned about compactly generated topological spaces. A compactly generated topological space is a topological space whose topology is coherent with compact sets, so a set $A$ is closed iff $A \cap K$ is closed for all compact sets $K$. A very important fact is that any Hausdorff locally compact space is compactly generated. This fact is very useful when dealing with proper maps. 
  
-\maketitle\textbf{October 2020}
-\\
+\subsection*{October 2020}
 
-(13/10/20) Today I learned about line bundles on riemann surfaces and how they are connected with divisor. If we assume the fact that every holomorphic line bundle on a Riemann surface has a non-zero meromorphic section then, the group of line bundles on a Riemann surface (say $X$) is isomorphic to group of divisors on $X$ modulo principal divisors on $X$.\\ 
 
-\maketitle\textbf{November 2020}
-\\
+\quad (13/10/20) Today I learned about line bundles on riemann surfaces and how they are connected with divisor. If we assume the fact that every holomorphic line bundle on a Riemann surface has a non-zero meromorphic section then, the group of line bundles on a Riemann surface (say $X$) is isomorphic to group of divisors on $X$ modulo principal divisors on $X$. 
 
-(6/11/20) Today I started reading a paper of Bennett Chow and Richard Hamilton about cross curvature flow.
+\subsection*{November 2020}
+
+
+\quad (6/11/20) Today I started reading a paper of Bennett Chow and Richard Hamilton about cross curvature flow.
 
 (16/11/20) Today I learned a cool trick to take covariant derivative of tensors from Bennett Chow's book \textit{Hamilton's Ricci flow} The trick was used to obtain covariant derivative of Christoffel symbols and expressing them in terms of covariant derivatives of the metric. The idea is to take normal coordinates so that derivatives of metric with respect to coordinates vanishes. Now the covariant derivative matches with the usual coordinate derivative, so we substitute that and get a tensorial equation. Hence this calculation is valid in all coordinates and we get the formula.
 
@@ -383,13 +371,11 @@ At the end it seems like ``All roads leads to complex geometry".\\
 
 (22/11/20) Today I learned a bit about the eight model geometry and the Geometrization conjecture of Thurston. One very ambitious goal is to understand it along with the study of Ricci flow.
 
-(27/11/20) Today I learned about van Kampen theorem from the category theory perspective. The theorem is formulated in terms of fundamental groupoid and colimits of the diagram from an good open cover. It felt way more clean than the group theory presentation although it is the same thing. Essentially in category theory there is just one proof with one idea and that's it, van Kampen in 4 lines. I had the first taste of abstract nonsense and it looks promising. Before this I finally learned about limits and colimits of category theory.\\ 
+(27/11/20) Today I learned about van Kampen theorem from the category theory perspective. The theorem is formulated in terms of fundamental groupoid and colimits of the diagram from an good open cover. It felt way more clean than the group theory presentation although it is the same thing. Essentially in category theory there is just one proof with one idea and that's it, van Kampen in 4 lines. I had the first taste of abstract nonsense and it looks promising. Before this I finally learned about limits and colimits of category theory. 
 
-\maketitle\textbf{December 2020}
-\\
+\subsection*{December 2020}
 
-
-(4/12/20) Today I learned about the algebraic topology proof of theorem that subgroup of a free group is free. I always knew there existed a proof but never bothered to look into it, neither it was required but today when I saw it for the first time, I was spell-bounded by the simplicity of the proof. Just a little bit of covering space theory and a lemma about fundamental group of graphs, and you are done.
+\quad (4/12/20) Today I learned about the algebraic topology proof of theorem that subgroup of a free group is free. I always knew there existed a proof but never bothered to look into it, neither it was required but today when I saw it for the first time, I was spell-bounded by the simplicity of the proof. Just a little bit of covering space theory and a lemma about fundamental group of graphs, and you are done.
 
 (10/12/20) Today I learned about cellular homology. The first definition is based on singular homology and then goes on to prove that it matches with singular homology. I don't completely understand the motivation behind the definition but it is pretty that you have one more homology theory isomorphic to singular homology.
 
@@ -419,13 +405,13 @@ I also learned about Hodge decomposition on K\"{a}hler manifolds and how it prov
  (29/12/20) Today I learned about fundamental class of a compact, oriented manifold. The existence proof is such an amazing application of induction and reducing to case to more and more simple setting until it becomes trivial. One proves a more general theorem of existence and uniqueness for compact subsets of a manifold and then apply it to compact manifolds. It uses a technique called local global principle which states that if a proposition is true for compact sets $A,B$ and $A\cap B$ then it is true for $A\cup B$. The proof goes via some standard Mayer-Vietoris arguement.
  
  (30/12/20) Today I continued learning about fundamental class. One thing which bothered me very much was the isomorphism $H_n(M,M-\{x\};R)\cong H_{n-1}(S^{n-1};R) \cong \mathbb{Z} \otimes_{\mathbb{Z}}R \cong R$ for a commutative ring $R$. 
- The second last isomorphism comes universal coefficient theorem which only gives it as a group isomorphism, then one has to see that the map is indeed also a ring homomorphism which then implies that it is also a ring isomorphism. Only now some arguments in the proof of fundamental class are valid.\\
+ The second last isomorphism comes universal coefficient theorem which only gives it as a group isomorphism, then one has to see that the map is indeed also a ring homomorphism which then implies that it is also a ring isomorphism. Only now some arguments in the proof of fundamental class are valid.
  
  
- \maketitle\textbf{January 2021}
- \\
+ \subsection*{January 2021}
  
- (1/1/21) Today I finally completed the proof of Poincaré duality for manifolds with or without boundary. The end result is so good but it doesn't come free. So many new ideas and things needed to be established before the proof, especially local orientation and fundamental class.
+ 
+ \quad (1/1/21) Today I finally completed the proof of Poincaré duality for manifolds with or without boundary. The end result is so good but it doesn't come free. So many new ideas and things needed to be established before the proof, especially local orientation and fundamental class.
  
  (3/1/21) Today I learned about intersection paring on cohomology on compact manifold with boundary. It is defined from Poincaré pairing. 
  
@@ -438,13 +424,11 @@ I also learned about Hodge decomposition on K\"{a}hler manifolds and how it prov
  (25/1/21) Today I learned about Weinstein Lagrangian Neighborhood theorem and Weinstein tubular neighborhood theorem. It turns out in a compact lagrangian $X$ submanifold of a symplectic manifold $(M,\omega)$, you can relate the symplectic form $\omega$ to canonical symplectic form $\omega_0$ of $T^{*}X$ by a diffeomorphism of neigbourhoods of $X$ in both manifolds. This theorem practically classifies lagrangian embeddings.
  
  (26/1/21) Today I learned about the compatibility between a symplectic, an almost complex and a riemannian structure. Given two of these we can construct the third one compatible with them. This should give a way to explore one geometry through other lenses, like we can ask questions like how  much curvature affects/restricts symplectic structure. The sweet intersection of all of this is of course K\"{a}hler geometry.
- \\
  
- \maketitle\textbf{February 2021}
- \\
-
  
- (2/2/21) Today I learned about Fibre bundles in algebraic topology. It looked like a important generalization of covering space which can help in finding homotopy groups. More surprising were fibrations which like fibre bundles satisfied long exact sequence of homotopy groups.
+ \subsection*{February 2021}
+ 
+ \quad (2/2/21) Today I learned about Fibre bundles in algebraic topology. It looked like a important generalization of covering space which can help in finding homotopy groups. More surprising were fibrations which like fibre bundles satisfied long exact sequence of homotopy groups.
  
  I also learned about Whitehead theorem on weak homotopy equivalence. The proof was so illustrative use of various properties, first mapping cylinder, then using compression lemma, probably also using the fact that every CW pair is a cofibration.
  
@@ -454,12 +438,12 @@ I also learned about Hodge decomposition on K\"{a}hler manifolds and how it prov
  (9/2/21) Today I learned about Serre spectral sequence of fibrations. I haven't looked at the proof but it looks far far from anything easy. The emphasis of my algebraic topology course is to learn calculations so we are doing that more without bothering about difficult proves. The method was so difficult to grasp at first but after some examples it is more clear and computational. It is surprising that we can relate homology/cohomology of fibrations. This method enables to compute homology/cohomolgy of more complicated spaces like Eilenberg-Maclane space which looks more accessible from fibrations than other techniques like CW homology or Mayer-Vietoris sequence. 
  
  (11/2/21) Today I learned about surface entropy on riemannian surface when scalar curvature is strictly positive. Since normalized ricci flow preserves the positive sign of scalar curvature, the entropy is defined as long as solution exists. It turns out that surface entropy is a monotonous (stricly monotonous unless scalar curvature becomes constant) quantity and it helps in estimating diameter of the manifold.
-  \\
+  
  
- \maketitle\textbf{April 2021}
- \\
+ \subsection*{April 2021}
  
- (3/4/21) Today I learned about complex deformations and Beltrami coefficient. It is related to marked Riemann surfaces, space of complex structures on a Riemann surface along a marking on it in the form of generators of fundamental group. This space upto a nice equivalence is called Teichmuller space and is related to study of Moduli spaces of Riemann surfaces.
+ 
+ \quad (3/4/21) Today I learned about complex deformations and Beltrami coefficient. It is related to marked Riemann surfaces, space of complex structures on a Riemann surface along a marking on it in the form of generators of fundamental group. This space upto a nice equivalence is called Teichmuller space and is related to study of Moduli spaces of Riemann surfaces.
  
  (4/4/21) Today I learned about Fuchsian groups. They are discrete subgroups of $Aut(H)$ and because $H$ is second-countable space, there are atmost countable number of elements in a Fuchsian group.
  
@@ -474,12 +458,12 @@ I also learned about Hodge decomposition on K\"{a}hler manifolds and how it prov
   
   Then this limit exists(not infinity) and is independent of $y$. This is called the volume entropy. It is related to a different kind of entropy called topological entropy which is more dynamical system wise definition. This is from paper \textit{Topological entropy for geodesic flows} by Anthony Manning.
   
-  (26/4/21) Today I learned about partial differential operators on smooth vector bundles.\\
+  (26/4/21) Today I learned about partial differential operators on smooth vector bundles.
   
-  \maketitle\textbf{June 2021}
-  \\
+  \subsection*{June 2021}
+  
  
-  (12/6/21) Today I learned about characters of a finite group and Dirichlet $L$ function.
+  \quad (12/6/21) Today I learned about characters of a finite group and Dirichlet $L$ function.
   
   (24/6/21) Today I learned about Harmonic maps between Riemannian manifolds from Eells and Sampson paper. The concept is not too difficult, it is based on energy of a function between two Riemannian manifolds and with the most obvious definition one can imagine. Let $f :(M,g)\mapsto (M',g')$ be a map between two Riemannian manifolds. For any point $x \in M$, $Df_x :T_xM \mapsto T_{f(x)}M'$ is a map between two vector spaces with inner product so $Df_x \in \text{Hom}(T_xM,t_{f(x)}M')  \cong T^*_xM \otimes T_{f(x)}M'$. From inner product $g$ one can equip $T_x^*M$ with an obvious inner product and tensor product of two inner product is also an inner product so we have a concept of norm for $Df_x$. Let $g = g_{ij}dx^i\otimes dx^j$ and $g' = g_{\alpha \beta}dy^\alpha dy^\beta $ be expression in local coordinates near $x$ and $f(x)$, then 
   
@@ -489,182 +473,182 @@ I also learned about Hodge decomposition on K\"{a}hler manifolds and how it prov
   
   \[ E(f) = \half \int_M ||Df_x||^2d\mu \]
   
-  Harmonic functions are extemals of this functional.\\
+  Harmonic functions are extemals of this functional.
   
-  \maketitle\textbf{August 2021}
-  \\
+  \subsection*{August 2021}
   
-  
-  (26/8/21) Today I learned about Morse theory. From a lemma of Morse, non-degenerate critical points of a function are quite rigid and upto a coordinate change behave like 
+  \quad (26/8/21) Today I learned about Morse theory. From a lemma of Morse, non-degenerate critical points of a function are quite rigid and upto a coordinate change behave like 
   
   \[ f(x_1,x_2,\ldots,x_n) = x_1^2 + \ldots x_\lambda^2 - x_{\lambda+1}^2 \ldots - x_n^2 \]
-   where $\lambda$ is called the index of the critical point.\\
+   where $\lambda$ is called the index of the critical point.
    
-    \maketitle\textbf{September 2021}
-   \\
+\subsection*{September 2021}
    
-   (8/9/21) Today I learned about existence of functions with no degenerate points on an embedded manifold. One of the function which does this wonder is distance from a point function. Its only degenerate points are the points where intuitively normals of the manifold converge. With the help of Sard's theorem and evaluation function of normal bundles, such points have measure 0. 
    
-   It proves something even better. With other part of the morse theory, we can conclude that any differentiable manifold has the homotopy type of a CW-complex and there exists a function with no degenerate points such that each $M^a$ is compact.\\
+\quad (8/9/21) Today I learned about existence of functions with no degenerate points on an embedded manifold. One of the function which does this wonder is distance from a point function. Its only degenerate points are the points where intuitively normals of the manifold converge. With the help of Sard's theorem and evaluation function of normal bundles, such points have measure 0. 
    
-     \maketitle\textbf{November 2021}
-   \\
+It proves something even better. With other part of the morse theory, we can conclude that any differentiable manifold has the homotopy type of a CW-complex and there exists a function with no degenerate points such that each $M^a$ is compact.
    
-   (15/11/21) Today I learned about Caretheodory extension theorem of premeasures. It states that starting from a premeasure  $\mu_0$ on an algebra $\mathcal{A}$, you can get a measure $\mu$ on a $\sigma$-algebra $\mathcal{M}$ containing $\mathcal{A}$ which when restricted to $\mathcal{A}$ is equal to $\mu_0$. Another nice property of this extension is that it is greater than every other extension of $\mu_0$, further if the space is $\sigma$ finite, then every extension of $\mu_0$ is same on the $\sigma$ algebra generated by $\mathcal{A}$.
+\subsection*{November 2021}
    
-   This theorem enables us to define Lebesgue measure on the euclidean space, based on the algebra of intervals. 
    
-   (22/11/21)  Today I learned about Malgrange-Ehrenpreis theorem in the theory of distributions. Given a polynomial differential operator $P = \sum_{\alpha} a_\alpha\partial^{\alpha}$ on an open set $\Omega \subset \R^n$, we want to find whether there exists a solution of the distributional equation 
+\quad (15/11/21) Today I learned about Caretheodory extension theorem of premeasures. It states that starting from a premeasure  $\mu_0$ on an algebra $\mathcal{A}$, you can get a measure $\mu$ on a $\sigma$-algebra $\mathcal{M}$ containing $\mathcal{A}$ which when restricted to $\mathcal{A}$ is equal to $\mu_0$. Another nice property of this extension is that it is greater than every other extension of $\mu_0$, further if the space is $\sigma$ finite, then every extension of $\mu_0$ is same on the $\sigma$ algebra generated by $\mathcal{A}$.
+   
+This theorem enables us to define Lebesgue measure on the euclidean space, based on the algebra of intervals. 
+   
+(22/11/21)  Today I learned about Malgrange-Ehrenpreis theorem in the theory of distributions. Given a polynomial differential operator $P = \sum_{\alpha} a_\alpha\partial^{\alpha}$ on an open set $\Omega \subset \R^n$, we want to find whether there exists a solution of the distributional equation 
 \begin{equation}
    P(E) = \delta \label{MET} 
 \end{equation}
    
-   Malgrange-Ehrenpreis theorem gurantees the existence of such distribution. Notice that $S \star \delta = S$ in convolution of distributions so $P(S \star E ) = S \star P(E) = S \star \delta = S$, hence if we can solve the fundamental equation \eqref{MET}, then we can solve any equation of the form $L(T) = S$ by substitution $T = S \star E$.
+Malgrange-Ehrenpreis theorem gurantees the existence of such distribution. Notice that $S \star \delta = S$ in convolution of distributions so $P(S \star E ) = S \star P(E) = S \star \delta = S$, hence if we can solve the fundamental equation \eqref{MET}, then we can solve any equation of the form $L(T) = S$ by substitution $T = S \star E$.
    
-   (28/11/21) Today I learned more about Sobolev spaces and density theorems on it. It turns out that like $L^p$ spaces we can approximate Sobolev functions in some sense by compactly supported smooth functions but not completely but nice things happen if it is the complete Euclidean space. Let $W^{m,p}(\Omega)$ denote your standard Sobolev space and $W^{m,p}_0(\Omega) = \overline{D(\Omega)}$ be closure of compactly supported smooth functions with respect to sobolev norm. Then for $\R^n$ we have 
+(28/11/21) Today I learned more about Sobolev spaces and density theorems on it. It turns out that like $L^p$ spaces we can approximate Sobolev functions in some sense by compactly supported smooth functions but not completely but nice things happen if it is the complete Euclidean space. Let $W^{m,p}(\Omega)$ denote your standard Sobolev space and $W^{m,p}_0(\Omega) = \overline{D(\Omega)}$ be closure of compactly supported smooth functions with respect to sobolev norm. Then for $\R^n$ we have 
    
    \[  W^{m,p}_0(\R^n) = W^{m,p}(\R^n)\]
    
-   The other density result for arbitrary open sets is the Friedrichs theorem which says that we can approximate by compactly supported smooth functions but we have to restrict this limit to relatively compact subsets.
+The other density result for arbitrary open sets is the Friedrichs theorem which says that we can approximate by compactly supported smooth functions but we have to restrict this limit to relatively compact subsets.
    
-   (29/11/21) Today I learned a small part of the trace theorem in Sobolev spaces. One part of the trace theory was to show that if $u \in W^{1,p}(\Omega) \cap \overline{C(\Omega)}$ and $u|_{\partial \Omega} = 0$ then $u \in W^{1,p}_0(\Omega)$, which is a really intuitive statement. If a function vanishes on the boundary we wish we could approximate it by compactly supported functions in $\Omega$. I guess $u$ being continuous is needed to make sense of vanishing at the boundary which might be a measure zero set. The hard part would be proving the converse of this which will be part of trace theory.
+(29/11/21) Today I learned a small part of the trace theorem in Sobolev spaces. One part of the trace theory was to show that if $u \in W^{1,p}(\Omega) \cap \overline{C(\Omega)}$ and $u|_{\partial \Omega} = 0$ then $u \in W^{1,p}_0(\Omega)$, which is a really intuitive statement. If a function vanishes on the boundary we wish we could approximate it by compactly supported functions in $\Omega$. I guess $u$ being continuous is needed to make sense of vanishing at the boundary which might be a measure zero set. The hard part would be proving the converse of this which will be part of trace theory.
    
-   I also learned about extension operator $P : W^{1,p}_0(\Omega) \to W^{1,p}(\R^n)$ which is a continuous linear map such that $P(u)|_{\Omega} = u$. There always exists such operator and its existence makes some things about the space $W^{1,0}_0(\Omega)$ so much simpler to deal with.
+I also learned about extension operator $P : W^{1,p}_0(\Omega) \to W^{1,p}(\R^n)$ which is a continuous linear map such that $P(u)|_{\Omega} = u$. There always exists such operator and its existence makes some things about the space $W^{1,0}_0(\Omega)$ so much simpler to deal with.
    
-   (30/11/21) Today I learned (again) about Poincar\'{e} inequality on bounded open sets of Euclidean space but finally with the proof. The proof had plenty of room for generalization and the author Kesavan suggests so too in the remarks. We can get away with unbounded domain which is bounded in one direction and the function only needs to vanish in that boundary.\\
+(30/11/21) Today I learned (again) about Poincar\'{e} inequality on bounded open sets of Euclidean space but finally with the proof. The proof had plenty of room for generalization and the author Kesavan suggests so too in the remarks. We can get away with unbounded domain which is bounded in one direction and the function only needs to vanish in that boundary.
    
-   \maketitle\textbf{December 2021}
-   \\
+\subsection*{December 2021}
    
-   (1/12/21) Today I learned about Sobolev inequality on $\R^n$. One part of the theorem is that if $1 \le p < n$ then there exists a continuous map 
+   
+\quad (1/12/21) Today I learned about Sobolev inequality on $\R^n$. One part of the theorem is that if $1 \le p < n$ then there exists a continuous map 
    \[ W^{1,p}(\R^n) \to L^{p^*}(\R^n) \]
    
-   where $p^* > p$ and satisfies $\frac{1}{p^*} = \frac{1}{p} - \frac{1}{n}$.
+where $p^* > p$ and satisfies $\frac{1}{p^*} = \frac{1}{p} - \frac{1}{n}$.
    
-   Basically it says that by the existence of $L^p$ derivatives we should be able to say something more about the function. The proof not surprisingly had 2 steps where we first proved this for compactly supported smooth function and then took the limit.
+Basically it says that by the existence of $L^p$ derivatives we should be able to say something more about the function. The proof not surprisingly had 2 steps where we first proved this for compactly supported smooth function and then took the limit.
    
-   (8/12/21) Today I learned about Trace operator for Sobolev spaces. The concept is very interesting and it generalizes Green's formula for Sobolev spaces which in my mind seems to be a big result. This opens up more space to do calculus on Sobolev spaces and $C^1$ domains. A peculiar finding was the range of Trace map. Let $\gamma : H^1(\R^n_+) \to L^2(\R^{n-1})$ be the trace map, then the range of map is $H^{\frac{1}{2}}(\R^{n-1})$, where the fractional Sobolev space is defined with the help of Fourier transforms. What this suggests is that going into the boundary eats up half of the derivative, a really good explanation of this fact with an example was done in the \href{https://math.stackexchange.com/a/3627476/445705}{math.stackexchange post}. More strangely, it tells that functions with more than $\frac{1}{2}$ derivative in some sense can be extended to to $\R^n_+$. The inverse is not very difficult to obtain, a formula with the help of exponential decay and Fourier transformations does the job as demonstrated in Kesavan. 
+(8/12/21) Today I learned about Trace operator for Sobolev spaces. The concept is very interesting and it generalizes Green's formula for Sobolev spaces which in my mind seems to be a big result. This opens up more space to do calculus on Sobolev spaces and $C^1$ domains. A peculiar finding was the range of Trace map. Let $\gamma : H^1(\R^n_+) \to L^2(\R^{n-1})$ be the trace map, then the range of map is $H^{\frac{1}{2}}(\R^{n-1})$, where the fractional Sobolev space is defined with the help of Fourier transforms. What this suggests is that going into the boundary eats up half of the derivative, a really good explanation of this fact with an example was done in the \href{https://math.stackexchange.com/a/3627476/445705}{math.stackexchange post}. More strangely, it tells that functions with more than $\frac{1}{2}$ derivative in some sense can be extended to to $\R^n_+$. The inverse is not very difficult to obtain, a formula with the help of exponential decay and Fourier transformations does the job as demonstrated in Kesavan. 
    
-   Overall the fractional derivative thing is mostly dealt with the help of Fourier transformations and seems to be serving as a generalization rather than a big concept in itself. I don't know how to interpret fractional derivative without Fourier transforms. 
+Overall the fractional derivative thing is mostly dealt with the help of Fourier transformations and seems to be serving as a generalization rather than a big concept in itself. I don't know how to interpret fractional derivative without Fourier transforms. 
    
-   (9/12/21) Today I learned about Lax-Milgram theorem again from Evans PDE book. Sobolev spaces were developed to solved PDEs and the space provides a solution in the weak sense. In the particular case of elliptic PDEs we have a regularity theorem which ensures that the solution has classical derivatives too given the test function is smooth. 
+(9/12/21) Today I learned about Lax-Milgram theorem again from Evans PDE book. Sobolev spaces were developed to solved PDEs and the space provides a solution in the weak sense. In the particular case of elliptic PDEs we have a regularity theorem which ensures that the solution has classical derivatives too given the test function is smooth. 
    
-   (10/12/21) Today I learned about the existence of the weak solution of the elliptic operator. The solution also depends continuously on the input function which was not too surprising. Poincar\'{e} theorem was crucial in one step of the proof, so we need to assume some sort of boundedness of the domain. This assumption felt pretty strong so it will be interesting to see how much of this is true in unbounded domains which seems like a natural question.\\
+(10/12/21) Today I learned about the existence of the weak solution of the elliptic operator. The solution also depends continuously on the input function which was not too surprising. Poincar\'{e} theorem was crucial in one step of the proof, so we need to assume some sort of boundedness of the domain. This assumption felt pretty strong so it will be interesting to see how much of this is true in unbounded domains which seems like a natural question.
    
-   \maketitle\textbf{February 2022}
-   \\
+\subsection*{February 2022}
    
-   	(18/2/22) Today I learned about semisimple modules. The definition is intuitive in the sense we want simple modules to be the building blocks to do algebra and semisimple modules are the object born out of it. One prominent feature here seems to be abundant use of Zorn's lemma to prove things which is understandable since we are dealing with quite general rings and modules.
-   	\\
+   
+\quad (18/2/22) Today I learned about semisimple modules. The definition is intuitive in the sense we want simple modules to be the building blocks to do algebra and semisimple modules are the object born out of it. One prominent feature here seems to be abundant use of Zorn's lemma to prove things which is understandable since we are dealing with quite general rings and modules.
    	
-   	\maketitle\textbf{March 2022}
-   	\\
-   (5/3/22)Today I learned about congruent numbers. This seemingly innocent problem led to a solution of Fermat's last Theorem for $n=4$. The original proof by Fermat is amazing ingenuity, both 1 being congruent and Fermat's last theorem for $n=4$ reduces to equation
+   	
+\subsection*{March 2022}
+   	
+\quad (5/3/22)Today I learned about congruent numbers. This seemingly innocent problem led to a solution of Fermat's last Theorem for $n=4$. The original proof by Fermat is amazing ingenuity, both 1 being congruent and Fermat's last theorem for $n=4$ reduces to equation
    \[ x^4-y^4 = u^2 \]
-   with $u$  being odd. Fermat solve this using the method of descent, that is given a solution he produced another solution with one of the parameters less than the previous one. Using this repeatedly would give us the required contradiction.
+with $u$  being odd. Fermat solve this using the method of descent, that is given a solution he produced another solution with one of the parameters less than the previous one. Using this repeatedly would give us the required contradiction.
    
-   (31/3/22) Today I learned about characters of representation. 
-   	\\
+(31/3/22) Today I learned about characters of representation. 
+   	
    
-   \maketitle\textbf{April 2022}
-   \\
-   (5/4/22) Today I learned about Mazur's theorem on Elliptic curves. The bounds on the theorem looks suprising strong. Why will anyone expect a bound on the number of torsion rational points in an elliptic curve to be a subgroup of order 12, such a small number. Not only that, Nagell-Lutz theorem sorts of gives an algorithm to find all rational points(which are actually integer points) because the $y$ coordinate needs to be a factor of the discriminant $D$.
+\subsection*{April 2022}
    
-   (6/4/22) Today I learned about $p$ adic numbers. The $p$ adic norm is not very geometric but does some job. It was very weird to see expansion of rational numbers with respect to this norm as you have infinite numbers on the left, not on the right! This is because norm of $p^n$ is actually $\dfrac{1}{p^n}$ which looks counter intuitive for the first time. So for example 
+\quad (5/4/22) Today I learned about Mazur's theorem on Elliptic curves. The bounds on the theorem looks suprising strong. Why will anyone expect a bound on the number of torsion rational points in an elliptic curve to be a subgroup of order 12, such a small number. Not only that, Nagell-Lutz theorem sorts of gives an algorithm to find all rational points(which are actually integer points) because the $y$ coordinate needs to be a factor of the discriminant $D$.
+   
+(6/4/22) Today I learned about $p$ adic numbers. The $p$ adic norm is not very geometric but does some job. It was very weird to see expansion of rational numbers with respect to this norm as you have infinite numbers on the left, not on the right! This is because norm of $p^n$ is actually $\dfrac{1}{p^n}$ which looks counter intuitive for the first time. So for example 
    \[ -1 = \sum_{i = 0}^{\infty} (p-1)p^n\]
    which in traditional decimal notation might look like $-1 = \ldots 666.0$ say for $p = 7$.
    
-   (7/4/22) Today I learned about points of order 3 on an elliptic curve. Surprisingly they always exist and form the group $\Z / 3\Z \times \Z /3\Z$. The result comes from solving the cubic polynomial $x(2P) = x(P)$ which always have 3 distinct roots because $f$ has distinct roots. Suppose $\beta_i$ are the solutions and $\delta_i = \sqrt{\beta_i}$ is the positive square root, the the group is explicitly
+(7/4/22) Today I learned about points of order 3 on an elliptic curve. Surprisingly they always exist and form the group $\Z / 3\Z \times \Z /3\Z$. The result comes from solving the cubic polynomial $x(2P) = x(P)$ which always have 3 distinct roots because $f$ has distinct roots. Suppose $\beta_i$ are the solutions and $\delta_i = \sqrt{\beta_i}$ is the positive square root, the the group is explicitly
    
    \[ G  =\{\infty, (\beta_1,\pm \delta_1),(\beta_2,\pm \delta_2),(\beta_3,\pm \delta_3),\} \]
    
-   (11/4/22) Today I learned about Nagell Lutz theorem in Elliptic curves from Silverman and Tate's book, \textit{Rational Points on Elliptic curves}. The proof was an interesting application of $p$ adic techniques and how primes numbers are fundamental blocks in the case of integers when it comes to divisibility. The proof combined the idea of group theory, elliptic curves and calculations related to it, integer divisibility in a intriguing fashion. A very important step was projective transformation to work in better coordinates and get a group homomorphism into rationals which illustrates how geometric number theory can be! 
+(11/4/22) Today I learned about Nagell Lutz theorem in Elliptic curves from Silverman and Tate's book, \textit{Rational Points on Elliptic curves}. The proof was an interesting application of $p$ adic techniques and how primes numbers are fundamental blocks in the case of integers when it comes to divisibility. The proof combined the idea of group theory, elliptic curves and calculations related to it, integer divisibility in a intriguing fashion. A very important step was projective transformation to work in better coordinates and get a group homomorphism into rationals which illustrates how geometric number theory can be! 
    
-   (12/4/22) Today I learned about Descent method to prove that the set of rational points on an elliptic curve is finitely generated. It seemed to be such a peculiar yet strong technique. The first step is to get a height function on the points and prove it has the required properties. As remarked in Tate and Silverman the subtlest part of the proof is proving that $[C(\Q): 2C(\Q)] < \infty $.
+(12/4/22) Today I learned about Descent method to prove that the set of rational points on an elliptic curve is finitely generated. It seemed to be such a peculiar yet strong technique. The first step is to get a height function on the points and prove it has the required properties. As remarked in Tate and Silverman the subtlest part of the proof is proving that $[C(\Q): 2C(\Q)] < \infty $.
 	
-	(21/4/22) Today I learned about Ramanujan's $\tau$ function and the conjectures related to it. First question was why, second question was how, third question was what does it mean. So Ramanujan's tau function are coefficients of $\Delta$ expansions and somehow they satisfy arithmetic properties. This is also the unique cusp form of weight 12 with $q$ coefficient $1$.
+(21/4/22) Today I learned about Ramanujan's $\tau$ function and the conjectures related to it. First question was why, second question was how, third question was what does it mean. So Ramanujan's tau function are coefficients of $\Delta$ expansions and somehow they satisfy arithmetic properties. This is also the unique cusp form of weight 12 with $q$ coefficient $1$.
 	
-	(24/4/22) Today I learned about Hecke operators on modular forms. Hecke operators are kind of an averaging operator on the modular forms, where the averaging is done over $SL_2(\Z)$ cosets of matrices of determinant $m$. 
+(24/4/22) Today I learned about Hecke operators on modular forms. Hecke operators are kind of an averaging operator on the modular forms, where the averaging is done over $SL_2(\Z)$ cosets of matrices of determinant $m$. 
 	
-	(27/4/22) Today I realized something very very basic about function composition. The notation $(f \circ g)(x) =f(g(x))$ can be thought as left group action of function so by design, $f \cdot g = (fg)$ when thinking like group action. \\
+(27/4/22) Today I realized something very very basic about function composition. The notation $(f \circ g)(x) =f(g(x))$ can be thought as left group action of function so by design, $f \cdot g = (fg)$ when thinking like group action. 
 	
-	\maketitle\textbf{May 2022}
-	\\
+\subsection*{May 2022}
 	
-	(1/5/22) Today I learned about representations of finite group. From Maschke's theorem, the ring $kG$ is semisimple so the regular representation can be decomposed into irreducible representations(and every irreducible decomposition comes from this). %Another idea in representation theory is the idea of characters of representations which are just trace functions with a fancier name. 
-	One can look at the center of $kG$ in two ways - conjugacy classes of the group and the Artin-Wedderburn decomposition. This leads to an interesting fact that the number of conjugacy classes is equal to the number of irreducible decomposition of a finite group.
 	
-	(11/5/22) Today I learned about unitary operators on Hilbert space. It was surprising that there are restricted class of isometries which are more suitable to study for Hilbert spaces. The two notion isometry and unitary coincides for finite dimensional spaces but differs for infinite dimensional which leads to interesting Hilbert theory. The difference seems subtle at first.
+\quad (1/5/22) Today I learned about representations of finite group. From Maschke's theorem, the ring $kG$ is semisimple so the regular representation can be decomposed into irreducible representations(and every irreducible decomposition comes from this). %Another idea in representation theory is the idea of characters of representations which are just trace functions with a fancier name. 
+One can look at the center of $kG$ in two ways - conjugacy classes of the group and the Artin-Wedderburn decomposition. This leads to an interesting fact that the number of conjugacy classes is equal to the number of irreducible decomposition of a finite group.
 	
-	(25/5/22) Today I learned about Ricci flow equation. The Ricci curvature has a formula computed with respect to metric derivatives and Christoffel symbols where one particular term is of the form $-\frac{1}{2}$ times the Laplacian of the metric. So when Hamilton wrote 
+(11/5/22) Today I learned about unitary operators on Hilbert space. It was surprising that there are restricted class of isometries which are more suitable to study for Hilbert spaces. The two notion isometry and unitary coincides for finite dimensional spaces but differs for infinite dimensional which leads to interesting Hilbert theory. The difference seems subtle at first.
+	
+(25/5/22) Today I learned about Ricci flow equation. The Ricci curvature has a formula computed with respect to metric derivatives and Christoffel symbols where one particular term is of the form $-\frac{1}{2}$ times the Laplacian of the metric. So when Hamilton wrote 
 	\[ \dt g_{ij} = -2\text{Ric}_{ij} \]
-	for the Ricci flow, it almost is like a heat equation but with extra terms.
+for the Ricci flow, it almost is like a heat equation but with extra terms.
 	
-	(28/5/22) Today I learned about Weyl tensor and Kulkarni-Nomizu product of symmetric $(2,0)$ tensors. The idea of Kulkarni-Nomizu product is very simple, given the symmetry of Riemannian curvature tensor we want to construct a product which has the same properties. Now Weyl tensor is traceless Riemannian $4$ tensor constructed using Kulkarni-Nomizu product. In the book \textit{The Ricci flow in Riemannian Geometry} there is a result by Huisken which suggests controlling Weyl tensor under Ricci flow is key to differentiable sphere theorem. It would be interesting to study the algebra of theses tensors, including dimension and representations of Riemannian type tensor.
+(28/5/22) Today I learned about Weyl tensor and Kulkarni-Nomizu product of symmetric $(2,0)$ tensors. The idea of Kulkarni-Nomizu product is very simple, given the symmetry of Riemannian curvature tensor we want to construct a product which has the same properties. Now Weyl tensor is traceless Riemannian $4$ tensor constructed using Kulkarni-Nomizu product. In the book \textit{The Ricci flow in Riemannian Geometry} there is a result by Huisken which suggests controlling Weyl tensor under Ricci flow is key to differentiable sphere theorem. It would be interesting to study the algebra of theses tensors, including dimension and representations of Riemannian type tensor.
 	
-	(29/5/22) Today I learned about Ulhenbeck's trick for Ricci flow. The idea is to generate a one-parameter family of isomorphisms on the tangent bundle which take the Ricci flow to the initial metric $g(0)$. A similar idea was used in the concept of self-similar solitons of the Ricci flow, the difference is that here the manifold is fixed and the isomorphisms is on the tangent bundle.
+(29/5/22) Today I learned about Ulhenbeck's trick for Ricci flow. The idea is to generate a one-parameter family of isomorphisms on the tangent bundle which take the Ricci flow to the initial metric $g(0)$. A similar idea was used in the concept of self-similar solitons of the Ricci flow, the difference is that here the manifold is fixed and the isomorphisms is on the tangent bundle.
 	
-	(30/5/22) Today I learned Ulhenbeck's trick with orthonormal frame approach and the fact that tangent space of Frame bundle is trivial. It is important to note that Frame bundle is not a vector bundle but a principal $GL(n)$ bundle.\\
+(30/5/22) Today I learned Ulhenbeck's trick with orthonormal frame approach and the fact that tangent space of Frame bundle is trivial. It is important to note that Frame bundle is not a vector bundle but a principal $GL(n)$ bundle.
 		
-	\maketitle\textbf{June 2022}
-	\\
+\subsection*{June 2022}
 	
-	(2/6/22) Today I learned another approach for Ulhenbeck's trick. This time a very natural idea was to consider the manifold $M \times \R$ and consider a family $g(t)$ on its $TM$ part of its vector bundle. We construct a (non symmetric) connection on the spatial vector bundle where the covariant derivative with respect to time is equal to time derivative of Riemannian curvature.
 	
-	(5/6/22) Today I learned about maximum principle for symmetric $2$-tensor. An interesting application of this is for Ricci tensor under Ricci flow in $3$ dimension. Hamilton observed that Weyl tensor vanishes in dimension $3$ and this allows a flow equation of Ricci tensor purely in terms on Ricci tensor and its contractions(so no $R_{ijkl}$ terms). This remark and the remarkable maximum principle implies that for $3$ manifolds if the initial Ricci tensor is positive then it remains so for all time the solution exists under Ricci flow.
+\quad (2/6/22) Today I learned another approach for Ulhenbeck's trick. This time a very natural idea was to consider the manifold $M \times \R$ and consider a family $g(t)$ on its $TM$ part of its vector bundle. We construct a (non symmetric) connection on the spatial vector bundle where the covariant derivative with respect to time is equal to time derivative of Riemannian curvature.
 	
-	(6/6/22) Today I learned about for maximum principle of vector bundle. The formalization was so abstract but it needed to be this way. Few concepts were introduced such as fibrewise convexity of a set, invariance under parallel transport along with normal and tangent cone of a closed convex set. The idea is that in the analogue of heat equation for section of vector bundle, its values continue to lie in fibrewise convex set if some good conditions are satisfied.
+(5/6/22) Today I learned about maximum principle for symmetric $2$-tensor. An interesting application of this is for Ricci tensor under Ricci flow in $3$ dimension. Hamilton observed that Weyl tensor vanishes in dimension $3$ and this allows a flow equation of Ricci tensor purely in terms on Ricci tensor and its contractions(so no $R_{ijkl}$ terms). This remark and the remarkable maximum principle implies that for $3$ manifolds if the initial Ricci tensor is positive then it remains so for all time the solution exists under Ricci flow.
 	
-	(7/6/22) Today I learned how the maximum principles for vector bundles implies the maximum principle for symmetric 2 tensors.
+(6/6/22) Today I learned about for maximum principle of vector bundle. The formalization was so abstract but it needed to be this way. Few concepts were introduced such as fibrewise convexity of a set, invariance under parallel transport along with normal and tangent cone of a closed convex set. The idea is that in the analogue of heat equation for section of vector bundle, its values continue to lie in fibrewise convex set if some good conditions are satisfied.
 	
-	(12/6/22) Today I learned about the Bernstein-Bando-Shi estimates for all derivatives for an $n$ dimensional manifold. Again the crucial trick was to create a function like $$G = t^m| \nabla^m \text{Rm}|^2 + \text{lower derivatives of } \text{Rm} \text{ with appropriate ratio}$$ to compensate for the bad terms.
-	The maximum principle on $G$ then allows to produce a bound on the derivative in terms of the tensor Rm.
+(7/6/22) Today I learned how the maximum principles for vector bundles implies the maximum principle for symmetric 2 tensors.
 	
-	(19/6/22) Today I learned the fact that every closed $3$-manifold is parrallelizable. The proof which I didn't pursue goes through obstruction theory and Stiefel-Whitney classes.
+(12/6/22) Today I learned about the Bernstein-Bando-Shi estimates for all derivatives for an $n$ dimensional manifold. Again the crucial trick was to create a function like $$G = t^m| \nabla^m \text{Rm}|^2 + \text{lower derivatives of } \text{Rm} \text{ with appropriate ratio}$$ to compensate for the bad terms.
+The maximum principle on $G$ then allows to produce a bound on the derivative in terms of the tensor Rm.
 	
-	I also learned about the curvature operator. Its just Riemannian tensor adopted to look like an operator on $2$-forms(because of good anti-symmetry properties) with the help of metric isomorphisms of $T^*M$ and $TM$. 
-   Ricci flow preserves the sign of this operator which has great consequences. Also, this operator when diagonalized in $3$ dimensions remain so under Ricci flow.\\
+(19/6/22) Today I learned the fact that every closed $3$-manifold is parrallelizable. The proof which I didn't pursue goes through obstruction theory and Stiefel-Whitney classes.
 	
-	\maketitle\textbf{July 2022}
-	\\
+I also learned about the curvature operator. Its just Riemannian tensor adopted to look like an operator on $2$-forms(because of good anti-symmetry properties) with the help of metric isomorphisms of $T^*M$ and $TM$. 
+Ricci flow preserves the sign of this operator which has great consequences. Also, this operator when diagonalized in $3$ dimensions remain so under Ricci flow.
 	
-	(5/7/22) Today I learned about locally convex hyperplanes. In a paper of embedding of negatively curved manifolds into Minkowski space, there is a result stating that the Gauss curvature flow is equivalent to cross curvature flow in a certain specific setting(locally convex, co-compact, spacelike hypersurface). 
-   Ben Andrews and others proved that the Gauss curvature flow in that case converges to hyperboloid of constant negative sectional curvature. Another evidence for the XCF conjecture.\\
+\subsection*{July 2022}
 	
-	(8/7/22) Today I learned about local isometric embedding of Riemannian manifolds. Let $(M^n,g)$ be a $n$-dimensional manifold which we want to locally embed in a Euclidean space $(\R^q,\delta)$. This reduces to solving for a function (locally) $u :B\subset\R^n \to \R^q$ such that $u^*\delta = g$ which is a system of $\frac{n(n+1)}{2}$ equation so ideally it should be possible with $q = \frac{n(n+1)}{2}$ and it turns out it is! There are different treatments for analytic and smooth cases. \\
 	
-	(9/7/22) Today I learned about curve-shortening flow.\\
+\quad (5/7/22) Today I learned about locally convex hyperplanes. In a paper of embedding of negatively curved manifolds into Minkowski space, there is a result stating that the Gauss curvature flow is equivalent to cross curvature flow in a certain specific setting(locally convex, co-compact, spacelike hypersurface). 
+Ben Andrews and others proved that the Gauss curvature flow in that case converges to hyperboloid of constant negative sectional curvature. Another evidence for the XCF conjecture.
 	
-		\maketitle\textbf{September 2022}
-	\\
+(8/7/22) Today I learned about local isometric embedding of Riemannian manifolds. Let $(M^n,g)$ be a $n$-dimensional manifold which we want to locally embed in a Euclidean space $(\R^q,\delta)$. This reduces to solving for a function (locally) $u :B\subset\R^n \to \R^q$ such that $u^*\delta = g$ which is a system of $\frac{n(n+1)}{2}$ equation so ideally it should be possible with $q = \frac{n(n+1)}{2}$ and it turns out it is! There are different treatments for analytic and smooth cases. 
 	
-	(1/9/22) Today I learned about the transcendence of $e$. The proof is slightly involved and the properties of $e$ comes unexpectedly. The idea is to use simultaneous approximation. This is a recurring theme in Transcendental number theory. Algebraic numbers can't be approximated too well because of Liouville's theorem. 
+(9/7/22) Today I learned about curve-shortening flow.
 	
-	(4/9/22) Today I learned about non-collapsing result in the mean curvature flow. Sheng and Wang proved that any compact mean-convex solution of MCF is $\delta$-non-collapsed for some $\delta >0$. Ben devised a simpler solution by using maximum principle on a two point function whose supremum measures the inscribed curvature. The evolution equation of this function satisfies maximum principle, so if we start with a $\delta$-non-collapsed hypersurface, it remains so under MCF.
+\subsection*{September 2022}
+
 	
-	(17/9/22) Today I learned about avoidance principle of MCF. Given two disjoint hypersurface evolving under MCF out of which at least one is compact, the distance between the hypersurface is a non-decreasing function of time. The solution is geometric flavour of maximum principle for parabolic equations. At the time of minima, the tangent planes become parallel which agrees with the intuition geometrically. The proof also implies that if we start the flow on an embedding, then it remains an embedding because of injectivity.
+\quad (1/9/22) Today I learned about the transcendence of $e$. The proof is slightly involved and the properties of $e$ comes unexpectedly. The idea is to use simultaneous approximation. This is a recurring theme in Transcendental number theory. Algebraic numbers can't be approximated too well because of Liouville's theorem. 
 	
-	(20/9/22) Today I learn about Monotonicity formula of Huisken. Under MCF, the Gaussian area of the manifold is a non-increasing function. This will be useful later to find about the manifolds arising as type-I singularities of the MCF.
+(4/9/22) Today I learned about non-collapsing result in the mean curvature flow. Sheng and Wang proved that any compact mean-convex solution of MCF is $\delta$-non-collapsed for some $\delta >0$. Ben devised a simpler solution by using maximum principle on a two point function whose supremum measures the inscribed curvature. The evolution equation of this function satisfies maximum principle, so if we start with a $\delta$-non-collapsed hypersurface, it remains so under MCF.
 	
-	(21/9/22) Today I learn about Liouville's theorem on irrational algebraic numbers. The theorem says that any algebraic number can be approximated by rational numbers only upto a certain degree. Liouville numbers are numbers can be approximated by rational numbers with any degree. Liouville numbers are transcendental, an example is 
+(17/9/22) Today I learned about avoidance principle of MCF. Given two disjoint hypersurface evolving under MCF out of which at least one is compact, the distance between the hypersurface is a non-decreasing function of time. The solution is geometric flavour of maximum principle for parabolic equations. At the time of minima, the tangent planes become parallel which agrees with the intuition geometrically. The proof also implies that if we start the flow on an embedding, then it remains an embedding because of injectivity.
+	
+(20/9/22) Today I learn about Monotonicity formula of Huisken. Under MCF, the Gaussian area of the manifold is a non-increasing function. This will be useful later to find about the manifolds arising as type-I singularities of the MCF.
+	
+(21/9/22) Today I learn about Liouville's theorem on irrational algebraic numbers. The theorem says that any algebraic number can be approximated by rational numbers only upto a certain degree. Liouville numbers are numbers can be approximated by rational numbers with any degree. Liouville numbers are transcendental, an example is 
 	\[ \alpha = \sum_{i = 0}^{\infty} \frac{1}{10^{n!}} \]
 	
-	which contain arbitrarily large gaps of zeros growing on a factorial pace.
+which contain arbitrarily large gaps of zeros growing on a factorial pace.
 	
-	(22/9/22) Today I learned about Lindemann-Weierstrass theorem. 
-   The theorem states that if $\alpha_1, \ldots, \alpha_s$ are distinct algebraic numbers, then $e^\alpha_1, \ldots, e^\alpha_s$ are linearly independent over $\overline{\Q}$. 
-   The idea comes from Lindemann's proof of transcendence of $\pi$ but applied to a larger setting of number fields. 
-   The proof is somewhat involved but the plan of attack is very similar, construction of an auxillary function and getting an integer out of it divisible by $(p-1)!$ but not $p!$ establishing it is non-zero and a bound on such that the integer is squeezed between $0$ and $1$ which gives the contradiction.\\
+(22/9/22) Today I learned about Lindemann-Weierstrass theorem. 
+The theorem states that if $\alpha_1, \ldots, \alpha_s$ are distinct algebraic numbers, then $e^\alpha_1, \ldots, e^\alpha_s$ are linearly independent over $\overline{\Q}$. 
+The idea comes from Lindemann's proof of transcendence of $\pi$ but applied to a larger setting of number fields. The proof is somewhat involved but the plan of attack is very similar, construction of an auxillary function and getting an integer out of it divisible by $(p-1)!$ but not $p!$ establishing it is non-zero and a bound on such that the integer is squeezed between $0$ and $1$ which gives the contradiction.
+   
+\subsection*{October 2022}
 
-	\maketitle\textbf{October 2022}
-\\
+\quad (12/10/22) Today I learned an example of Riemannian manifold where geodesic balls might not have compact closure. Most of the time the picture I have in mind is of closed manifolds embedded in $ \R^{n} $ but we can consider open submanifolds of $ \R^{n} $. In fact for manifolds which can be isometrically embed as closed submanifolds of $ \R^{n} $ the geodesic balls will always have compact closure because of Heine-Borel theorem. In case of open manifold, this need not happen. 
+For example consider an open cylinder in $ \R^{n} $ so the manifold has bounded diameter but is non-compact.
 
-   (12/10/22) Today I learned an example of Riemannian manifold where geodesic balls might not have compact closure. Most of the time the picture I have in mind is of closed manifolds embedded in $ \R^{n} $ but we can consider open submanifolds of $ \R^{n} $. In fact for manifolds which can be isometrically embed as closed submanifolds of $ \R^{n} $ the geodesic balls will always have compact closure because of Heine-Borel theorem. In case of open manifold, this need not happen. For example consider an open cylinder in $ \R^{n} $ so the manifold has bounded diameter but is non-compact. 
+\subsection*{November 2022}
 
-   \maketitle\textbf{November 2022}
-\\
+\quad (2/11/22) Today I learned about Gelfond-Schneider theorem. The theorem gives an affirmative answer to Hilbert's seventh problem. Lang generalized the theorem which says more about transcendence of some values of elliptic functions. The proof is a difficult excursion through inequalities, maximum modulus principle, Siegel's lemma, estimates on derivatives and rate of growth of entire functions.
 
-   (2/11/22) Today I learned about Gel'fond-Schneider theorem. The theorem gives an affirmative answer to Hilbert's seventh problem. The proof is really difficult on estimates and involves a lot of new ideas.
+(3/11/22) Today I learned about Baker's theorem which is a generalization of Gelfond-Schneider theorem. The proof is a complicated multivariable version on Gelfond-Schneider theorem with vast applications. The theorem also proves some transcendence results of values of Dirichlet L-series for non-trivial characters. 
+
+(5/11/22) Today I learned about Stampacchia iteration method used in Huisken's proof. 
 
 \end{document}
 
