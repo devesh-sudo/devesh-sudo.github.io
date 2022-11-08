@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667651332 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.pdf" "Today I learned" 1667651334
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux" 1667651333 763 599d92c40175c56efa09230a3a320091 ""
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" 1667651331 86972 ce6ad032a1d2d32a0267ec78fb78898c ""
+["pdflatex"] 1667731376 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.pdf" "Today I learned" 1667731379
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.aux" 1667731379 763 599d92c40175c56efa09230a3a320091 ""
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" 1667731374 87299 f9a741c4edc6e055b947f16fe190ceb6 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -104,11 +104,11 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1615842402 2432460 0c5342e868e2aba20fbf89f7c2304d66 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "Today I learned.aux" 1667651333 763 599d92c40175c56efa09230a3a320091 "pdflatex"
-  "Today I learned.tex" 1667651331 86972 ce6ad032a1d2d32a0267ec78fb78898c ""
+  "Today I learned.aux" 1667731379 763 599d92c40175c56efa09230a3a320091 "pdflatex"
+  "Today I learned.tex" 1667731374 87299 f9a741c4edc6e055b947f16fe190ceb6 ""
   (generated)
   "Today I learned.log"
-  "Today I learned.aux"
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.log"
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.pdf"
   "Today I learned.pdf"
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.pdf"
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.log"
+  "Today I learned.aux"

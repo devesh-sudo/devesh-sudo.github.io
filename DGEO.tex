@@ -315,7 +315,7 @@
 
     Let $ (M^{n},g)  \hookrightarrow (\Rn, \delta)$ be a smooth hypersurface in $ \Rn $. We are going to define the Gauss map on the hypersurface, under the assumption that $ M^{n} $  is compact and without boundary. Given any point $ p \in M^{n} $, let $ N_{p} \in \Rn $ denote \textit{a} (there are two choices) unit normal at $ p $. Define the \textbf{Gauss map}, $ \mathcal{G} : M^{n} \to S^{n} $ by 
     \[ \mathcal{G} : p \mapsto N_{p}  \]
-    As hypersurfaces are oriented, we can have a smooth choice of normal throughout the manifold. Given a map from oriented, compact manifold to sphere, one has a notion of degree of the map. The definition comes from differential topology and is also equal to the degree of the top homology map. 
+    for a continuous choice of normal which is possible because the hypersurface is oriented. Given a map from oriented, compact manifold to sphere, one has a notion of degree of the map. The definition comes from differential topology and is also equal to the degree of the top homology map. 
     \newpage
     \begin{thm}[Gauss-Bonnet]
         Let $ M^2 $ be an embedded surface in $ \R^{3} $. Then the degree of the Gauss map is equal to 
@@ -328,6 +328,19 @@
     Note : Exam may contain simple applications of Gauss-Bonnet.
     Another reference : Problems in Geometry and Topology.
 
-    
+    \section{November 8, 2022}
+
+    Let $ (M^{2},g) $ be a smooth surface in $ \R^{3} $ and $ \gamma : \R \to M $ be a smooth curve. The \textbf{geodesic curvature} denoted by $ \kappa_{g}(s) $ of $ \gamma $ at $ \gamma(s) $ is defined as
+    \[ \kappa_{g}(s) = \bigg| \frac{D}{ds}\gamma'(s)\bigg|_{g} \]
+     
+    which is different from the previous definition 
+    \[ \kappa_{g}(t) = \frac{\det \left< \gamma''(t), \gamma'(t), N_{\gamma(t)} \right>}{||\gamma'(t)||^{3}} \]
+    which was obtained using Frenet-Serret frame.
+
+    \begin{thm}
+        Let $ (M,g)  \subset \R^{3}$ be a compact orientable smooth surface with induced metric $ g $. Denote its connected boundary  by $ \partial M $. Then 
+        \[ \int_{M}\kappa dA + \int_{ \partial M} \kappa_{g}ds + \sum_{i=1}^{r} \theta_{i}  = 2 \pi \chi(M)\]
+        where $ \theta_{i} $ are the exterior angle in $ \partial M $.
+    \end{thm}
     
 \end{document}
