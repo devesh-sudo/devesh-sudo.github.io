@@ -5,4 +5,5 @@
 \contentsline {section}{\numberline {4}November 1, 2022}{5}{section.4}%
 \contentsline {section}{\numberline {5}November 3, 2022}{6}{section.5}%
 \contentsline {section}{\numberline {6}November 8, 2022}{7}{section.6}%
+\contentsline {section}{\numberline {7}November 10, 2022}{7}{section.7}%
 \contentsfinish 

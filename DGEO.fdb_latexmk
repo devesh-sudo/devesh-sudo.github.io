@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1667909564 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.tex" "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.pdf" "DGEO" 1667909566
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.aux" 1667909565 4448 66afb4df6107589b98a48740253b6561 ""
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.tex" 1667909564 18207 49e17c1e800e9608c8d381247c29a05b ""
+["pdflatex"] 1668077894 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.tex" "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.pdf" "DGEO" 1668077897
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.aux" 1668077896 4700 f7e225600615f627615b05d14f7b76ee ""
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.tex" 1668077894 18360 b0eb281aec8ff2ba8346f6bc3a6cfb11 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -235,13 +235,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1615842402 2432460 0c5342e868e2aba20fbf89f7c2304d66 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "DGEO.aux" 1667909565 4448 66afb4df6107589b98a48740253b6561 "pdflatex"
-  "DGEO.tex" 1667909564 18207 49e17c1e800e9608c8d381247c29a05b ""
-  "DGEO.toc" 1667909565 460 6dec99859b346a26f75b6ed4d1d96c7c "pdflatex"
+  "DGEO.aux" 1668077896 4700 f7e225600615f627615b05d14f7b76ee "pdflatex"
+  "DGEO.tex" 1668077894 18360 b0eb281aec8ff2ba8346f6bc3a6cfb11 ""
+  "DGEO.toc" 1668077896 533 996398214a2028de684f966914cde7fa "pdflatex"
   (generated)
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.log"
-  "DGEO.log"
   "DGEO.toc"
-  "DGEO.pdf"
-  "DGEO.aux"
   "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.pdf"
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/DGEO.log"
+  "DGEO.aux"
+  "DGEO.log"
+  "DGEO.pdf"
