@@ -1,5 +1,8 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+%\usepackage{courier}
+
+
 %\usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -269,7 +272,7 @@ The proof is based on expanding $\det(A(t))$ in a row with adjoint factors and u
 This was used for deriving a formula for Laplacian of a $C^2$ function $f$ on a smooth Riemannian manifold $(M,g)$. The formula is $$\Delta f = (\frac{1}{\sqrt{g}})\sum_{j,k} \partial_j(g^{jk}\sqrt{g}\,\partial_k f)$$
 I am learning spectra of Laplacian from the text \textit{Eigenvalues in Riemannian Geometry} by Issac Chavel.
 
-(17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From Akhil Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
+(17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From `Akhi'l Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
 
 (26/5/20) Today I learned something very interesting in Riemannian geometry. Let $M$ be a smooth manifold, then the scalar curvature functional from the set of all riemannian metrics (normalised to unital volume) to reals given by  $g \mapsto \int_M R(g)dV_g$ recovers Einstein equations through Euler-Lagrange equations. This was discovered by Hilbert. % The name Einstein manifolds comes from Einstein equations which says Ricci curvature is propotional to metric curvature. 
 I do not have much knowledge in the subject but I will look into more.
@@ -656,7 +659,9 @@ For example consider an open cylinder in $ \R^{n} $ so the manifold has bounded 
 \[ \Gamma_{k} = \{ \mu  \in \R^{n} | s_{1}(\mu)>0, \ldots, s_{k}(\mu)>0\} \]
 and concavity of function $ q_{k+1} = \frac{s_{k+1}}{s_{k}} $ on cone $  \Gamma_{k}$. The calculations are really lengthy and loaded with tricks.
 
+\subsection*{December 2022}
 
+\quad (1/12/2022) Today I learned about Stampacchia iteration technique used by Huisken in the 1984 MCF paper. I have to verify a few details but I think the crux of the argument is to get an $ L^{p} $ bound for sufficiently large $ p $ and then establish an $ L^{\infty} $ bound.
 \end{document}
 
 

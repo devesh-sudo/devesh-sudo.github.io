@@ -1,9 +1,0 @@
-\babel@toc {english}{}
-\contentsline {section}{\numberline {1}Oct 13, 2022}{1}{section.1}%
-\contentsline {section}{\numberline {2}Oct 18, 2022}{2}{section.2}%
-\contentsline {section}{\numberline {3}Oct 20, 2022}{4}{section.3}%
-\contentsline {section}{\numberline {4}November 1, 2022}{5}{section.4}%
-\contentsline {section}{\numberline {5}November 3, 2022}{6}{section.5}%
-\contentsline {section}{\numberline {6}November 8, 2022}{7}{section.6}%
-\contentsline {section}{\numberline {7}November 10, 2022}{7}{section.7}%
-\contentsfinish 
