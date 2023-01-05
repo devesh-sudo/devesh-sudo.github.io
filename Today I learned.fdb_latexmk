@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1670353897 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" "Today I learned.pdf" "Today I learned" 1670353898
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" 1670353896 88430 ebfe3900035de32232d0944c8867f90d ""
+["pdflatex"] 1672894620 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" "Today I learned.pdf" "Today I learned" 1672894622
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex" 1672894618 88974 a33820945b113d271b2f99d300ebb0c7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -107,8 +107,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1669181550 2826445 8d828e6cb4da87cb9cff131bbe7f6429 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Today I learned.aux" 1670353898 788 f21b7751022e6101f05716855effc214 "pdflatex"
-  "Today I learned.tex" 1670353896 88430 ebfe3900035de32232d0944c8867f90d ""
+  "Today I learned.aux" 1672894622 788 452039fb8afa198ea07c374c6e0ebba6 "pdflatex"
+  "Today I learned.tex" 1672894618 88974 a33820945b113d271b2f99d300ebb0c7 ""
   (generated)
   "Today I learned.aux"
   "Today I learned.log"
