@@ -130,6 +130,8 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Ho}{\mathbb{H}}
 \newcommand{\dou}{\partial}
 \newcommand{\half}{\ensuremath{\frac{1}{2}}}
 \newcommand{\pt}{\partial_t}
@@ -158,6 +160,77 @@
 
     Suppose $ f : M \to N $ is a continuous map between manifolds. We say that $  f  $ is smooth if for $ (U, \phi) \in \mathcal{q}(M) $, $ (V, \psi) \in \mathcal{q}(N) $ such that $ f(U) \subset V $ and $ \psi \circ f \circ  \phi^{-1} $ is smooth. 
     
-    \color{red}{ TO DO : Construction of tangent bundle and vector bundle}
+    TO DO : Construction of tangent bundle and vector bundle
 
+    \section{9th Jan 2023}
+
+    \begin{defn}
+        $ G $ is a Lie group if \begin{enumerate}
+            \item $ G $ is a smooth manifold
+            \item $ G $ is also a group s.t 
+            \begin{align*}
+                \mu : G \times G \to G \\
+                ( g,h) \mapsto gh
+            \end{align*} and 
+            \begin{align*}
+                i : G \to G \\
+                g \mapsto g^{-1}
+            \end{align*}
+            are smooth maps.
+        \end{enumerate}
+    \end{defn}
+    \begin{defn}
+        A real (or complex) vector space $ V $ together with a bilinear map \begin{align*}
+            [,] : V \times V \to V
+        \end{align*}
+        is called a \textbf{Lie Algebra} if \begin{enumerate}
+            \item $[X,Y] = -[Y,X]$ - skew symmetry
+            \item $[[X,Y],Z]+ [[Y,Z],X]+ [[Z,X],Y] = 0 $ - Jacobi identity
+        \end{enumerate}
+    \end{defn}
+
+    \begin{example}
+        \begin{enumerate}
+            \item $ \left( \R, + \right) , (\C, +)$, $ V $ any f.d vector space over $ \R $ or $ \C $. 
+            \item $ (\R^{\times}, \cdot), (\C^{\times}, \cdot) $
+            \item $ S^{1} = \{ z \in \C^{\times}| |z| =1\} $
+            \item $ \operatorname{GL}_{n}(\R) $, $ \operatorname{GL}_{n}(\C) $
+            \item $ \R^{n} / \Z^{n} \cong \left( \R^{n} /\Z^{n} \right) \cong (S^{1})^{n}$
+            \item Suppose $ \Gamma \subset V $ is a discrete subgroup. Then $ V / \Gamma  $ is a Lie group.
+            \item $ N = $ unipotent upper triangular matrices, $ B =  $ upper triangular matrices. As manifolds $ N \cong \R^{\binom{n}{2}} $ and $ B \cong (\R^{\times})^{n} \times N $.
+            \item $ \operatorname{SL}_{n}(\R) = \{X \in \operatorname{GL}_{n}(\R) | \det X = 1\} $, $ \operatorname{SL}_{n}(\C) $. 
+            \item $ O(n) $, $ SO(n) $.
+            \item $ U(n) $, $ SU(n) $.
+            \item $ \Ho^{\times} $, $ S^{3}  $ with quaternion multiplication.
+            \item $ Sp(n) = \{X \in \operatorname{GL}_{n}(\R)| X \text{ preserves quaternion structure as a subset of } \operatorname{Aut}_{\Ho}\Ho^{n}\} $
+        \end{enumerate}
+    \end{example}
+    \begin{problem}
+        $ V / \Gamma  \cong \R^{k} \times  (S^{1})^{n-k}$ for $ n $-dimensional vector space $  V$. 
+    \end{problem}
+    \begin{thm}
+        Suppose $ G $ is a compact, connected, simple Lie group. Then $ G $ is locally isomorphic to \begin{enumerate}
+            \item $ SU(n) , n \ge 2$ denoted by $ A_{n-1} $
+            \item $ SO(2n+1), n \ge 2 $ denoted by $ B_{n} $
+            \item $ Sp(n), n \ge 1 $ denoted by $ C_{n} $
+            \item $ SO(2n), n\ge 2 $ denoted by $ D_{n} $
+        \end{enumerate}
+        or one of the following exceptional Lie group $ G_{2}, F_{4}, E_{6}, E_{7}, E_{8} $.
+
+    \end{thm}
+    \begin{problem}
+        Prove that $ \operatorname{SL}_{n}(\R) $ and $ O(n) $ are smooth manifold, hence Lie groups.
+    \end{problem}
+
+    Examples of Lie algebra - \begin{example}
+       \begin{enumerate}
+        \item $ (V, [\cdot, \cdot] \equiv 0 )$ is called trivial Lie algebra. 
+        \item $ (\mathfrak{gl}_{n}(\R), [A,B ]  = AB - BA )$, $ \mathfrak{gl}_{n}(\C)$
+        \item $ \mathfrak{sl}_n(\R) $ ($ \mathfrak{sl}_n (\C) $) is the Lie subalgebra of $ \mathfrak{gl}_{n}(\R) $ ($ \mathfrak{gl}_{n}(\C) $)  consisting of trace $ 0 $.
+        \item $ \mathfrak{so}_n $ is Lie subalgebra of $ \mathfrak{gl}_{n}(\R) $ consisting of skew-symmetric matrices.
+       \end{enumerate}
+    \end{example}
+    \begin{defn}
+        A vector field $ X $ on a Lie group $ G $ is called left invariant if $ (L_{g})_{*}(X_{h}) = X_{gh} $
+    \end{defn}
 \end{document}
