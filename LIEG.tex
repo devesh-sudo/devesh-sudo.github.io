@@ -233,4 +233,75 @@
     \begin{defn}
         A vector field $ X $ on a Lie group $ G $ is called left invariant if $ (L_{g})_{*}(X_{h}) = X_{gh} $
     \end{defn}
+
+    \section{11th Jan 2023}
+
+    Recall $ \Ho =  \{a+bi+cj+dk : (a,b,c,d) \in \R^{4},  \, i^{2} = -1, j^{2} = -1, k^{2} = -1,  ij=k, jk = l, ki=j \} $ is the quaternion division algebra  with the norm 
+    \[ ||a+ bi+ cj+dk||^{2} = a^{2}+ b^{2}+c^{2}+d^{2} \] which satisfies $ ||q_{1} \cdot  q_{2}|| = ||q_{1}|| \cdot ||q_{2}||$
+
+    We can put this multiplication on $ S^{3} \cong SU(2) $ to get a compact Lie group. To get the isomorphism $ SU(2) \cong S^{3} $, we define a map 
+    \begin{align*}
+        \phi :S^{3} & \to SU(2)\\
+            (a,b,c,d) & \mapsto \begin{bmatrix}
+                a+bi & c+di\\
+                -(c-di)&  a-bi
+            \end{bmatrix}
+    \end{align*}
+    which is an algebra isomorphism. 
+
+    \begin{defn}
+        The Lie algebra of $ G $ is the space of all left-invariant vector fields on $ G $. 
+        
+    \end{defn}
+    We have an  isomorphism \begin{align*}
+        \mathfrak{g}  = \operatorname{Lie}(G) &\to T_{e}G\\ 
+        X &\mapsto X_{e}
+    \end{align*}
+    \begin{example}
+        Let $ G = \R^{n} $, with identity element $ 0 \in \R^{n} $ and left-invariant vector fields $ \{ \frac{ \partial}{ \partial x_{1}}, \ldots, \frac{ \partial}{ \partial x_{n}}\} $. Then the Lie bracket is \begin{align*}
+            [\cdot, \cdot ] \equiv 0
+        \end{align*}
+    \end{example}
+    \begin{remark}
+        In general for any abelian Lie group $ G $, the Lie bracket is $ [\cdot, \cdot ] \equiv 0 $.
+    \end{remark}
+    \begin{thm}
+        Let $ G $ be a connected Lie group. Then \begin{enumerate}
+            \item Lie$ (G)  = \mathfrak{g}$ is isomorphic as a vector space to $ T_{e}(G) $.
+            \item Left-invariant vector fields are smooth. 
+            \item Lie$ (G) $ is closed under Lie bracket. 
+        \end{enumerate}
+    \end{thm}
+    \begin{proof} 1. 
+        Let $ X $ be a left-invariant vector field on $ G $. We need to show that $ Xf $ is smooth for each $ f \in C^{\infty}(G) $. 
+        \begin{align*}
+            (Xf)(g) & = X_{g}f\\
+             & = (d \lambda_{g} X_{e})f \\
+             & = X_{e}( f \circ \lambda_{g})
+        \end{align*}
+        To show that $ Xf $ is smooth, it suffices to show that $ X_{e}(f \circ \lambda_{g}) $ is smooth. We realize $ X_{e}(f \circ \lambda_{g}) $ as evaluation of a smooth function on a smooth function. 
+
+        Let $ Y $ be a smooth vector field on $ G $ such that $ Y_{e} = X_{e}$ \begin{align*}
+            Y_{e}(f \circ \lambda_{g}) = X_{e}( f \circ \lambda_{g})
+        \end{align*}
+        We look at $ \lambda_{g} $ as the composition of \begin{align*}
+            G &\xrightarrow{i_{g}^{2}} G \times G 
+            \xrightarrow{\mu} G \\
+            x & \mapsto (g,x)\mapsto gx
+        \end{align*}
+        Regard $ Y $ as the vector field $ (0,Y) $ on $ G \times G $. Now \begin{align*}
+            (0,Y)(f \circ \mu) \circ i_{e}^{1}(g) & = (0,Y)_{(g,e)} ( f\circ \mu)\\
+            & =0_{g}( f\circ \mu \circ i_{g}^{1})+ Y_{e}( f\circ \mu \circ i_{g}^{2}) \\
+            & = Y_{e}( f \circ \lambda_{g})
+        \end{align*}
+        which proves the smoothness.
+
+        2. Let $ X,Y  $ left-invariant vector fields on $ G $. We must show that $ [X,Y] $  is a left-invariant vector field. \begin{align*}
+            d \lambda_{g}([X,Y]_{e})f & = [X,Y]_{g}f \\
+            & = [X,Y]_{e}( f\circ \lambda_{g}) \\
+            & = X_{e}(Y(f\circ \lambda_{g})) - Y_{e}(X(f \circ \lambda_{g})) \\
+            & = X_{e}(d \lambda_{g}(Yf)) - Y_{e}(d \lambda_{g}(Yf)) 
+        \end{align*}
+    \end{proof}
+    
 \end{document}
