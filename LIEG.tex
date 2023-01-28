@@ -422,6 +422,27 @@
     \begin{thm}
         \textbf{(Frobenius)}  Let $ \mathscr{D} $ be a $ c $-dimensional involutive smooth distribution on $ M $. Then there exists an integral manifold of $ \mathscr{D} $ passing through each point of $ M $.
     \end{thm}
+
+    \subsection*{Differential Ideals}
+
+    Let $ E^{*}(M)  = \bigoplus_{i=0}^{\infty} E^{i}(M) $ denote the graded algebra of smooth differential forms over manifold $ M $. 
+    \begin{defn}
+        Let $ \mathscr{D} $ be a smooth $ p$-dimensional distribution on $ M $. A $ q $-form $ \omega $ is said to \textbf{annihilate} $ \mathscr{D} $ if for each $ x \in M $ 
+        \[ \omega_{x}\left(v_{1}, \ldots , v_{q}\right) = 0 \quad\text{  whenever  }v_{1}, \ldots, v_{q} \in \mathscr{D}_{x}\]
+        
+    \end{defn}
+
+    A form $ \omega \in E^{*}(M)  $ is said to annihilate $ \mathscr{D} $ if each of the homogenous components of $ \omega $ annihilate $ \mathscr{D} $. Define 
+    \[ \mathscr{I}( \mathscr{D})  \define \{ \omega \in E^{*}(M): \omega \text{ annihilates }\mathscr{D}\}\]
+    
+
+    \begin{defn}
+        An ideal $ \mathscr{I} \in E^{*}(M) $ is called a \textbf{differential ideal} if it is closed under exterior differentiation; i.e. 
+        \[ d (\mathscr{I}) \subset \mathscr{I} .\]
+    \end{defn}
+    \begin{thm}
+        A smooth distribution $ \mathscr{D} $ on $ M $ is involutive if and only if the ideal $ \mathscr{I}( \mathscr{D}) $ is a differential ideal.
+    \end{thm}
     \section{25 Jan 2023}
     \vspace{0.5cm}
     \begin{thm}
