@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1675072085 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" "LIEG.pdf" "LIEG" 1675072089
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" 1675072085 29343 3071755e8036f5bc973b14c4653f5338 ""
+["pdflatex"] 1675677147 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" "LIEG.pdf" "LIEG" 1675677150
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" 1675677143 35634 4bb882a6f805d937554aecbf8c47da2d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -49,6 +49,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1248133631 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1248133631 28902 2f5c04fd2884d1878057baa5aad22765 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
@@ -202,7 +203,6 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/mdframed/md-frame-1.mdf" 1372805434 24632 760c4c81e779e6958bac43417deb524f ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/mdframed/mdframed.sty" 1372805434 53487 3e997243f47cb3ba8b4c7b8df9c82989 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/needspace/needspace.sty" 1364856750 852 0e34dbb72efc69fa07602405ad95585e ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty" 1615762720 4288 94714aa7f535440f33181fec52a31963 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty" 1575674318 6575 25396d208d8f2b9395d06ef315d5886c ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty" 1643492961 54508 3fd4fcb0ce463ba481db9f80ae95dad2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def" 1643492961 6591 1d9fd5a4927982c154f0f69ebbcad9c3 ""
@@ -249,9 +249,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1669181550 2826445 8d828e6cb4da87cb9cff131bbe7f6429 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "LIEG.aux" 1675072089 13192 369f7f221aa6288d58cb87aee314c85a "pdflatex"
-  "LIEG.tex" 1675072085 29343 3071755e8036f5bc973b14c4653f5338 ""
-  "LIEG.toc" 1675072089 588 0d6719d9ef29e6bcd7a1409b25bf2a9c "pdflatex"
+  "LIEG.aux" 1675677150 15918 249e20a484365958b5cb2989e0e2a950 "pdflatex"
+  "LIEG.tex" 1675677143 35634 4bb882a6f805d937554aecbf8c47da2d ""
+  "LIEG.toc" 1675677150 722 70470eecf3a185722732c40c702563b7 "pdflatex"
   "quiver.sty" 1674038177 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
   "LIEG.aux"
