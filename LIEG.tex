@@ -140,8 +140,10 @@
 \newcommand{\dt}{\frac{\partial}{\partial_t}}
 \newcommand{\define}{\doteqdot}
 
+\newcommand{\ag}{\mathfrak{a}}
 \newcommand{\fg}{\mathfrak{g}}
 \newcommand{\hg}{\mathfrak{h}}
+\newcommand{\zg}{\mathfrak{z}}
 
 \title{\LARGE Lie Groups}
 \author{\large Devesh Rajpal}
@@ -712,5 +714,69 @@ so $ Z_{2} = XY - \frac{1}{2}\left( XY+YX \right)  = \frac{1}{2}\left( XY-YX \ri
     \[ \psi([-t_{0},t_{0}]) \subset \exp(U') \]
     Let $ n \ge 2 $, and suppose that $ X \in U'
      $ such that $ \exp(X) = \psi(  \frac{t_{0}}{n}) $. Claim $ nX = Y $
+\end{proof}
+\section{6 Feb}
+\section{8 Feb}
+\section{13 Feb}
+
+\vspace{0.5cm}
+\begin{defn}
+    Let $ \mathfrak{a} \in \fg $ be a Lie subalgebra of a Lie algebra $ \fg $. We say that $ \ag $ is an \textbf{ideal} in $ \fg $ if $ [X,Y] \in \ag $ for all $ X \in \fg $ and $ Y \in \ag $. 
+\end{defn}
+
+
+\begin{thm}
+    Suppose $ A \subset g$ is a connected Lie subgroup of a connected Lie group $ G $. Then $ A $ is normal in $ G $ if and only if $ \ag = \text{Lie}(A) $ is an ideal in $ \fg $.
+\end{thm}
+\begin{proof}
+    Suppose that $ \ag  \subset \fg $ is an ideal. Let $ g \in G $, $ h \in A $. We must show that $ ghg^{-1} \in A $, to do this it is enough to show this for $ g $ in a neighborhood of $ e $ and $ h $ in a neighborhood of $ e $ in $ A $. So we may write $ g = \exp X, h = \exp Y $  \begin{align*}
+        ghg^{-1} & = \exp \circ \operatorname{Ad}_{g}(Y) \\
+        & = \exp \operatorname{Ad}_{\exp(X)}(Y) \\
+        & = \left( \exp \left( \exp(id_{X}) \right) \right) \\
+        & = \exp \left( I + \operatorname{ad}_{X} + \frac{\operatorname{ad}_{X}^{2}}{2!} + \ldots \right)(Y) \\
+        & = \exp\left(Y+ [X,Y]+ \frac{[X,[X,Y]]}{2!}+ \ldots \right) \in A
+    \end{align*}
+
+Now assume $ A $ is normal in $ G $. Let $ X \in \fg $, $ Y \in \ag $. Write $ g_{t} = \exp tX $. We know that \begin{align*}
+   A \ni g_{t} ( \exp(sY))g_{t}^{-1} & = \exp( \operatorname{Ad}_{g_{t}}(sY)) \\
+   & = \exp(s \operatorname{Ad}_{g_{t}}) \\
+   & = \exp(s \exp \operatorname{ad}_{tX}(Y))
+\end{align*}
+This implies $ \exp \operatorname{ad}_{tX}(Y) \in \ag $ so $ Y+ t[X,Y] + \frac{t^{2}}{2!}[X,[X,Y]] + \dots $ and using $ \dfrac{d}{dt}\bigg|_{t=0} \exp \operatorname{ad}_{tX}(Y) = [X,Y] \in \ag $
+\end{proof}
+
+\begin{defn}
+    The center of a Lie algebra $\fg $ is the vector space $ \mathfrak{z} = \mathfrak{z}(\fg) = \{X \in \fg \,  | \, [X,Y] = 0 \, \forall \, Y \in \fg\} $.
+\end{defn}
+\begin{remark}
+    Note that $ \mathfrak{z} $ is trivial Lie subalgebra of $ \fg $.
+\end{remark}
+
+\begin{thm}
+    Let $ Z = Z(G) $ be the center of $ G $. Then $ Z(G) = \ker ( \operatorname{Ad} : G \to \operatorname{GL}(\fg)) $.
+\end{thm}
+\begin{proof}
+    If $ \fg \in Z(G) $, then $ i_{g}: G \to G = \operatorname{id}_{G} $ where $ i_{g} $ is the conjugation map. Taking the differential, this implies $ A_{g} : \fg  \to \fg$ is identity, hence $ g \in \ker( \operatorname{Ad}) $. 
+
+    Suppose that $ g \in \ker( \operatorname{Ad}) $, %then $ g \in Z(G) $. It is enough to show that elements in a neighborhood of $ e $ in $ \ker( \operatorname{Ad}) $. 
+    so $ \operatorname{Ad}_{g}(X) = X $. Let $ X \in \fg $ then \begin{align*}
+        \exp tX & = \exp (t \operatorname{Ad}_{g}(X)) \\
+        & = g \exp(tX) g^{-1}
+    \end{align*}
+    so $ g $ commutes with elements $ \exp(tX) $ in a neighborhood of $ e $ but that is enough since elements of the form $ \exp tX $ for any $ t \in \R, X \in \fg$ generate $ G $. Therefore $ g \in Z(G) $. 
+\end{proof}
+
+\begin{proposition}
+    If $ X,Y \in \fg $ are such that $ [X,Y] = 0 $. Then 
+    \[ \exp(X+Y) = \exp(X) \exp(Y) .\]
+\end{proposition}
+\begin{proof}
+    Let $ \ag = \R X+ \R Y $. Then $ \ag $ is abelian subalgebra of $ \fg $. Then the corresponding Lie subgroup $ A $ is abelian. Define $ \alpha : \R \to G $ such that 
+    \[ \alpha(t) = \exp(tX) \exp(tY) \in A\]
+    It follows that $ \alpha(s+t) = \alpha(s) \alpha(t) $ since $ A $ is abelian. Now $ \alpha (t) = \exp(tZ) $ for some $ Z \in \fg $ where $ Z = \dfrac{d}{dt}|_{t=0} \alpha(t)$. \begin{align*}
+        \frac{d}{dt} \alpha(t) & = \frac{d}{dt}|_{t=0} \exp(tX)+ \frac{d}{dt}|_{t=0} \exp(tY) \\
+        & = X_{e}+Y_{e} 
+    \end{align*}
+    So $ Z_{e} = X_{e}+ Y_{e} $ and $ \exp(tZ) = \exp(tX) \exp(tY) $ for all $ t \in \R $.
 \end{proof}
 \end{document}
