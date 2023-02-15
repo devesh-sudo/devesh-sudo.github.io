@@ -134,6 +134,7 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Ho}{\mathbb{H}}
+\newcommand{\T}{\mathbb{T}}
 \newcommand{\dou}{\partial}
 \newcommand{\half}{\ensuremath{\frac{1}{2}}}
 \newcommand{\pt}{\partial_t}
@@ -773,10 +774,103 @@ This implies $ \exp \operatorname{ad}_{tX}(Y) \in \ag $ so $ Y+ t[X,Y] + \frac{t
 \begin{proof}
     Let $ \ag = \R X+ \R Y $. Then $ \ag $ is abelian subalgebra of $ \fg $. Then the corresponding Lie subgroup $ A $ is abelian. Define $ \alpha : \R \to G $ such that 
     \[ \alpha(t) = \exp(tX) \exp(tY) \in A\]
-    It follows that $ \alpha(s+t) = \alpha(s) \alpha(t) $ since $ A $ is abelian. Now $ \alpha (t) = \exp(tZ) $ for some $ Z \in \fg $ where $ Z = \dfrac{d}{dt}|_{t=0} \alpha(t)$. \begin{align*}
-        \frac{d}{dt} \alpha(t) & = \frac{d}{dt}|_{t=0} \exp(tX)+ \frac{d}{dt}|_{t=0} \exp(tY) \\
+    It follows that $ \alpha(s+t) = \alpha(s) \alpha(t) $ since $ A $ is abelian. Now $ \alpha (t) = \exp(tZ) $ for some $ Z \in \fg $ where $ Z = \dfrac{d}{dt}\bigg|_{t=0} \alpha(t)$. \begin{align*}
+        \frac{d}{dt} \alpha(t) & = \frac{d}{dt}\bigg|_{t=0} \exp(tX)+ \frac{d}{dt}\bigg|_{t=0} \exp(tY) \\
         & = X_{e}+Y_{e} 
     \end{align*}
     So $ Z_{e} = X_{e}+ Y_{e} $ and $ \exp(tZ) = \exp(tX) \exp(tY) $ for all $ t \in \R $.
 \end{proof}
+
+\section{15 Feb}
+
+\begin{motivation}
+    We will try to look into automorphism group of Lie group now and the expectation is that it is a Lie group itself. %For example in case of an $ n $-torus, $ \T^{n} $ the automorphisms are in bijection with 
+\end{motivation}
+
+Let $ \psi : V \otimes V \to V $ be a linear map. Consider the sets 
+\[ A_{\psi}(V) = \{ \alpha \in \operatorname{GL}(V)| (\alpha u, \alpha v) = \alpha (u,v)\}, \] i.e. the diagram commutes 
+% https://q.uiver.app/?q=WzAsNCxbMCwwLCJWIFxcb3RpbWVzIFYiXSxbMiwwLCJWIl0sWzIsMiwiViJdLFswLDIsIlYgXFxvdGltZXMgViJdLFszLDIsIlxccHNpIl0sWzAsMSwiXFxwc2kiXSxbMCwzLCJcXGFscGhhIFxcb3RpbWVzIFxcYWxwaGEiLDFdLFsxLDIsIlxcYWxwaGEiLDFdXQ==
+\[\begin{tikzcd}[ampersand replacement=\&]
+	{V \otimes V} \&\& V \\
+	\\
+	{V \otimes V} \&\& V
+	\arrow["\psi", from=3-1, to=3-3]
+	\arrow["\psi", from=1-1, to=1-3]
+	\arrow["{\alpha \otimes \alpha}"{description}, from=1-1, to=3-1]
+	\arrow["\alpha"{description}, from=1-3, to=3-3]
+\end{tikzcd}\]
+
+and 
+\[ Dev_{\psi}(V)  = \{f \in \operatorname{End}(V) |  f(\psi(u,v)) = \psi(f(u),v)+ \psi(u, f(v))\} \]
+
+\begin{proposition}
+    \begin{enumerate}
+        \item $ A_{\psi}(V) $ is a closed subgroup of $ \operatorname{GL}(V) $. 
+        \item $ Dev_{\psi}(V) $ is a Lie subalgebra of $ \fg(V) $ .
+    \end{enumerate}
+\end{proposition}
+\begin{proof}
+    TO DO
+\end{proof}
+\begin{thm}
+    Lie algebra of $ A_{\psi}(V) $ equals $ Dev_{\psi}(V) $.
+\end{thm}
+\begin{proof}
+    Let $ \ag = Lie(A_{\psi}(V)) \subset \fg(V) = \operatorname{End}(V)$. We must show that $ \ag = Dev_{\psi}(V) $. Suppose that $ f \in \ag $, then $ \exp(tf) \in A_{\psi}(V) $ for all $ t $. We need to show that 
+    \[ f \circ \psi = \psi \circ (f \otimes 1 + 1 \otimes f) \]
+    To do this, let $ u,v \in V $, then \begin{align*}
+        \exp tf (u,v) & = (\exp tf (u), \exp tf (v)) \\
+        & = (u,v)+ (t f(u), v)+ (u, t f(v)) + \text{higher powers of }t
+    \end{align*}
+    so \begin{align*}
+        f(u,v) = \frac{d}{dt}\bigg|_{t=0} \exp tf (u,v) & = (f(u),v)+ (u, f(v))
+    \end{align*}
+    so $ f \in Dev_{\psi}(V) $. 
+
+    Let $ f \in Dev_{\psi}(V)  $, we must show that \begin{align*}
+        \exp (tf) (u,v) & = ( \exp (tf) u, \exp(tf) v) \\
+        i.e \qquad \qquad \exp (tf) \circ \psi & = \psi \circ ( \exp (tf) \otimes \exp (tf)) \qquad \forall u,v \in V \text{ and } \forall t \in \R
+    \end{align*}
+
+    As $ f \in Dev_{\psi}(V) $, we have \begin{align*}
+        f \circ \psi & = \psi \circ ( f \otimes 1+ 1 \otimes f) \\
+        f^{2} \circ \psi & = f \circ f \circ \psi \\
+        & = f \circ \psi \circ ( f \otimes 1 + 1 \otimes f) \\
+        & = \psi \circ ( f \otimes 1 + 1 \otimes f)^{2} 
+    \end{align*}
+
+    By induction, 
+    \[ f^{n} \circ \psi = \psi \circ (f \otimes 1+ 1 \otimes f) \]
+    and $ f \otimes 1 , 1 \otimes f : V \otimes V \to V \otimes V$ commutes. It follows that \begin{align*}
+        \exp (tf) \circ \psi & = \sum_{}^{} \left( \frac{t^{k}f^{k}}{k!} \circ \psi \right) \\
+        & = \sum_{}^{} \frac{t^{k}}{k!} \psi \circ (f \otimes 1 + 1 \otimes f)^{k} \\
+        & = \psi \circ \sum_{}^{} \frac{t^{k}}{k!}(f \otimes 1 + 1 \otimes f)^{k} \\
+        & = \psi \circ \exp (tf \otimes 1+ 1 \otimes tf) \\
+        & = \psi \circ (tf \otimes 1) \circ \exp (1 \otimes tf) \\
+        & = \psi \circ \exp (tf \otimes tf) \\
+        & = \psi ( \exp (tf) \otimes \exp (tf))  
+    \end{align*}
+\end{proof}
+
+Let $ V = \fg = \operatorname{Lie}(G) $ and $ \psi = [ \cdot, \cdot] : \fg \otimes \fg \to \fg$ be the Lie bracket. Then 
+\[ A_{\psi}(V) = \operatorname{Aut}_{Lie}( \fg ) \subset \operatorname{GL}(\fg) \] and 
+\[ \operatorname{Der}_{\psi}(V) = \operatorname{Lie}( \operatorname{Aut}(\fg)) \]
+by the theorem. Note that $ G \xrightarrow{ \operatorname{Ad}} \operatorname{GL}(\fg)$ factors through $ G \to \operatorname{Aut}_{ \operatorname{Lie}}(\fg) $ and $ \fg \xrightarrow{ \operatorname{ad}} \operatorname{Der}(\fg) $.   
+
+
+Let $ V $ be a finite dimensional vector space. Consider a bilinear form 
+\[ B : V \times V \to F, \]
+equipped with a linear map 
+\[ V \otimes V \to F \]
+
+An element $ g \in \operatorname{GL}(V) $ is $ B$-invariant if 
+\[ (u,v) = (gu,gv) \qquad \qquad \forall u,v \in V\]
+
+An element $ f \in \operatorname{End}(V) $ is $ B $-invariant if 
+\[ (fu,v)+ (u,fv) = 0 \]
+Then $ O_{B}(V) = \{g \in \operatorname{GL}(V)| g \text{ is }B \text{-invariant}\} $ is a closed Lie subgroup of $ \operatorname{GL}(V) $ with  Lie algebra $ B $-invariant linear map endomorphisms of $ V $.
+
+\begin{example}
+    Take $ V = \R^{n} $ and $ B $ is the standard inner product. Then $ O_{B}(V) = O(n) $.
+\end{example}
 \end{document}
