@@ -277,7 +277,7 @@ The proof is based on expanding $\det(A(t))$ in a row with adjoint factors and u
 This was used for deriving a formula for Laplacian of a $C^2$ function $f$ on a smooth Riemannian manifold $(M,g)$. The formula is $$\Delta f = (\frac{1}{\sqrt{g}})\sum_{j,k} \partial_j(g^{jk}\sqrt{g}\,\partial_k f)$$
 I am learning spectra of Laplacian from the text \textit{Eigenvalues in Riemannian Geometry} by Issac Chavel.
 
-(17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From `Akhi'l Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
+(17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From Akhil Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
 
 (26/5/20) Today I learned something very interesting in Riemannian geometry. Let $M$ be a smooth manifold, then the scalar curvature functional from the set of all riemannian metrics (normalised to unital volume) to reals given by  $g \mapsto \int_M R(g)dV_g$ recovers Einstein equations through Euler-Lagrange equations. This was discovered by Hilbert. % The name Einstein manifolds comes from Einstein equations which says Ricci curvature is propotional to metric curvature. 
 I do not have much knowledge in the subject but I will look into more.
@@ -690,10 +690,16 @@ Now given any distribution $ \mathscr{D} $ we can consider the set of one-forms 
 
 (22/2/23) Today I learned about simplicial sets. A simplicial set is a contravariant functor $ X : \Delta \to \textbf{\text{Set}}  $. Here $ \Delta $ is the category with objects $ [n] = \{0<1< \cdots <n\} $ for $ n \ge 0 $ and morphisms are $ \delta:[n] \to [m] $ are weakly monotone functions.
 
-(25/3/23) Today I finished the proof of Stampacchia iteration after nearly 8 months. The entire proof is very complicated and one has to get $ L^{p} $ estimates before the iteration even starts. That in itself is a task requiring so many estimates. This is the major part of proving that the limit of a mean-convex compact hypersurface is convex. The not-so difficult part is to get done with the convergence of manifolds theory and prove that mean-convex convex hypersurface satisfy those convergence conditions.
+(25/2/23) Today I finished the proof of Stampacchia iteration after nearly 8 months. The entire proof is very complicated and one has to get $ L^{p} $ estimates before the iteration even starts. That in itself is a task requiring so many estimates. This is the major part of proving that the limit of a mean-convex compact hypersurface is convex. The not-so difficult part is to get done with the convergence of manifolds theory and prove that mean-convex convex hypersurface satisfy those convergence conditions.
 
+(28/2/23) Today I learned about locally compact spaces. One definition is that $ X $ is locally compact if for any $ x \in X $ and any open neighborhood $ U_{x} $ of $ x $, there exists a compact Neighborhood $ K_{x} $ such that $ K_{x} \subset U_{x} $. The other definition is that every point $ x \in X $ has a relatively compact neighborhood. This is more restrictive (and natural to me) however the two definitions match on Hausdorff spaces.
 
-\end{document}
+\subsection*{March 2023}
+
+\quad (1/3/23) Today I learned about induced representation on $ L^{1}(G) $ from a unitary representation of $ G $. So given a unitary continuous representation $ \pi : G \to \mathcal{U}(H) $, we can define a representation on $ L^{1}(G) $ using the formula 
+\[ \left< \pi(f)v,w \right> = \int_{G}f(x)\left< \pi(x)v,w \right> dx\]
+which be thought of as averaging with weight $ f $ given by $ \pi(f) = \int_{G}f(x)\pi(x) dx $. Surprisingly there is a way to formalize this without using the previous explicit formula. It is called Bochner integration which can be defined whenever we want to integrate a function with values in a Banach space (not just $ \C $).
+ \end{document}
 
 
 
