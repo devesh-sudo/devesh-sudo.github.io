@@ -699,6 +699,15 @@ Now given any distribution $ \mathscr{D} $ we can consider the set of one-forms 
 \quad (1/3/23) Today I learned about induced representation on $ L^{1}(G) $ from a unitary representation of $ G $. So given a unitary continuous representation $ \pi : G \to \mathcal{U}(H) $, we can define a representation on $ L^{1}(G) $ using the formula 
 \[ \left< \pi(f)v,w \right> = \int_{G}f(x)\left< \pi(x)v,w \right> dx\]
 which be thought of as averaging with weight $ f $ given by $ \pi(f) = \int_{G}f(x)\pi(x) dx $. Surprisingly there is a way to formalize this without using the previous explicit formula. It is called Bochner integration which can be defined whenever we want to integrate a function with values in a Banach space (not just $ \C $).
+
+(2/3/23) Today I learned about type II singularity in MCF. For mean-convex hypersurface it can be proved using maximum principle that $ |A|^{2} \le c_{0}H^{2} $ for some constant $ c_{0} $ depending only on initial hypersurface. Also, algebraically $ H^{2}\le n|A|^{2} $ so $ |A|^{2} $ and $ H^{2} $ have same rate of blow-up. Using maximum principle again on the evolution equation of $ |A|^{2} $ one can derive that 
+\[ \max_{\mathcal{M}_{t}}|A|^{2}\ge \frac{1}{2(T-t)}. \]
+
+Using this we say that the MCF develops a singularity of \textit{type I} if there exists a constant $ C>0 $ such that 
+\[ \max_{ \mathcal{M}_{t}}|A|^{2} \le \frac{C}{T-t} \]
+so the blow-up rate is inverse linear. Otherwise it is called a singularity of \textit{type II}. I think most singularities are type II but strictly convex hypersurface are type I. 
+
+(3/3/23) Today I learned about Cheeger-Gromov convergence of pointed Riemannian manifolds. Question - Is the Cheeger-Gromov limit unique upto pointed isometries?
  \end{document}
 
 
