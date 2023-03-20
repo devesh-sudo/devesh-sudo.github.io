@@ -630,7 +630,7 @@ It can be proved that the series is convergent with sup norm and further we have
     
     \[ e^{A+B} = e^{A}e^{B} \]
 \end{lemma}
-which can be used to prove that $ e^{A} \in \operatorname{GL}(n,\C) $ so the definition makes sense.
+which can be used to prove that $ e^{A} \in \operatorname{GL}(n,\C) $, so the definition makes sense.
 
 Fix $ A $  and consider the function \begin{align*}
     \R \ni t \mapsto e^{tA} \in \operatorname{GL}(n,\C)
@@ -743,7 +743,9 @@ Now assume $ A $ is normal in $ G $. Let $ X \in \fg $, $ Y \in \ag $. Write $ g
    & = \exp(s \operatorname{Ad}_{g_{t}}) \\
    & = \exp(s \exp \operatorname{ad}_{tX}(Y))
 \end{align*}
-This implies $ \exp \operatorname{ad}_{tX}(Y) \in \ag $ so $ Y+ t[X,Y] + \frac{t^{2}}{2!}[X,[X,Y]] + \dots $ and using $ \dfrac{d}{dt}\bigg|_{t=0} \exp \operatorname{ad}_{tX}(Y) = [X,Y] \in \ag $
+
+This implies $ \exp \operatorname{ad}_{tX}(Y) \in \ag $ so $ Y+ t[X,Y] + \frac{t^{2}}{2!}[X,[X,Y]] + \dots $ and using \newline 
+$ \dfrac{d}{dt}\bigg|_{t=0} \exp \operatorname{ad}_{tX}(Y) = [X,Y] \in \ag $.
 \end{proof}
 
 \begin{defn}
@@ -764,7 +766,7 @@ This implies $ \exp \operatorname{ad}_{tX}(Y) \in \ag $ so $ Y+ t[X,Y] + \frac{t
         \exp tX & = \exp (t \operatorname{Ad}_{g}(X)) \\
         & = g \exp(tX) g^{-1}
     \end{align*}
-    so $ g $ commutes with elements $ \exp(tX) $ in a neighborhood of $ e $ but that is enough since elements of the form $ \exp tX $ for any $ t \in \R, X \in \fg$ generate $ G $. Therefore $ g \in Z(G) $. 
+    so $ g $ commutes with elements $ \exp(tX) $ in a neighborhood of $ e $ but that is enough since elements of the form $ \exp tX $ for any $ t \in \R, X \in \fg$ generate $ G $. Therefore, $ g \in Z(G) $. 
 \end{proof}
 
 \begin{proposition}
@@ -806,7 +808,7 @@ and
 \begin{proposition}
     \begin{enumerate}
         \item $ A_{\psi}(V) $ is a closed subgroup of $ \operatorname{GL}(V) $. 
-        \item $ Dev_{\psi}(V) $ is a Lie subalgebra of $ \fg(V) $ .
+        \item $ Dev_{\psi}(V) $ is a Lie subalgebra of $ \fg(V) $.
     \end{enumerate}
 \end{proposition}
 \begin{proof}
@@ -900,4 +902,59 @@ as $ \C $-Lie algebra.
 Q. Given a Lie algebra, when is it the Lie algebra of a compact Lie group? 
 
 A. Something about Killing form and non-degeneracy of complexified Lie algebra and semisimple Lie algebra.
+
+\section{20 March}
+
+Suppose that $ \psi : H \to G $ is a Lie algebra homomorphism into a connected $ \C $-Lie group $ G $. Then $ d \psi : \hg \to \fg $ extends to a complex Lie algebra homomorphism 
+\[ \hg_{\C} \xrightarrow{d \psi \otimes \C} \fg .\]
+
+\begin{defn}
+    We say that $ \psi : H \to G $ is a complexification of $ H $ if for any complex Lie group $ L $ and any real Lie group homomorphism $ f : H \to L  $, there exists a unique complex Lie group homomorphism $ \phi : G \to L$ such that 
+    \[ f = \phi \circ \psi .\]
+\end{defn}
+Also, \begin{defn}
+    A homomorphism of Lie groups $ \psi : G \to L $ is a complex Lie group homomorphism if $ G,L $ are complex and $ d \psi : \fg \to \mathfrak{l} $ is a complex Lie algebra homomorphism.
+\end{defn}
+
+Idea : Like we can complexify a real Lie algebra, we would like to have a concept of complexification of a Lie group but we may not be able to do so for all real Lie groups.
+
+Given a complex Lie group $ G $, any $ (H,\psi) $ whose complexification is $ G $ will be called a real form. For a given complex Lie group there can be more than one real form. E.g consider $ SU(n) \subset \operatorname{SL}(n,\C) $ and it can be proven that $ SU(n) $ is a real form of $ \operatorname{SL}(n,\C) $ (also called compact form since $ SU(n) $ is compact) by dimension analysis. 
+
+Consider the diagram % https://q.uiver.app/?q=WzAsMyxbMCwwLCJTVShuKSJdLFsyLDAsIkwgKGNvbXBsZXggTGllIGdyb3VwKSJdLFswLDIsIlNMKG4sXFxtYXRoYmJ7Q30pIl0sWzAsMiwiXFxwc2kiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDEsIlxcZXhpc3RzID8gXFxwaGkiXSxbMCwxXV0=
+\[\begin{tikzcd}
+	{SU(n)} && {L} \\
+	\\
+	{SL(n,\mathbb{C})}
+	\arrow["\psi", hook, from=1-1, to=3-1]
+	\arrow["{\exists ? \phi}", from=3-1, to=1-3]
+	\arrow[from=1-1, to=1-3]
+    \arrow["f", from=1-1, to=1-3]
+\end{tikzcd}\]
+where $ L $ is a complex Lie group. At the Lie algebra level \[\begin{tikzcd}
+	{\mathfrak{su}(n)} && {L} \\
+	\\
+	{\mathfrak{sl}(n,\mathbb{C})}
+	\arrow[hook, from=1-1, to=3-1]
+	\arrow["\theta", from=3-1, to=1-3]
+	\arrow["df", from=1-1, to=1-3]
+\end{tikzcd}\]
+
+where $ \mathfrak{sl}(n,\C) = \mathfrak{su}(n) + i \mathfrak{su}(n) $ , $ \exists  \operatorname{SL}(n,\C) \xrightarrow{\phi} L$ such that $ d \phi = \theta $ since $ \operatorname{SL}(n,\C) $ is simply connected. Then $ \phi  $ restricts to $ f $ since $ d \phi|_{ \mathfrak{su}(n)} = d f $.
+
+\begin{thm}
+    Let $ K $ be a compact connected Lie group. Then there exists a complex Lie group $ K_{\C} $ and a Lie group homomorphism $ f : K \to K_{\C} $ such that \begin{enumerate}
+        \item $ f_{*} : \pi_{1}(K) \to \pi_{1}(K_{\C}) $ is an isomorphism. 
+        \item $ \operatorname{Lie}(K_{\C})  = \operatorname{Lie}(K) \otimes \C$. 
+        \item $ K_{C} $ is the complexification of $ K $.
+    \end{enumerate}
+\end{thm}
+
+\begin{thm}
+    Suppose that $ G $ is a complex linear connected semisimple Lie group. Then any maximal compact Lie subgroup $ K \subset G  $ is a real form of $ G $.
+\end{thm}
+
+%\begin{Remark}
+    %Complex Lie group are very well-behaved because of bi invariant Haar measure so it is important to form links between complex and real case. 
+%\end{Remark}
+
 \end{document}
