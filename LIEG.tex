@@ -957,4 +957,107 @@ where $ \mathfrak{sl}(n,\C) = \mathfrak{su}(n) + i \mathfrak{su}(n) $ , $ \exist
     %Complex Lie group are very well-behaved because of bi invariant Haar measure so it is important to form links between complex and real case. 
 %\end{Remark}
 
+\section{22 March}
+
+Let $ \beta $ be a symmetric bilinear form on $ V $, where $ V $ is a finite-dimensional vector space over $ \R $ or $ \C $. Let $ Q $ be the associated quadratic form 
+\[ Q : V \to \R \qquad \text{ or } \qquad Q : V \to \C\]
+\[ Q(\lambda v) = \lambda^{2}v \]
+
+We have $ Q(V) = \beta (v,v) $, and $ \beta(u,v) = \frac{Q(u+v) -Q(u)-Qv}{2}$. Suppose that $ (V, \beta) $, $ (V, \beta') $ are quadratic spaces. Then we say that $ (V, \beta), (V, \beta') $ are equivalent if there exists $ T : V \to V $ such that 
+\[ \beta'(u,v) = \beta(Tu,TV)  \quad \forall u,v \in V\]
+Suppose that $ v_{1}, \ldots, v_{n} $ is a basis for $ V $. Then the matrix of $ \beta $ is $ B = (\beta(v_{i},v_{j})) $.
+
+Let $ B,B' $ be the matrices of $ \beta, \beta' $. Then $ (V, \beta), (V, \beta') $ are equivalent if there exists $ T \in M_{n}(F) $ such that 
+\[ B = \, ^{t}TBT \]
+where $ ^{t} $ denotes transpose. Now if $ x = (x_{1} \dots x_{n})^{t} $, $ y = (y_{1}, \dots, y_{n})^{t} $ are vectors in $ F^{n} \equiv V $, then 
+\[ x^{t}By = \beta(x,y) \]
+and 
+\begin{align*}
+    \beta'(x,y) & = \beta(Tx,Ty) \\
+    & = x^{t}T^{t}BTy \\
+    & = x^{t}B'y
+\end{align*}
+which proves the statement. Suppose $ E_{1} \subset E $, $ (E, \beta) $ is a quadratic space. Then $ (E_{1},\beta|_{E_{1}}) $ is a quadratic space. 
+\[ E_{1}^{\perp} = \{x \in E : \beta(x,y) = 0 \, \forall y \in E_{1}\} \]
+
+\begin{lemma}
+    Suppose that $ E_{1} \subset E $ and $ (E, \beta|_{E_{1}}) $ is non-degenerate. Then 
+    \[ E = E_{1} \oplus E_{1}^{\perp} = E_{1} \perp E_{1}^{\perp} \]
+    If $ (E, \beta) $ is non-degenerate, then $ (E_{1}^{\perp}, \beta_{E_{1}^{\perp}}) $ is also non-degenerate. 
+\end{lemma}
+\begin{proof}
+    TO DO. 
+\end{proof}
+
+Example - Consider the quad space $ (H, \beta) $ where $ H = \R^{2} $ and $ Q((x,y)) = x^{2}-y^{2} $. Then $ (H, \beta) \cong (H, \beta') $ where $ Q'((x,y)) = xy $. One can calculate that 
+\[ B = \begin{bmatrix}
+    1 && 0 \\
+    0 && -1
+\end{bmatrix} \]
+and 
+\[ B ' = \begin{bmatrix}
+    0 && 1 \\
+    1 && 0
+\end{bmatrix} \]
+so the forms are non-degenerate and similar using transformation $ T = \frac{1}{\sqrt{2}}\begin{bmatrix}
+    1 && 1 \\
+    1 && -1
+\end{bmatrix} $. Suppose $ (V, \beta) $ is non-singular, if $ \beta|_{E} \equiv 0 $, then $ \dim E \le \frac{1}{2}\dim V $. Further \begin{lemma}
+    If $ (V, \beta) $ is non-singular then 
+\[ V = V_{1} \oplus \dots \oplus V_{n} \] 
+where each $ V_{i} $ is $ 1 $-dimensional and $ (V_{i}, \beta|_{V_{i}}) $ is non-degenerate, $ V_{i} \perp V_{j} $ if $ i \neq j $, i.e. there exists a basis of $ V $ with respect to the matrix $ B $ of $ \beta $ is diagonal.
+\end{lemma}
+\begin{proof}
+    The proof is by induction on dimension. First suppose that $ v \in V $ is non-zero then choose $ V_{1} = Fv $ then 
+    \[ V = V_{1} \oplus V_{1}^{\perp} \]
+    and $ (V_{1}^{\perp}, \beta|_{V_{1}^{\perp}}) $ is non-degenerate. Apply induction to $ (V_{1}^{\perp}, \beta|_{V_{1}^{\perp}}) $. 
+
+    Suppose $ \beta(v,v) = 0 $. Choose by non-degeneracy of $ \beta $ a vector $ V \in V $ such that $ \beta(u,v) = 0 $. Notice that $ \beta(u+v,u+v) = 2\beta(u,v) \neq 0$ which lands us in earlier case.
+\end{proof}
+
+Now suppose that $ (V, \beta) $ is arbitrary. Let $ V_{0} = \operatorname{rad}(\beta) = \{x \in V : \beta(x,y) = 0 \forall y \in V\} $
+Consider the quotient $ (\frac{V}{V_{0}}, \overline{\beta}) $ with 
+\[ \overline{\beta}(u+V_{0},v+V_{0}) = \beta(u,v) \]
+and $ \operatorname{rad}(\beta) = 0 $, so $ (\frac{V}{V_{0}}, \overline{\beta}) $ is non-degenerate. Main theorem \begin{thm}
+    Over $ \R $ any non-degenerate $ \beta $ is equivalent to the bilinear form with basis 
+    \[ \begin{bmatrix}
+        I_{k} && \\
+        && - I_{l}
+    \end{bmatrix} \]
+ with $ k+l = n$. Moreover, $ k,l $ are uniquely determined by $ \beta $.
+\end{thm}
+
+\begin{defn}
+    Let $ (V, Q) $ be a quadratic space. The \textbf{Clifford algebra} $ C(Q) $ associated to it is an algebra over $ F $ with a homomorphism $ \theta : V \to C(Q) $ such that
+\begin{enumerate}
+    \item $ \theta(x)^{2} = Q(x) $ 
+    \item $ C(Q) $ is universal with respect to 1st property, i.e. if $ \psi : V \to A $ is any vector space homomorphism to an $ F $-algebra such that 
+    \[ \psi(x)^{2} = Q(x) \]
+    then there exists a unique algebra homomorphism $ f $ such that % https://q.uiver.app/?q=WzAsMyxbMCwwLCJDKFEpIl0sWzIsMCwiQSJdLFsxLDIsIlYiXSxbMiwwLCJcXHRoZXRhIl0sWzIsMSwiXFxwc2kiLDJdLFswLDEsImYiXV0=
+    \[\begin{tikzcd}
+        {C(Q)} && A \\
+        \\
+        & V
+        \arrow["\theta", from=3-2, to=1-1]
+        \arrow["\psi"', from=3-2, to=1-3]
+        \arrow["f", from=1-1, to=1-3]
+    \end{tikzcd}\]
+    commutes. 
+\end{enumerate}
+\end{defn}
+We can construct the Clifford algebra by 
+\[ C(Q) = \frac{T(V)}{\left< x \otimes x - \psi(x) \right>} \]
+where $ T(V) $ is the tensor algebra of $ V $. 
+
+\begin{example}
+    1. $ V = \R $, $ Q(x) = -x^{2} $ then 
+    \[ T(V) =\R \oplus \R e_{1} \oplus \R( e_{1} \otimes e_{1}) \oplus \dots    \]
+    and $ C(Q) = \R \oplus \R e_{1} $, $ e_{1}^{2} = -1 $ so $ C(Q) \cong \C $. 
+
+    2. $ V = \R $, $ Q'(x) = x^{2} $, then 
+    \[ C(Q') = \R \oplus \R e_{1} \]
+    with $ e_{1}^{2} = 1 $ so it is the polynomial ring $ \frac{\R[x]}{(x^{2}-1)} $. 
+    
+\end{example}
+
 \end{document}
