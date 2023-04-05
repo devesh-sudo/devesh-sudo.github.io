@@ -1,0 +1,9 @@
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QMatrix coefficients form a dense subset of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q but we will not prove it.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QMissed 5 April.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QMissed 13 March.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\Q&& && \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QThen && && \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q commutes.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QThe answer is yes but the proof is quite difficult.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\Q&& && \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q commutes.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QConsider the map \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q given by \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q The image is a Lie subgroup of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q but it is not a closed Lie subgroup.\\E$"}
+{"rule":"IF_IS","sentence":"^\\QIf \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q are irreducible representations over \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q of a compact Lie group \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, then \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q if \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q if \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q Let \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q or \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q denote the ring given by characteristic of representation of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
