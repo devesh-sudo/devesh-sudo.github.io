@@ -768,7 +768,7 @@ $ \dfrac{d}{dt}\bigg|_{t=0} \exp \operatorname{ad}_{tX}(Y) = [X,Y] \in \ag $.
         \exp tX & = \exp (t \operatorname{Ad}_{g}(X)) \\
         & = g \exp(tX) g^{-1}
     \end{align*}
-    so $ g $ commutes with elements $ \exp(tX) $ in a neighborhood of $ e $ but that is enough since elements of the form $ \exp tX $ for any $ t \in \R, X \in \fg$ generate $ G $. Therefore, $ g \in Z(G) $. 
+    so $ g $ commutes with elements $ \exp(tX) $ in a neighborhood of $ e $, but that is enough since elements of the form $ \exp tX $ for any $ t \in \R, X \in \fg$ generate $ G $. Therefore, $ g \in Z(G) $. 
 \end{proof}
 
 \begin{proposition}
@@ -918,9 +918,9 @@ Also, \begin{defn}
     A homomorphism of Lie groups $ \psi : G \to L $ is a complex Lie group homomorphism if $ G,L $ are complex and $ d \psi : \fg \to \mathfrak{l} $ is a complex Lie algebra homomorphism.
 \end{defn}
 
-Idea : Like we can complexify a real Lie algebra, we would like to have a concept of complexification of a Lie group but we may not be able to do so for all real Lie groups.
+Idea : Like we can complexify a real Lie algebra, we would like to have a concept of complexification of a Lie group, but we may not be able to do so for all real Lie groups.
 
-Given a complex Lie group $ G $, any $ (H,\psi) $ whose complexification is $ G $ will be called a real form. For a given complex Lie group there can be more than one real form. E.g consider $ SU(n) \subset \operatorname{SL}(n,\C) $ and it can be proven that $ SU(n) $ is a real form of $ \operatorname{SL}(n,\C) $ (also called compact form since $ SU(n) $ is compact) by dimension analysis. 
+Given a complex Lie group $ G $, any $ (H,\psi) $ whose complexification is $ G $ will be called a real form. For a given complex Lie group there can be more than one real form. E.g. consider $ SU(n) \subset \operatorname{SL}(n,\C) $, and it can be proven that $ SU(n) $ is a real form of $ \operatorname{SL}(n,\C) $ (also called compact form since $ SU(n) $ is compact) by dimension analysis. 
 
 Consider the diagram % https://q.uiver.app/?q=WzAsMyxbMCwwLCJTVShuKSJdLFsyLDAsIkwgKGNvbXBsZXggTGllIGdyb3VwKSJdLFswLDIsIlNMKG4sXFxtYXRoYmJ7Q30pIl0sWzAsMiwiXFxwc2kiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsyLDEsIlxcZXhpc3RzID8gXFxwaGkiXSxbMCwxXV0=
 \[\begin{tikzcd}
@@ -940,14 +940,13 @@ where $ L $ is a complex Lie group. At the Lie algebra level \[\begin{tikzcd}
 	\arrow["\theta", from=3-1, to=1-3]
 	\arrow["df", from=1-1, to=1-3]
 \end{tikzcd}\]
-
-where $ \mathfrak{sl}(n,\C) = \mathfrak{su}(n) + i \mathfrak{su}(n) $ , $ \exists  \operatorname{SL}(n,\C) \xrightarrow{\phi} L$ such that $ d \phi = \theta $ since $ \operatorname{SL}(n,\C) $ is simply connected. Then $ \phi  $ restricts to $ f $ since $ d \phi|_{ \mathfrak{su}(n)} = d f $.
+where $ \mathfrak{sl}(n,\C) = \mathfrak{su}(n) + i \mathfrak{su}(n) $, $ \exists  \operatorname{SL}(n,\C) \xrightarrow{\phi} L$ such that $ d \phi = \theta $ since $ \operatorname{SL}(n,\C) $ is simply connected. Then $ \phi  $ restricts to $ f $ since $ d \phi|_{ \mathfrak{su}(n)} = d f $.
 
 \begin{thm}
     Let $ K $ be a compact connected Lie group. Then there exists a complex Lie group $ K_{\C} $ and a Lie group homomorphism $ f : K \to K_{\C} $ such that \begin{enumerate}
         \item $ f_{*} : \pi_{1}(K) \to \pi_{1}(K_{\C}) $ is an isomorphism. 
         \item $ \operatorname{Lie}(K_{\C})  = \operatorname{Lie}(K) \otimes \C$. 
-        \item $ K_{C} $ is the complexification of $ K $.
+        \item $ K_{C} $ is the compactification of $ K $.
     \end{enumerate}
 \end{thm}
 
@@ -1000,7 +999,7 @@ and
 \[ B ' = \begin{bmatrix}
     0 && 1 \\
     1 && 0
-\end{bmatrix} \]
+\end{bmatrix}, \]
 so the forms are non-degenerate and similar using transformation $ T = \frac{1}{\sqrt{2}}\begin{bmatrix}
     1 && 1 \\
     1 && -1
@@ -1070,7 +1069,7 @@ Missed
 \section{5 April}
 
 \begin{lemma}[Schur's lemma]
-    Suppose that $ G $ is a compact Lie group. Let $ V_{0}, V_{1} $ be a finite dimensional irreducible representation over $\C $. Then any $ G $-homomorphism $ \psi : V_{0} \to V_{1} $ is either $ 0 $ or an isomorphism. Moreover, any $ G $-homomorphism $ V_{0} \to V_{0} $ is a scalar multiple of the idenity.
+    Suppose that $ G $ is a compact Lie group. Let $ V_{0}, V_{1} $ be a finite dimensional irreducible representation over $\C $. Then any $ G $-homomorphism $ \psi : V_{0} \to V_{1} $ is either $ 0 $ or an isomorphism. Moreover, any $ G $-homomorphism $ V_{0} \to V_{0} $ is a scalar multiple of the identity.
 \end{lemma}
 \begin{proof}
     If $ V $ is any irreducible representation, then $ V $ is simple i.e. the only subrepresentation of $ V $ are $ 0 $ and $ V $. Now $ \operatorname{im}(\psi) \subset V_{1}$ is a subrepresentation. Assume $ \psi \neq 0 $. Then $ \operatorname{im}(\psi) = V_{1} $. 
@@ -1086,7 +1085,7 @@ Let $ [V] $ denote the isomorphism class of finite dimensional $ G $-representat
 \[ S = \{[V_{0} \oplus V_{1}] - [V_{0}]- [V_{1}]  : V_{0}, V_{1} \text{ are } G-\text{representations}\} \]
 then $ RG \define A / S $ is an abelian group. Further we can define multiplication by 
 \[ [V] \cdot [W] = [V \otimes W] \]
-Distributivity follows from $ (V_{1} \oplus V_{2}) \otimes W \cong (V_{1} \otimes W) \oplus (V_{2} \otimes W $)
+Distributivity follows from $ (V_{1} \oplus V_{2}) \otimes W \cong (V_{1} \otimes W) \oplus (V_{2} \otimes W $
 
     Remark : Given two representations $ (V, \pi) $ and $ (W, \sigma) $ the tensor $ (V \otimes W, \rho ) $ is also $ G $-representation via 
     \[ \rho(g)(a \otimes b) = \pi(g)a \otimes \sigma(g)b \]
@@ -1158,11 +1157,11 @@ Distributivity follows from $ (V_{1} \oplus V_{2}) \otimes W \cong (V_{1} \otime
     \begin{proof}
         We need only show that $ \chi  $ is a monomorphism. Suppose 
         \[ a = \sum_{}^{} a_{i}[V_{i}] \]
-        where $ V_{i} $ are irreducible such that $ \chi(a) = 0 $. so 
+        where $ V_{i} $ are irreducible such that $ \chi(a) = 0 $. So 
         \[ \sum_{}^{}a_{i}\chi_{V_{i}} = 0  \]
         this implies 
         \[ \sum_{}^{}a_{i} \delta_{ij} =  \sum_{}^{} a_{i} \left< \chi_{V_{i}}, \chi_{V_{j}} \right>  = 0\]
-        for all $ j $. Thus $ a_{j} = 0 $ hence $ a = 0 $. 
+        for all $ j $. Thus, $ a_{j} = 0 $ hence $ a = 0 $. 
     \end{proof}
 
     Suppose that $ g \sim h $ in $ G $, so $ g = xhx^{-1} $ for some $ x \in G $. Then $ \chi_{\pi}(g) = \chi_{\pi}(h) $, i.e. $ \chi_{\pi} $ is constant on conjugacy classes. 
@@ -1193,9 +1192,156 @@ Distributivity follows from $ (V_{1} \oplus V_{2}) \otimes W \cong (V_{1} \otime
 \end{tikzcd}\]
  where zigzag lines denote isomorphism. Further 
  \[ R(G \times H ) = RG \otimes RH \]
- 
  \[ R(T^{n}) = \Z [\chi_{1},\chi_{1}^{-1}, \dots , \chi_{n},\chi_{n}^{-1}] \]
  
+ \section{10 April}
  
+ \begin{lemma}
+    Suppose that $ \left< \cdot, \cdot \right> $ is a $ G $-invariant Hermitian inner product on $ V_{1} $ where $ G $ is compact. Let $ v_{i} \in V_{i} $. Then we obtain a linear transformation $ T : V_{1} \to V_{2} $ defined by
+    \[ T(\omega) = \int_{G} \left< \pi_{1}(g)w,v_{1}  \right> \pi_{2}(g^{-1})v_{2} d g  \in V_{2}\]
+    where  $ dg $ is a Haar measure (unimodular here because $ G $ is compact). Then $ T $ is a $ G $-equivariant, i.e. $ T(\pi_{1}(h) \omega) = \pi_{2}(h)T(\omega) $. 
+    
+ \end{lemma}
 
+ \begin{proof}
+    \begin{align*}
+        T(\pi_{1}(h)\omega) & = \int_{G} \left< \pi_{1}(g)\pi_{1}(h) \omega, v_{1}  \right> \pi_{2}(g^{-1})(v_{2}) dg \\
+        & = \int_{G} \left< \pi_{1}(gh)\omega, v_{1} \right>\pi_{2}(g^{-1})v_{2} dg 
+    \end{align*}
+    Put $ gh=x $, then $ g = x h^{-1} = \rho_{h}(x) $ and $ dg = dx $. So \begin{align*}
+        T(\pi_{1}(h)\omega) & = \int_{G}\left< \pi_{1}(x)\omega, v_{1}  \right> \pi_{2}(h)\pi_{2}(x^{-1})v_{2}dx \\
+        & = \pi_{2}(h) \int_{G}\left< \pi_{1}(x) \omega, v_{1} \right> \pi_{2}(x^{-1})v_{2} dx \\
+        & = \pi_{2}(h)T(\omega)
+    \end{align*}
+ \end{proof}
+Recall
+ \begin{lemma}[Schur's ortho]
+    Suppose that $ (\pi_{1},V_{1}) $ and $ (\pi_{2},V_{2}) $ are irreducible. Then every matrix coefficient $ \psi_{\pi_{1},u,v} $ is orthogonal to $ \psi_{\pi_{2},u',v'} $ or $ (\pi_{1},V_{1}) $ is isomorphic to $ (\pi_{2},V_{2}) $. 
+ \end{lemma}
+
+ Now 
+ \begin{proof}{continuing}
+    Assume $ \psi_{\pi_{1},u,v} $ and $ \psi_{\pi_{2},u',v'} $ are not orthogonal. So \begin{align*}
+        0  & \neq \int_{G}\left< \pi_{1}(g)u,v \right> \overline{\left< \pi_{2}u',v' \right>}dg \\
+        & = \int_{G} \left< \pi_{1}(g)u,v \right> \left< v',\pi_{2}(g)u',v' \right>dg \\
+        & = \int_{G}\left< \pi_{1}(g)u,v \right> \left< \pi_{2}(g^{-1})v',u' \right>dg 
+    \end{align*}
+    which is $ \left< T(u),u' \right> $ hence $ T $ is non-zero so by $ T $ is an isomorphism by Schur's lemma. 
+ \end{proof}
+
+ Let $ T $ be a subgroup of $ G $, then we know that there is a map 
+ \[ RG \xrightarrow[]{Res_{}^{}}RT \]
+
+ Basic fact : If $ (\pi,V) $ is an irreducible representation of a torus $ T $. Then $ V $ is one-dimensional. 
+
+ \begin{proof}
+    Let $ t \in T $. Consider $ \pi(t) : V \to V $. Because $ T $ is abelian, $ \pi(t) $ is  $ T $-linear, i.e. 
+    \[ \pi(ts)(v) = \pi(t)(\pi(s)v) = \pi(s)\pi(t)v = \pi(st)(v) \]
+    hence by Schur's lemma 
+    \[ \pi(t) v = \chi(t)v \]
+    for all $ v $ where $ \chi : T \to C^{\times} $ so 
+    \[ \chi(st) = \chi(s)\chi(t) \]
+    holds. Now 
+    \begin{align*}
+        \chi(st)v & = \pi(st)v = \pi(s)\pi(t)v \\
+        & = \pi(s)(\chi(t)v) = \chi(t)\pi(s)v \\
+        & = \chi(t)\chi(s)v
+    \end{align*}
+    Since every non-zero subspace of $ V $ is a $ T $-representation ( as $ \pi(t) = \chi(t)I $) we must have $ \dim V = 1 $ as $ V $ is irreducible. 
+    
+ \end{proof}
+
+ \begin{example}
+    Let $ G = SU(2) $ with  torus 
+    \[ T = \biggl\{\begin{bmatrix}
+        e^{i \theta} &  \\
+        & e^{-i \theta} \end{bmatrix} : 0 \le \theta \le 2 \pi\biggr\} \]
+        where $ T $ is maximal since the only matrices in $ SU(2) $ which commute with every $ \begin{bmatrix}
+            e^{i \theta} & \\
+            & e^{-i \theta}
+        \end{bmatrix} $ is itself diagonal and hence in $ T $. 
+ \end{example}
+Std : $ V = \C^{2} = V_{1} \oplus V_{2} $ be irreducible where $ V_{i} = \C e_{i} $ and 
+\[ \begin{pmatrix}
+    e^{i \theta} &  \\
+    & e^{-i \theta}
+\end{pmatrix}e_{1} = \begin{pmatrix}
+    e^{i \theta} & \\
+    & e^{-i \theta}
+\end{pmatrix} \begin{pmatrix}
+    1 \\
+    0
+\end{pmatrix} = e^{i \theta} \begin{pmatrix}
+    1 \\
+    0
+\end{pmatrix} \]
+thus 
+\[ \chi_{1} \begin{pmatrix}
+    e^{i \theta} & \\
+    & e^{-i \theta}
+\end{pmatrix} = e^{i \theta}\]
+similarly 
+\[ \chi_{2}\begin{pmatrix}
+    e^{ i \theta} & \\
+    & e^{-i \theta}
+\end{pmatrix}  = e^{-i \theta}\]
+
+
+Let $ S^{k}(V  ) $ be the $ k $-th symmetric power of $ V $ which is same as polynomials of degree $ k $ in $ e_{1},e_{2} $. The characters of $ S^{k} $ are 
+\[ \begin{pmatrix}
+    e^{i \theta} & \\
+    & e^{-i \theta}\end{pmatrix}e_{1}^{j}e_{2}^{k-j} = e^{ij \theta}e^{-i(k-j) \theta}e_{1}^{j} e_{2}^{k-j} = e^{i(2j-k) \theta}e_{1}^{j}e_{2}^{k-j}
+ \]
+
+\begin{align*}
+    RSU(2) & \xrightarrow{Res_{}^{}} RT \\
+    S^{k} & \mapsto V_{k} \oplus V_{k-2} \oplus \dots \oplus V_{-k}
+\end{align*}
+where $ V_{i} \leftrightarrow x_{j} $
+
+\begin{thm}
+    The $ S^{k} $ are the only irreducible representations of $ SU(2) $. 
+\end{thm}
+Known as $ \operatorname{SL}(2) $ theory. 
+
+Let $ G $ be a compact connected Lie group. Let $ T $ be a maximal torus. Then we define the Weyl group $ W = W(G,T) $ of $ G  $ with respect to $ T $ as 
+\[ W = N_{G}(T) / T \]
+where $ N_{G}(T) = \{g \in G : gTg^{-1} = T\} $
+ and $ N_{G} \subset \operatorname{Aut}(T) $ via conjugation. Hence, $ W  $ acts in $ T $ via automorphism. \begin{thm}
+    $ W $ is a finite group.
+ \end{thm}
+ \begin{proof}
+    $ W $ acts on $ \operatorname{Lie}(T) $ as linear map. Consider the projection map 
+   \begin{align*}
+    \R^{n} \cong & \operatorname{Lie}(T) \xrightarrow{p} T \cong \R^{n} / \Z^{n} \\
+    (t_{1}, \dots, t_{n}) & \mapsto (e^{2 \pi i t_{1}}, \dots, e^{2 \pi i t_{n}})
+   \end{align*}
+
+   % https://q.uiver.app/?q=WzAsNCxbMCwwLCJMaWUoVCkiXSxbMiwwLCJMaWUoVCkiXSxbMCwyLCJUIl0sWzIsMiwiVCJdLFswLDEsIlxcb21lZ2EiXSxbMCwyLCJwIiwyXSxbMiwzLCJcXG9tZWdhIiwyXSxbMSwzLCJwIl1d
+\[\begin{tikzcd}
+	{Lie(T)} && {Lie(T)} \\
+	\\
+	T && T
+	\arrow["w", from=1-1, to=1-3]
+	\arrow["p"', from=1-1, to=3-1]
+	\arrow["w"', from=3-1, to=3-3]
+	\arrow["p", from=1-3, to=3-3]
+\end{tikzcd}\]
+    
+where $ w(\Z^{n}) = \Z^{n}  $ for all $ w \in W $. Now $ N_{G}(T)    $ is closed in $ G $ and hence compact. So $ W  $ is compact and $ W $ is finite since $ W \subset \operatorname{GL}(n,\Z)$ which is discrete.  
+ \end{proof}
+
+ \begin{example}
+    Take $ G = U(n) $ and $ T = \biggl\{ \begin{pmatrix} t_{1}&  \hdots &   \\
+        & \ddots & \\
+    & \hdots & t_{n} \end{pmatrix} : t_{i} \in S^{1} \biggr\} $ Noe that $ U(n) = \bigcup_{g \in U(n)}gT^{-1}g^{-1} $ since given any $ x \in U(n) $, there exists a unitary basis $ \mathcal{U} = u_{1}, \dots, u_{n} $ of $ \C^{n} $ such that the matrix of $ x $ with respect to $ \mathcal{U} $ is diagonal. Take $ g $ to be such that $ g(e_{i}) = u_{i} $ for all $ i $. Then $ (g^{-1}xg)(e_{i}) = g^{-1}x(u_{i}) = \lambda_{i}g^{-1}u_{i}  = \lambda_{i}e_{i}$ 
+
+    On the other hand if $ gTg^{-1}=T $, then choose 
+    \[ g \begin{pmatrix}
+        \lambda_{1} & & \\
+        & \ddots & \\
+        & & \lambda_{n}
+    \end{pmatrix}g^{-1} \in T \]
+    where $ \lambda_{1}, \dots, \lambda_{n} $ are pairwise distinct. This implies $ ge_{i} = z_{i}e_{\sigma(i)} $ for some $ j $,for some $ \sigma \in S_{n} $. Thus $ N(T) $ is a monomial matrix which implies $ N(T) /T \cong S_{n} $. 
+ \end{example}
 \end{document}

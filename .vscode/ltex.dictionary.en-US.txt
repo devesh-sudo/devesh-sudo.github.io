@@ -17,3 +17,6 @@ cosets
 Frobenius
 quaternion
 Adó
+Haar
+Schur
+Weyl
