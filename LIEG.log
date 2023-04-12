@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.23)  10 APR 2023 15:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.23)  12 APR 2023 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1049,6 +1049,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 22.
 Package tocbasic Info: Using my definition of `\numberline' on input line 23.
 Package tocbasic Info: Using my definition of `\numberline' on input line 24.
 Package tocbasic Info: Using my definition of `\numberline' on input line 25.
+Package tocbasic Info: Using my definition of `\numberline' on input line 26.
 )
 \tf@toc=\write4
 \openout4 = `LIEG.toc'.
@@ -1063,8 +1064,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 192.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
 (mdframed)              on input line 199.
  [2]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1082,13 +1083,14 @@ Package hyperref Info: bookmark level for unknown thm defaults to 0 on input lin
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 231.
+ [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 235.
 LaTeX Font Info:    Trying to load font information for U+euf on input line 237.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [3]
+)
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 243.
@@ -1111,7 +1113,23 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 319.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 319.
- [5]
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 320.
+
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 320.
+[5]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last split box is empty
+(mdframed)                You have to change the settings on input line 320.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 340.
@@ -1121,24 +1139,33 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 365.
+Package mdframed Info: Not enough space on this page on input line 368.
+[6]
+Package mdframed Info: Not enough space on this page on input line 368.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 370.
-Package mdframed Info: Not enough space on this page on input line 372.
- [6]
-Package mdframed Info: Not enough space on this page on input line 372.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 374.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 405.
+
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 411.
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 411.
+[7]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 418.
-Package mdframed Info: Not enough space on this page on input line 421.
- [7]
-Package mdframed Info: Not enough space on this page on input line 421.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 424.
@@ -1154,10 +1181,10 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 452.
+ [8]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 457.
- [8]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 465.
@@ -1170,7 +1197,6 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 499.
-Package mdframed Info: Not enough space on this page on input line 500.
  [9]
 Package mdframed Info: Not enough space on this page on input line 500.
 Package mdframed Info: mdframed detected package amsthm 
@@ -1350,20 +1376,51 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: Not enough space on this page on input line 1346.
  [28]
 Package mdframed Info: Not enough space on this page on input line 1346.
- [29] (./LIEG.aux) ) 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1357.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1384.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1400.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1403.
+
+Overfull \hbox (2.86926pt too wide) in paragraph at lines 1409--1411
+\OT1/cmr/m/n/10.95 as $\OML/cmm/m/it/10.95 T$\OT1/cmr/m/n/10.95 -representation. There-fore $[^^C[](\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 ^^U[]\OT1/cmr/m/n/10.95 ] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 RT$ \OT1/cmr/m/n/10.95 and $[] \OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = ^^C[](\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 )$ as a $\OML/cmm/m/it/10.95 T$\OT1/cmr/m/n/10.95 -representation
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1435.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1436.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1441.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1444.
+[29]
+Package mdframed Info: Not enough space on this page on input line 1464.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1464.
+ [30] [31] (./LIEG.aux) ) 
 Here is how much of TeX's memory you used:
- 33204 strings out of 478268
- 668949 string characters out of 5846346
- 1085037 words of memory out of 5000000
- 50558 multiletter control sequences out of 15000+600000
+ 33275 strings out of 478268
+ 670527 string characters out of 5846346
+ 1113037 words of memory out of 5000000
+ 50615 multiletter control sequences out of 15000+600000
  488376 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,18n,120p,10659b,1420s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,19n,120p,10659b,1420s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on LIEG.pdf (29 pages, 322846 bytes).
+Output written on LIEG.pdf (31 pages, 335132 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 276 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 664 PDF objects out of 1000 (max. 8388607)
+ 587 compressed objects within 6 object streams
+ 290 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

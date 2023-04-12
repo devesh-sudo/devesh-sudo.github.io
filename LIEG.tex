@@ -1344,4 +1344,133 @@ where $ w(\Z^{n}) = \Z^{n}  $ for all $ w \in W $. Now $ N_{G}(T)    $ is closed
     \end{pmatrix}g^{-1} \in T \]
     where $ \lambda_{1}, \dots, \lambda_{n} $ are pairwise distinct. This implies $ ge_{i} = z_{i}e_{\sigma(i)} $ for some $ j $,for some $ \sigma \in S_{n} $. Thus $ N(T) $ is a monomial matrix which implies $ N(T) /T \cong S_{n} $. 
  \end{example}
+
+ \section{12 April}
+
+ Let $ G $ be a compact connected Lie group and $ T \subset G $  be a maximal torus. Define $ W = W(G,T) = N_{G}(T) / T $ as the Weyl group of $ G  $ with respect to $ W $. It is finite. 
+
+
+ \begin{align*}
+    RG & \to RT = R(S^{1})^{n} = \Z[ \chi_{1}^{\pm}, \dots, \chi_{n}^{\pm}] , \qquad \chi_{j} : T \to S^{1} \text{ is projection }
+ \end{align*}
+ where $ n $ is the dimension of $ T $ and is called the rank of $ G $. \begin{thm}
+    \begin{enumerate}
+        \item $ RG \hookrightarrow (RT)^{W} $
+        \item Equality holds if $ G $ is simply connected. Here $ RT^{W} = $ fixed ring for the $ W $-action on $ RT $. 
+    \end{enumerate}
+ \end{thm}
+
+ Recall : $ (\pi, V_{\pi}) $, $ (\sigma, V_{\sigma}) $ are isomorphic as $ G $-representation if $ \exists f : V_{\pi} \to V_{\sigma} $ a $ \C $-linear isomorphism such that $ \forall g \in G $, 
+ % https://q.uiver.app/?q=WzAsNCxbMCwwLCJWX3tcXHBpfSJdLFsyLDAsIlZfe1xcc2lnbWF9Il0sWzAsMiwiVl97XFxwaX0iXSxbMiwyLCJWX3tcXHNpZ21hfSJdLFswLDEsImYiXSxbMSwzLCJcXHNpZ21hKGcpIl0sWzIsMywiZiIsMl0sWzAsMiwiXFxwaShnKSIsMl1d
+\[\begin{tikzcd}
+	{V_{\pi}} && {V_{\sigma}} \\
+	\\
+	{V_{\pi}} && {V_{\sigma}}
+	\arrow["f", from=1-1, to=1-3]
+	\arrow["{\sigma(g)}", from=1-3, to=3-3]
+	\arrow["f"', from=3-1, to=3-3]
+	\arrow["{\pi(g)}"', from=1-1, to=3-1]
+\end{tikzcd}\]
+
+Also since $ V_{\pi} $ is determined by its characters $ \chi_{\pi}: G \to \C $ with $ g \mapsto \operatorname{tr}(\pi(g)) $. If $ H \xrightarrow{\theta} G $ is a homomorphism of compact Lie groups then $ \theta $ induces a ring automorphism 
+\[ \theta^{*} : RG \to RH \]
+If $ \theta : G \to G $ is an inner automorphism then $ \theta^{*} = \operatorname{id}_{} : RG \to RG$
+
+
+$ N(T) $ acts on $ T $ via automorphism therefore it acts on $ RT $ via ring automorphism. $ N(T) \subset G$ acts via conjugation inducing identity on $ RG $. Since $ N(T) $ action on $ RT $ passes to $ W $ action on $ RT $, we obtain the first part of the previous theorem. 
+
+
+\begin{example}
+    Consider $ G = U(n) $ with $ T = U(1)^{n} \subset U(n) $, then $ W = S_{n} $ the set of permutation matrices. If $ \sigma \in S_{n} $, viewed as a permutation, then 
+    \[ \sigma\begin{pmatrix}
+        \lambda_{1} & & \\
+        & \ddots & \\
+        & &  \lambda_{n}
+    \end{pmatrix} \sigma^{-1} = \begin{pmatrix}
+    \lambda_{\sigma(1)} & & \\
+    & \ddots & \\
+    & &  \lambda_{\sigma(n)}
+\end{pmatrix}\]
+    and 
+    \begin{align*}
+        RG & \xrightarrow{\sigma^{*}} RT \\
+        \Z[\chi_{1}^{\pm}, \dots, \chi_{n}^{\pm}] & \xrightarrow{\sigma^{*}} \Z[\chi_{1}^{\pm}, \dots, \chi_{n}^{\pm}]
+    \end{align*}
+    with $ \sigma^{*}\chi_{j} = \chi_{\sigma(j)}  $. From this can conclude that the fixed ring is the ring of symmetric polynomials given by \begin{lemma}
+        $ RT^{W} = \Z[\lambda_{1}, \dots, \lambda_{n}, \lambda_{n}^{-1}] $ where $ \lambda_{n}^{-1} = \chi_{1}^{-1} \cdots \chi_{n}^{-1} $. Also 
+        \[ \chi_{1}^{-1}+ \dots , \chi_{n}^{-1} = \frac{\lambda_{n-1}}{\chi_{1} \cdots \chi_{n}} \]
+        
+    \end{lemma}
+    $ U(n) $ operates on $ \C^{n} $ is the standard representation of $ U(n) $. $ \Lambda^{j}(V) $ is also $ U(n) $-representation. 
+    \[ V = \C e_{1} \oplus \dots \oplus \C e_{n} = V_{\chi_{1}} \oplus \dots \oplus V_{\chi_{n}} \]
+    as a $ T $-representation. Therefore $ V = \lambda_{1} \in RT^{W} $ 
+
+    
+    \[ \Lambda^{j}(V) = \sum_{1 \le i_{1} < \dots < i_{j} \le n}^{} V_{i_{1}} \otimes \dots \otimes V_{i_{n}} \]
+    as $ T $-representation. Therefore $ [\Lambda^{j}(V) = \lambda_{j}]  \in RT$ and $ \det V = \Lambda^{n}(V   ) $ as a $ T $-representation is $ V_{1} \otimes \dots \otimes V_{n} $. 
+
+    For $ t \in T $ $ t \cdot (e_{1} \wedge \dots \wedge e_{n}) = t e_{1} \wedge \dots \wedge e_{n}  = \chi_{1}(t) \chi_{2}(t) \dots \chi_{n}(t) e_{1} \wedge \dots \wedge e_{n}$ so $ \Lambda^{n}V = \lambda_{n} $. 
+    
+    Next example done is $ G = SU(n) \subset U(n)$ where 
+    \[  T_{0} = \biggl\{\begin{pmatrix}t_{1} & & \\
+    & \ddots & \\
+    & & t_{n}\end{pmatrix} : \Pi t_{i} = 1 \text{ and } |t_{i}| = 1\biggr\}  \cong (S^{1})^{n-1}\]
+    with $ RT_{0} = \Z[y_{1}^{\pm}, \dots, y_{n}^{\pm}] / \left< y_{1} \cdots y_{n} - 1 \right>  \cong \Z[y_{1}^{\pm}, \dots, y_{n-1}^{\pm}]$
+
+    $ W = W(SU(n), T_{0}) $ and $ W \cong S_{n} $, $ RSU(n) = \Z[\lambda_{1}, \dots, \lambda_{n-1}] = \Z[y_{1}^{\pm}, \dots, y_{n}^{\pm}]^{S_{n}} / \sim $
+
+
+    Next example $ G = \operatorname{SO}(n) $. Let $ n = 2m $, then 
+    \[ T = \begin{pmatrix}
+        (R(\theta_{1})) & & \\
+        & \ddots & \\
+        & & (R(\theta_{n}))
+    \end{pmatrix} \]
+    where $ R(\theta_{j}) = \begin{pmatrix}
+        \cos \theta & - \sin \theta \\
+        \sin \theta & \cos \theta
+    \end{pmatrix} $ is a torus
+
+    \begin{lemma}
+        $ T \subset G = \operatorname{SO}(2m)  $ is a maximal torus. 
+    \end{lemma}
+
+    Let $ V = \R^{2m} = \R^{n}$ be the standard representation of $ \operatorname{SO}(n) $. Write $ V_{j} = \R e_{2j-1} \oplus \R e_{2j} $, $ 1 \le j \le m $. The $ V_{j} $ is a $ T $-representation and $ V = V_{1} \oplus \dots \oplus V_{m} $
+
+    \begin{lemma}
+        If $ g \in \operatorname{SO}(n) $   is such that 
+        \[ gt = tg \]
+        $ \forall g \in G $, then $ g \in T $. 
+    \end{lemma}
+    This is because, $ gV_{j} = V_{j} $ $ \forall j$ and \begin{align*}
+        gtg^{-1}(g(V_{j})) & = g(V_{j}) \\
+        t(g(V_{j})) & = g(V_{j})
+    \end{align*}
+    Therefore,  $ gV_{j} = V_{\sigma(j)} $ for some permutation $ \sigma $ of $ \{1, \dots, m\} $. $ \sigma $ has to be identity : 
+    \[ \sigma \begin{pmatrix}
+        R(\theta_{1}) & & \\
+        & \ddots & \\
+        & & R(\theta_{n})
+    \end{pmatrix} \sigma^{-1} = \begin{pmatrix}
+        R(\theta_{\sigma(1)}) & & \\
+        & \ddots & \\
+        & & R(\theta_{\sigma(n)})
+    \end{pmatrix}\]
+     a lot of calculations . . . 
+
+
+     Write $ RT = \Z[\chi_{1}^{\pm}, \dots, \chi_{m}^{\pm}] $ where $ \chi_{j}: T \to S^{1} $ and $ \chi_{j}(R(\theta_{1}, \dots, \theta_{m})) = e^{2 \pi i \theta_{j}} $
+     Then $ W \cong S_{m} \ltimes \Z_{2}^{m} $. It acts on $ RT $ as follows : $ S_{m}$  permutes $ \chi_{1}, \dots \chi_{m} $ the $ j $th factor of $ \Z_{2} $ interchanges $ \chi_{j} \longleftrightarrow \chi_{j}^{-1} $
+\end{example}
+Let $ Y = V \otimes \C $ be the complexification of the standard representation $ \R^{2n} $ of $ \operatorname{SO}(2m) $ $ \Lambda^{j} Y $, $ 1 \le j \le n $. \begin{align*}
+    * : \Lambda^{j} Y & \to Lambda^{n-j}Y \\
+    e_{i_{1}} \wedge \dots \wedge e_{i_{j}} & \mapsto \pm e_{k_{1}} \wedge \dots \wedge e_{k_{n-j}}
+\end{align*}
+where $ i_{1}< \dots < i_{j} $ and $ k_{1} < \dots < k_{n-j} $. Further, 
+\[ ** = (-1)^{j(n-j)} \]
+so for $ j=m $, $ ** = (-1)^{m^{2}} = (-1)^{m} $ and we get a splitting 
+\[ \Lambda^{m}V = \Lambda_{+}^{m}V \Lambda_{-}^{m}V \]
+where $ \Lambda_{+} $ is itself an $ \operatorname{SO} $ representation. 
+
+
 \end{document}
