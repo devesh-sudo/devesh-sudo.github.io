@@ -20,3 +20,4 @@ Adó
 Haar
 Schur
 Weyl
+Stampacchia
