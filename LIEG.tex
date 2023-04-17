@@ -1472,5 +1472,117 @@ so for $ j=m $, $ ** = (-1)^{m^{2}} = (-1)^{m} $ and we get a splitting
 \[ \Lambda^{m}V = \Lambda_{+}^{m}V \oplus \Lambda_{-}^{m}V \]
 where $ \Lambda_{+} $ is itself has an $ \operatorname{SO} $ representation. 
 
+\section{17 April}
+
+Consider the representation ring $ RSO(2m) $ which acts linearly on $ \R^{2m} $. Denote its complexification by $ V $. 
+\[ \lambda_{1} = [V] \in RSO(2m) \]
+and 
+\[ \lambda_{j} = [\Lambda^{j}V] , \qquad 1 \le j \le m \]
+
+We have the Hodge $ * $ operator 
+\[ * : \Lambda^{j} V \xrightarrow{\sim} \Lambda^{2m-j} \]
+is an isomorphism of $ \operatorname{SO}(2m) $. Also $ ** = (-1)^{m} \operatorname{id}_{V^{m}} $ for $ j = m $. Decompose $ \Lambda^{m} V  $ as $ W^{+} \oplus W^{-} $, $ V^{+}, V^{-} $ are the $ \pm 1$ (or $ \pm i $) are eigenspaces of $ * $. Now let $ g \in G $, \begin{align*}
+    *(gv) & = g * (v) \\
+    & = g(cv) = c g(v) \qquad \forall v \in W^{+}
+\end{align*}
+Therefore $ V^{+}, V^{-} $ are again $ \operatorname{SO}(2m) $ representation. 
+
+\begin{thm}
+    $ RSO(2m) = \Z[ \lambda_{1}, \dots, \lambda_{m-1}, \lambda^{+}, \lambda^{-}] / \sim   \qquad \subset RT = \Z[u_{1}^{\pm 1}, \dots, u_{m}^{\pm 1}]$
+
+    $ \lambda^{\pm} = [W^{\pm}] $
+\end{thm}
+\begin{proof}
+    Recall $ T = (\operatorname{SO}(2))^{m} = \begin{pmatrix}
+        \operatorname{SO}(2) &  & \\
+        & \ddots & \\
+        & & \operatorname{SO}(2)
+    \end{pmatrix} \subset \operatorname{SO}(2m) $
+
+    and $ W = S_{m} \ltimes (\Z_{2})^{m-1} $
+\end{proof}
+
+
+For even dimension, let $ n = 2m+1 $ and let 
+\[ T = \begin{pmatrix}
+    \operatorname{SO}(2) & &  &\\
+    & \ddots & & \\
+    & & \operatorname{SO}(2) \\
+    & & & 1
+\end{pmatrix} \]
+\begin{lemma}
+    $ T \subset \operatorname{SO}(2m+1) $ is a maximal torus. 
+\end{lemma}
+And the Weyl group is $ W = S_{m} \ltimes \Z_{2}^{m} $. 
+\[ RT = \Z[u_{1}^{\pm}, \dots, u_{m}^{\pm}] \]
+and 
+\[ RSO(2m+1) = \Z[\lambda_{1}, \dots, \lambda_{2m}] = RT^{W} \]
+which is a polynomial algebra even though it is not simply connected. 
+Reference : Husemoller and Fulton-Harris. 
+
+
+Now we come to Spin groups. Recall the commutative diagram % https://q.uiver.app/?q=WzAsNCxbMCwwLCJTcGluKG4pIl0sWzIsMCwiU08obikiXSxbMCwyLCJwXi0xKFQpIl0sWzIsMiwiVCJdLFsyLDNdLFszLDEsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzAsMSwicCIsMl0sWzIsMCwiIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XV0=
+\[\begin{tikzcd}
+	{Spin(n)} && {SO(n)} \\
+	\\
+	{p^-1(T)} && T
+	\arrow[from=3-1, to=3-3]
+	\arrow[hook, from=3-3, to=1-3]
+	\arrow["p"', from=1-1, to=1-3]
+	\arrow[hook, from=3-1, to=1-1]
+\end{tikzcd}\]
+
+\begin{lemma}
+    Suppose $ G $ is compact connected Lie group. Then $ Z(G) = \bigcup_{g \in G}gTg^{-1} $, for any maximal torus of $ G $. 
+\end{lemma}
+
+\begin{proof}
+    If $ z \in gTg^{-1} $, then $ z $ commutes with every element of $ gTg^{-1} $. Since $ G = \cup gTg^{-1}$ it follows that $ z $ commutes with any $ x \in G $ ( since $ x \in gTg^{-1} $ for some $ g $). This implies $ \cup gTg^{-1}  \subset Z(G)$. 
+\end{proof}
+
+From this, 
+\[ W(\operatorname{Spin}(n), p^{-1}(T)) \cong W(\operatorname{SO}(n), T) \]
+
+Q : What is $ RT \to R \tilde{T} $ where $ \tilde{T} = p^{-1}(T) $.
+
+Let $ v : (u_{1} \cdots u_{m})^{\frac{1}{2}} : \tilde{T} \to S^{1} $ be the ``unique" (upto conjugation) homomorphism such that $ v^{2} = u_{1} \cdots u_{m} : T \to S^{1} $ where $ u_{i} $ are the projection maps of the torus (previously denoted by $ \chi $) which are characters as well.  
+% https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHRpbGRle1R9Il0sWzIsMiwiU14xIl0sWzAsMiwiVCJdLFsyLDEsInVfMSBcXGNkb3RzIHVfbSJdLFswLDEsIlxcY2hpIl0sWzAsMiwicCJdXQ==
+\[\begin{tikzcd}
+	{\tilde{T}} \\
+	\\
+	T && {S^1}
+	\arrow["{u_1 \cdots u_m}", from=3-1, to=3-3]
+	\arrow["\chi", from=1-1, to=3-3]
+	\arrow["p", from=1-1, to=3-1]
+\end{tikzcd}\]
+
+with $ \ker(p) = \{\pm 1\} $. Then $ R \tilde{T} = \Z[u_{1}^{\pm}, \dots, u_{m}^{\pm}, v] / \sim $ and $ v^{2} = u_{1} \dots u_{m} $ and $ R \tilde{T} \subset \Z [v_{1}^{\pm}, \dots, v_{m}^{\pm}] $ where $ u_{i} = v_{i}^{2} $. 
+
+$ W = W( \operatorname{Spin}(n), \tilde{T}) $ operates on $ R \tilde{T} $ by permuting the suffixes and inventing (even number of ) $ v_{i} \mapsto v_{j}^{-1} $ for $ n = 2m+1 $ ( $ n = 2m $). 
+
+Representation of $ \operatorname{Spin}(n) $  - We have the representations $ \lambda_{1}, \dots, \lambda_{m} $ arising from $ \operatorname{SO}(n) $ representation. $ n = 2m $ or $ n = 2m+1 $. Consider 
+\[ \Delta = \sum_{}^{} v_{1}^{\epsilon_{1}} \dots v_{m}^{\epsilon_{m}}   \in (R \tilde{T})^{W}, \qquad \epsilon_{j} = \pm 1\]
+where $ n = 2m $, then 
+\[ \Delta = \Delta^{+} + \Delta^{-} \]
+where $ \Delta^{+} = \sum_{}^{} v_{1}^{\epsilon} \dots v_{m}^{\epsilon_{m}}  $ with $ \Pi \epsilon_{i} = 1 $ and $ \Delta^{-1}  = \sum_{}^{} v_{1}^{\epsilon} \dots v_{m}^{\epsilon_{m}}  $ with $ \Pi \epsilon_{i} = -1 $
+ 
+\begin{thm}
+    $$ R \operatorname{Spin}(2m) = \Z [\lambda_{1}, \dots, \lambda_{m-2}, \Delta^{+}, \Delta^{-}] $$ is a polynomial algebra. 
+
+
+    $$ R \operatorname{Spin}(2m+1)  = \Z[ \lambda_{1}, \dots, \lambda_{m-1}, \Delta]. $$ 
+\end{thm}
+
+
+Let $ G $ be a compact connected Lie group. Let $ T \subset G $ be a maximal torus. Let $ \fg = \operatorname{Lie}(G) $, viewed as the adjoint representation of $ G $. Restrict it to $ T $. This is a real representation. Since $ T $ is abelian any irreducible representation of $ T $ is either one-dimensional (which is trivial) or two-dimensional, given by a homomorphism 
+\[ \chi : T \to \operatorname{SO}(2) \]
+Therefore 
+\[ \operatorname{Lie}(G) = V_{0} \oplus_{\alpha \in R'} V_{\alpha}  \]
+where $ V_{0}  $ is trivial and $ R' $ consists of non-zero characters.
+
+\begin{lemma}
+    $ \dim V_{0} = \dim T = \operatorname{rank}(G) $. 
+\end{lemma}
+
 
 \end{document}

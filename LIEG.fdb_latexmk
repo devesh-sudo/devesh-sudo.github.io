@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1681300454 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" "LIEG.pdf" "LIEG" 1681300459
-  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" 1681300453 74905 05be9f6c1a19cae46a9290b00645c7d6 ""
+["pdflatex"] 1681725036 "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" "LIEG.pdf" "LIEG" 1681725041
+  "/Users/deveshrajpal/Desktop/devesh-sudo.github.io/LIEG.tex" 1681725036 80425 7b50191ee133f90dafd403b560739233 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -250,9 +250,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1669181550 2826445 8d828e6cb4da87cb9cff131bbe7f6429 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "LIEG.aux" 1681300459 29241 19dd06d02ad4bda1806a8b6f1feb9d72 "pdflatex"
-  "LIEG.tex" 1681300453 74905 05be9f6c1a19cae46a9290b00645c7d6 ""
-  "LIEG.toc" 1681300459 1779 b791090fabe7e09bca02c414179d80cd "pdflatex"
+  "LIEG.aux" 1681725041 30734 6cce8717c169508c329d9dd994ed5eb9 "pdflatex"
+  "LIEG.tex" 1681725036 80425 7b50191ee133f90dafd403b560739233 ""
+  "LIEG.toc" 1681725041 1846 4d7adb299f467c518d40dec8a6c54c2c "pdflatex"
   "quiver.sty" 1674038177 1606 ac24526cc82038afe47d6f803f11170f ""
   (generated)
   "LIEG.aux"

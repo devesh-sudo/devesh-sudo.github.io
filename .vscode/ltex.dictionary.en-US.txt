@@ -21,3 +21,6 @@ Haar
 Schur
 Weyl
 Stampacchia
+Huisken
+Frobenius-Schur
+holomorphic
