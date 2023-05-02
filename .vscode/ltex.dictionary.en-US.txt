@@ -24,3 +24,8 @@ Stampacchia
 Huisken
 Frobenius-Schur
 holomorphic
+neckpinch
+diagonalized
+homeomorphism
+Calabi
+Geovanni
