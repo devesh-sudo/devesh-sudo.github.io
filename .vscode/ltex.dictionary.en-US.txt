@@ -29,3 +29,6 @@ diagonalized
 homeomorphism
 Calabi
 Geovanni
+Huisken-Sinestrari
+noncollapsing
+codimension
