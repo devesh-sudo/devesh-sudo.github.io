@@ -40,3 +40,9 @@ insta
 Lorelai
 cocycle
 Modi
+covectors
+Pointwise
+covector
+observables
+Naber
+mathcal

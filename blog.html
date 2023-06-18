@@ -3,6 +3,13 @@
 <html>
   <head>
     <style>
+      .box {
+      background-color: #f2f2f2;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+    }
 body { background-color: whitesmoke;
 	
 }
@@ -50,11 +57,28 @@ aside {
     </div>
     <nav role="navigation" class="toc">
         <ol>
+          <!--<li><a href="#QM">The Postulates of Quantum Mechanics</a></li> -->
           <!--<li><a href="#Heateq">The heat equation</a></li>-->
         <li><a href="#Why-MCF">Why Mean Curvature Flow</a></li>
         <li><a href="#OnGeometry">On Geometry in General</a></li>
         </ol>
     </nav>
+    <!--<center><h2 id="QM">The Postulates of Quantum Mechanics</h2></center>
+    <center><h3>15th June 2023</h3></center>
+    <p>Nature threw a big tantrum when she decided fundamental laws of the nature are quantum and not classical. I have always struggled with understanding quantum mechanics at axiomatic level. One big jump was that physical observables are not real functions on phase space but rather linear operators on a Hilbert space whose eigenvalues contain information about states.</p> 
+
+    <p>I will be writing down the postulates mainly from the <a href="https://en.wikipedia.org/wiki/Mathematical_formulation_of_quantum_mechanics" target="_blank">Wikipedia</a> page and Gregory Naber's book <i>Quantum Mechanics</i>.</p>
+    <br>
+    <div class="box"><b>Postulate 1</b>. Every isolated quantum system is associated with a separable, complex Hilbert space \(\mathcal{H}\). The pure states of the system are represented by vectors \(\psi \in \mathcal{H}\) with \(|| \psi || = 1 \) and for any complex number \(\alpha\) with \(|\alpha |=1 \), \(\psi\) and \(\alpha \psi\) represent the same state. \(\mathcal{H}\) is called the <i>state space</i>.</div>
+
+    <p>The explanation for separable condition on Wikipedia is that we should be able to determine the system by countably many observables. It's a valid assumption, but things can get so philosophical here. This is the first time I am seeing the mathematics of infinity coming into physical systems where it makes a difference (or not, it's just a model anyway). All \(n\)-dimensional complex Hilbert spaces are isomorphic as are all separable infinite-dimensional complex Hilbert spaces. Usually we will choose \(\mathcal{H}\) as some \(L^2\) space. Also, Naber states that it's not that every unit vector represent a physical state but all states are unit vectors. Composite systems are be tensor products of Hilbert spaces. 
+    </p>
+    <br>
+    <div class="box"><b>Composite systems</b>. The Hilbert space of a composite system is the tensor product of the state spaces.</div>
+    <br>
+    <div class="box"><b>Postulate 2</b>. For a quantum state with Hilbert space \(\mathcal{H}\), every observable is identified with a self-adjoint operator \(A : \mathcal{D}(A) \to \mathcal{H}\) and any possible outcome of a measurement of the observable is a real number which must be a eigenvalue of the operator.</div>
+
+    <p>Examples of observables include energy, momentum, position etc. Also the operators can be unbounded, so need not be continuous.</p>-->
     <!--<center><h2 id="Heateq">The heat equation</h2></center>
     <center><h3>6th June 2023</h3></center>
     It is surprising how a PDE initially modeleded for measuring the transfer of heat in a metal rod has been so successful in mathematics. 
