@@ -743,7 +743,35 @@ This function is constant on conjugacy classes of $ G $. One big theorem I got t
 
 (8/6/23) Today I learned about connections on fiber bundles. So connections can be constructed on any fiber bundle with the vector bundle set up I am used to. The fundamental idea is to get a notion of parrallel transport between two fibres. In fact in fiber bundles case one can even avoid smooth structres.
 
-(13/6/23) Today I went back and learned something about the postulates of Quantum Mechanics. The idea that you need seperable Hilbert spaces to specify you physicsal states and observables are now operators and not not functions is so weird.
+(13/6/23) Today I went back and learned something about the postulates of Quantum Mechanics. The idea that you need separable Hilbert spaces to specify you physical states and observables are now operators and not functions is so weird.
+
+\subsection*{August 2023}
+\quad (17/8/23) Today I learned about transversality of smooth maps into a submanifold. It can be thought of as an extension of regular value. Let $ f :X \to Y $ be a smooth map and let $ Z \subset Y $ be a submanifold of $ Y $. We say $ f $ is \textit{transversal} to $ Z $ if for each $ x \in f^{-1}(Z) $ the following condition holds 
+\[ \operatorname{im}(d f_{x})+ T_{y}(Z)  = T_{y}(Z).\]
+This is denoted by $ f \pitchfork Z $. This condition leads to the property that if $ f $ is transversal to $ Z $ then the preimage $ f^{-1}(Z) $ is also a submanifold of $ X $ with same codimension as $ Z $ (this is easier to check).
+
+When $ f $ is an inclusion map of a submanifold $ i : X \to Y $, the condition becomes for every $ x \in X \cap Z $, 
+\[ T_{x}(X) + T_{x}(Z) = T_{x}(Y) \]
+which is a symmetric condition and we write this as $ X \pitchfork Z $. In Guilleman and Pollack, it is explained that this basically happens when the cutout functions of $ X $ and $ Z $ are independent.
+
+(18/8/23) Today I relearned about steady Ricci solitons and gradient Ricci solitons. 
+
+(27/8/23) Today I relearned about Riemannian curvature tensor as an operator on two-forms. In the context of Ricci flow, this is particularly helpful. It turns out that upto an isometry(a very specific pullback involving Ulhenbeck's trick), the Ricci flow can be simply written as 
+\[ \frac{\partial}{\partial t}(\iota^{*}Rm)  = \Delta_{D}Rm + Rm^{2}+ Rm^{\#}\]
+where $ \iota $ is the pullback, $ Rm^{2} $ is square of $ Rm $ when thinking of as an operator, and $ Rm^{\#} $ is its Lie algebra square. Two corollaries -  \begin{enumerate}
+   \item If the curvature operator is positive, then it remains so during the flow.
+   \item In dimension three, this implies that the flow is diagonal under an orthonormal frame.
+\end{enumerate}
+(28/8/23) Today I learned about Perelman's $ \mathcal{F} $ functional. It is defined on product space of Riemannian metrics and functions by the formula 
+\[ \mathcal{F}(g,f) = \int_{M}(R+ |\nabla f|^{2})e^{-f}dV \]
+where $ R $ is the scalar curvature.
+
+(31/8/23) Today I learned more about Perelman $ \mathcal{F} $  functional. The $ \mathcal{F} $ functional is diffeomorphism invariant and we can construct a functional purely based on metrics out of it. Let $ d \omega $ be a fixed measure, then for a given metric $ g $ by Radon-Nikodym we can consider the function $ f = \log ( \frac{d \mu(g)}{d \omega}) $ and composing it with $ \mathcal{F} $, we get a functional $ \mathcal{F}^{m} : \mathfrak{Met} \to \R $, 
+\[ \mathcal{F}^{m}(g) = \mathcal{F}\left(g, \log \left( \frac{d \mu(g)}{d \omega}\right)\right) = \int_{M} (R+|\nabla f|^{2})d \omega. \]
+
+Perelman proves that the gradient flow of this functional is upto a diffeomorphism same as the Ricci flow coupled with an evolution equation of $ f $. Further since this is a gradient flow, this quantity is monotonic and by diffeomorphism invariance of the functional we further get that it is monotonic under Ricci flow too! So if $ (g(t),f(t)) $ is a solution of the coupled Ricci flow, then 
+\[ \frac{d}{dt} \mathcal{F}(g(t),f(t)) = 2 \int_{M} |R_{ij}+ \nabla_{i}\nabla_{j}f|^{2} e^{-f}d \mu \ge 0. \]
+
  \end{document}
 
 
