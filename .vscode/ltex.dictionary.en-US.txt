@@ -56,3 +56,7 @@ Kapoor
 Gopal
 starrer
 transversality
+Ricci
+monotonicity
+diffeomorphically
+soliton

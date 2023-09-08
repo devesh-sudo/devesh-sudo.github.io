@@ -772,6 +772,20 @@ where $ R $ is the scalar curvature.
 Perelman proves that the gradient flow of this functional is upto a diffeomorphism same as the Ricci flow coupled with an evolution equation of $ f $. Further since this is a gradient flow, this quantity is monotonic and by diffeomorphism invariance of the functional we further get that it is monotonic under Ricci flow too! So if $ (g(t),f(t)) $ is a solution of the coupled Ricci flow, then 
 \[ \frac{d}{dt} \mathcal{F}(g(t),f(t)) = 2 \int_{M} |R_{ij}+ \nabla_{i}\nabla_{j}f|^{2} e^{-f}d \mu \ge 0. \]
 
+\subsection*{September 2023}
+\quad (4/9/23) Today I learned about Perelman's theorem on breathers. A metric $ g_{ij}(t) $ evolving by the Ricci flow is called a \textbf{breather} if there exists $ t_{1}< t_{2} $ and $ \alpha >0 $ such that the metrics $ \alpha g_{ij}(t_{1}) $ and $ g_{ij}(t_{2}) $ differ only by diffeomorphism. The cases $ \alpha =1, \alpha <1, \alpha >1 $ correspond to \textbf{steady}, \textbf{shrinking}, and \textbf{expanding breathers} respectively. 
+
+Using the monotonicity of functional $ \mathcal{F}$, Perelman proved two results regarding the first two breathers - \begin{enumerate}
+   \item A steady breather is necessarily a steady gradient soliton.
+   \item An expanding breather is necessarily an expanding gradient soliton.
+\end{enumerate}
+
+(6/9/23) Today I learned about Perelman's $ \mathcal{W} $ functional. It is more involved functional defined on $ \mathfrak{Met} \times C^{\infty}(M) \times \R^{+} \to \R $ as 
+\begin{align*}
+   W(g,f, \tau) &= \int_{M} (\tau(R+ |\nabla f|^{2})+ f-n )u d \mu \\
+   & = \frac{1}{(4 \pi \tau)^{\frac{n}{2}}} \left(\tau \mathcal{F}(g,f)+ \int_{M}(f-n)e^{-f}d \mu\right)
+\end{align*}
+where $ u = (4 \pi \tau)^{\frac{-n}{2}}e^{-f} $. Like $ \mathcal{F} $ functional this is also diffeomorphism invariant so its gradient flow which is diffeomorphically similar to Ricci flow yields a monotonicity formula for Ricci flow.
  \end{document}
 
 
