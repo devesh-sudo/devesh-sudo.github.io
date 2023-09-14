@@ -756,7 +756,7 @@ which is a symmetric condition and we write this as $ X \pitchfork Z $. In Guill
 
 (18/8/23) Today I relearned about steady Ricci solitons and gradient Ricci solitons. 
 
-(27/8/23) Today I relearned about Riemannian curvature tensor as an operator on two-forms. In the context of Ricci flow, this is particularly helpful. It turns out that upto an isometry(a very specific pullback involving Ulhenbeck's trick), the Ricci flow can be simply written as 
+(27/8/23) Today I relearned about Riemannian curvature tensor as an operator on two-forms. In the context of Ricci flow, this is particularly helpful. It turns out that upto an isometry(a very specific pullback involving Uhlenbeck's trick), the Ricci flow can be simply written as 
 \[ \frac{\partial}{\partial t}(\iota^{*}Rm)  = \Delta_{D}Rm + Rm^{2}+ Rm^{\#}\]
 where $ \iota $ is the pullback, $ Rm^{2} $ is square of $ Rm $ when thinking of as an operator, and $ Rm^{\#} $ is its Lie algebra square. Two corollaries -  \begin{enumerate}
    \item If the curvature operator is positive, then it remains so during the flow.
@@ -780,13 +780,24 @@ Using the monotonicity of functional $ \mathcal{F}$, Perelman proved two results
    \item An expanding breather is necessarily an expanding gradient soliton.
 \end{enumerate}
 
-(6/9/23) Today I learned about Perelman's $ \mathcal{W} $ functional. It is more involved functional defined on $ \mathfrak{Met} \times C^{\infty}(M) \times \R^{+} \to \R $ as 
+(6/9/23) Today I learned about Perelman's $ \mathcal{W} $ functional. It is more involved functional defined on $\mathcal{W} : \mathfrak{Met} \times C^{\infty}(M) \times \R^{+} \to \R $ as 
 \begin{align*}
-   W(g,f, \tau) &= \int_{M} (\tau(R+ |\nabla f|^{2})+ f-n )u d \mu \\
+  \mathcal{W} (g,f, \tau) &= \int_{M} (\tau(R+ |\nabla f|^{2})+ f-n )u d \mu \\
    & = \frac{1}{(4 \pi \tau)^{\frac{n}{2}}} \left(\tau \mathcal{F}(g,f)+ \int_{M}(f-n)e^{-f}d \mu\right)
 \end{align*}
 where $ u = (4 \pi \tau)^{\frac{-n}{2}}e^{-f} $. Like $ \mathcal{F} $ functional this is also diffeomorphism invariant so its gradient flow which is diffeomorphically similar to Ricci flow yields a monotonicity formula for Ricci flow.
- \end{document}
+
+
+(9/9/23) Today I learned about the $ \mu $ functional minimizing the $ \mathcal{W} $ functional, which is like $ \lambda $ functional minimizing $ \mathcal{F} $ functional. It is defined as 
+\[ \mu(g, \tau) = \inf \{\mathcal{W}(g,f, \tau) | f \in C^{\infty}(M) \text{ is compatible with }g \text{ and } \tau\} \]
+where we say that $ f $ is compatible with $ (g, \tau) $ if 
+\[ \int_{M} (4 \pi \tau)^{- \frac{n}{2}}e^{-f}d \mu = \int_{M} u d \mu = 1.\]
+
+From some really involved elliptic PDE theory, Andrews-Hopper's book proves that $ \mu $ has a smooth minimizer. Then from the monotonicity of $ \mathcal{W} $ one can prove that $ \mu $ is monotonous as well (the compatibility of a minimizer function is preserved under Ricci flow). The monotonicity of $ \mu $ can be used to prove that shrinking breather are necessarily a gradient shrinking soliton. Thus we have proved that every breather is actually a gradient soliton.
+
+(13/9/23) Today I learned about Curve shortening flow (CSF), the one-dimensional version of MCF. The flow is simpler than MCF and it being in one-dimension makes some computations easier or intuitive. Like MCF it obeys avoidance principle and preserve embeddedness. For the proof of embeddedness in the book \textit{Extrinsic Geometric Flows}  Andrews et al. prove a maximum principle for a two-variable distance function. 
+
+\end{document}
 
 
 
