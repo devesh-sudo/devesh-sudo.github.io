@@ -797,6 +797,16 @@ From some really involved elliptic PDE theory, Andrews-Hopper's book proves that
 
 (13/9/23) Today I learned about Curve shortening flow (CSF), the one-dimensional version of MCF. The flow is simpler than MCF and it being in one-dimension makes some computations easier or intuitive. Like MCF it obeys avoidance principle and preserve embeddedness. For the proof of embeddedness in the book \textit{Extrinsic Geometric Flows}  Andrews et al. prove a maximum principle for a two-variable distance function. 
 
+(16/9/23) Today I learned about convex ancient solutions of the CSF. I am trying to read a paper by Theodora et al. which classifies convex ancient solutions of CSF. In the beginning we are dealing with asymptotics of a given solution. Let $ \Gamma : (-\frac{\pi}{2}, \frac{\pi}{2}) \times (- \infty, 0) \to \R^{2} $ be a convex, non-compact ancient solution in the angle turning parametrization bounded in the strip $ |x|< \frac{\pi}{2} $ and contained in no smaller strip. Then for any $ s<0 $, the spacetime translated curve 
+\[ \Gamma^{s}(\theta, t) \coloneqq \Gamma(\theta, t+s) - \Gamma(0,s) \]
+is also a solution of the CSF with $ \Gamma^{s}(0,0) = 0 $. Using Harnack inequality and classification of translating solutions to CSF, they prove that 
+\[ \lim_{s \to -\infty} \Gamma^{s}(\theta,t) = rG(\theta, r^{-2}t) \]
+converges locally uniformly in the smooth topology where $ G(\theta,t)  = (\theta, t+\log \sec (\theta))$ is the Grim reaper solution and $ r = lim_{s \to -\infty} \kappa^{-1}(0,s)$.
+
+One interesting point in the proof is that in the limit, the curvature doesn't depend on time, so it is a translating solution after which they use the classification result.
+
+(17/9/23) Today I learned more about convex ancient solutions of CSF. Continuing the paper, a convex ancient solutions sweeps out the strip $ |x| < \frac{\pi}{2} $. The proof relies on the fact that in the limit $ t \to - \infty $, we have $ \kappa \to \kappa_{-\infty} >0 $.
+
 \end{document}
 
 

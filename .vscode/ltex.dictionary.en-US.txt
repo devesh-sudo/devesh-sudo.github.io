@@ -60,3 +60,4 @@ Ricci
 monotonicity
 diffeomorphically
 soliton
+Harnack
