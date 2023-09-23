@@ -807,6 +807,15 @@ One interesting point in the proof is that in the limit, the curvature doesn't d
 
 (17/9/23) Today I learned more about convex ancient solutions of CSF. Continuing the paper, a convex ancient solutions sweeps out the strip $ |x| < \frac{\pi}{2} $. The proof relies on the fact that in the limit $ t \to - \infty $, we have $ \kappa \to \kappa_{-\infty} >0 $.
 
+(22/9/23) Today I learned about estimates of derivatives of harmonic function on an open set in $ \R^{n} $. If $ \alpha $ is a mutlindex of norm $ k $, then 
+\[ |D^{\alpha} u (x_{0}) \le \frac{C_{k}}{r^{n+k}}||u||_{L^{1}(B(x_{0},r))} \]
+for each $ B(x_{0},r) $ in the domain. Here 
+\[ C_{0} = \frac{1}{\alpha(n)} , \qquad C_{k} = \frac{(2^{n+1}nk)^{k}}{\alpha(n)} \qquad (k = 1, \dots)\]
+are dimensional constants. The proof is by induction ($ D^{\alpha}u $ is also harmonic if $ u $ is) and using the mean value property on $ B(x_{0}, \frac{r}{k}) $ to get 
+\[ |D^{\alpha}(x_{0})| \le \frac{nk}{r} ||D^{\beta}u||_{L^{\infty}( \partial B(x, \frac{r}{k}))} \]
+where $ \alpha = \beta + e_{i} $ for some $ i $. Now if $ x \in B(x_{0}, \frac{r}{k}) $ then $ B(x, \frac{(k-1)}{k}r)  \subset B(x_{0},r)$ and by using the induction hypothesis we get a bound. 
+
+The arbitrary radius in small ball argument indicates the constants might not be sharp.
 \end{document}
 
 
