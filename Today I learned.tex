@@ -808,14 +808,23 @@ One interesting point in the proof is that in the limit, the curvature doesn't d
 (17/9/23) Today I learned more about convex ancient solutions of CSF. Continuing the paper, a convex ancient solutions sweeps out the strip $ |x| < \frac{\pi}{2} $. The proof relies on the fact that in the limit $ t \to - \infty $, we have $ \kappa \to \kappa_{-\infty} >0 $.
 
 (22/9/23) Today I learned about estimates of derivatives of harmonic function on an open set in $ \R^{n} $. If $ \alpha $ is a mutlindex of norm $ k $, then 
-\[ |D^{\alpha} u (x_{0}) \le \frac{C_{k}}{r^{n+k}}||u||_{L^{1}(B(x_{0},r))} \]
+\[ |D^{\alpha} u (x_{0})| \le \frac{C_{k}}{r^{n+k}}||u||_{L^{1}(B(x_{0},r))} \]
 for each $ B(x_{0},r) $ in the domain. Here 
 \[ C_{0} = \frac{1}{\alpha(n)} , \qquad C_{k} = \frac{(2^{n+1}nk)^{k}}{\alpha(n)} \qquad (k = 1, \dots)\]
 are dimensional constants. The proof is by induction ($ D^{\alpha}u $ is also harmonic if $ u $ is) and using the mean value property on $ B(x_{0}, \frac{r}{k}) $ to get 
 \[ |D^{\alpha}(x_{0})| \le \frac{nk}{r} ||D^{\beta}u||_{L^{\infty}( \partial B(x, \frac{r}{k}))} \]
 where $ \alpha = \beta + e_{i} $ for some $ i $. Now if $ x \in B(x_{0}, \frac{r}{k}) $ then $ B(x, \frac{(k-1)}{k}r)  \subset B(x_{0},r)$ and by using the induction hypothesis we get a bound. 
 
-The arbitrary radius in small ball argument indicates the constants might not be sharp.
+The arbitrary radius in the small ball argument indicates the constants might not be sharp.
+
+(26/9/23) Today I learned about Green's function. It is useful for solving Poisson's equation for a bounded domain. Using the method solving Poisson's equation reduces to constructing a Green's function for the given domain (which can be difficult).
+
+(29/9/23) Today I learned about stochastic process. A general idea is that a stochastic process is a family of random variables $ X(t) $ indexed by time (can be discrete or continuous). The question is how to make sense of the continuity of  $ t \mapsto X(t) $ when $ t $ takes values from an interval in $ \R $. There are various ways to define this continuity, some stronger than others. We say that $ X(t) $ is \textbf{continuous with probability one} at $ t $ if 
+\[ \textbf{P}  \left( \{\omega \in \Omega \big|  \lim_{s \to t} |X(s)- X(t)| = 0 \}\right)= 1  \]
+ where $ \Omega $ is the sample space. The family $ X(t) $ is said to be \textbf{continuous in probability} at $ t $ if, for all $ \epsilon >0 $, 
+ \[ \lim_{s \to t} \textbf{P} \left( \{ \omega \in \Omega \big| |X(s)- X(t)| \ge \epsilon \}\right) = 0.  \]
+
+ Conintuity with probability one implies continuity in probability but I haven't read the proof. Also, it can be useful to think of an element $ \omega \in \Omega $ as a particle and the function $ t \mapsto X(t) $ as its path. 
 \end{document}
 
 
