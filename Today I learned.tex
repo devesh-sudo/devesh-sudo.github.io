@@ -274,7 +274,7 @@ So to prove L\"{u}roth's theorem we need to find an element $u \in E$ such that 
 (14/5/20) Today I learned about Jacobi's formula on derivative of determinant of a matrix. Suppose $A(t)\in M_n(\mathbb{R})$ with entries $a_{ij}(t)$ which are differentiable function of $t$. Then $$\frac{d}{dt} \det(A(t)) = \text{tr} \left(  \text{adj}(A(t))\frac{d}{dt}(A(t))\right) $$
 The proof is based on expanding $\det(A(t))$ in a row with adjoint factors and using formula of trace for product of matrices.
 
-This was used for deriving a formula for Laplacian of a $C^2$ function $f$ on a smooth Riemannian manifold $(M,g)$. The formula is $$\Delta f = (\frac{1}{\sqrt{g}})\sum_{j,k} \partial_j(g^{jk}\sqrt{g}\,\partial_k f)$$
+This was used for deriving a formula for Laplacian of a $C^2$ function $f$ on a smooth Riemannian manifold $(M,g)$. The formula is $$\Delta f = \frac{1}{\sqrt{g}}\sum_{j,k} \partial_j(g^{jk}\sqrt{g}\,\partial_k f)$$
 I am learning spectra of Laplacian from the text \textit{Eigenvalues in Riemannian Geometry} by Issac Chavel.
 
 (17/5/20) Today I somewhat understood how the proof of homotopy axiom works for singular homology. From Akhil Mathew's \href{https://amathew.wordpress.com/2010/09/11/the-method-of-acyclic-models/}{blogpost} I got a vague idea of the method of acyclic models. In the singular homology case the simplexes $\Delta^n$ serves as model objects in the category of topological spaces because of the way singular homology is defined. The proof the homotopy axiom is broken into two parts - first proving it for simplexes(models) and then extending it by using some natural transformations. This approached is generalized in acyclic model theorem.
@@ -825,6 +825,37 @@ The arbitrary radius in the small ball argument indicates the constants might no
  \[ \lim_{s \to t} \textbf{P} \left( \{ \omega \in \Omega \big| |X(s)- X(t)| \ge \epsilon \}\right) = 0.  \]
 
  Conintuity with probability one implies continuity in probability but I haven't read the proof. Also, it can be useful to think of an element $ \omega \in \Omega $ as a particle and the function $ t \mapsto X(t) $ as its path. 
+
+\subsection*{October 2023}
+\quad (16/10/23) Today I learned about CMC (constant mean curvature) surfaces. Let $ U \subset \R^{n} $ be a bounded open set with $ C^{2} $ boundary and $ f \in C^{2}( \partial U) $, $ u \in C^{2}(U) \cap C ( \overline{U})$. Suppose the graph of the function $ u : U \to \R $ in $ \R^{n+1} $ when subjected to a volume constraint and required to be $ f $ on the boundary is an area minimizer, then it is a CMC surface.
+
+I also learned about Hopf boundary point lemma for elliptic PDEs.
+
+(31/10/23) Today I learned how Brendle's paper on sharp bound on the inscribed curvature is related to the convexity estimates of mean-convex MCF. The smallest principal curvature $ \kappa_{1} $ can be considered like a local exscribed radius bound and similarly the largest principal curvature can be considered like a local inscribed radius bound. Let $ k(x) $ be the inscribed curvature (inverse of the radius of the largest sphere inside the hypersurface touching it at $ x $), and $ \rho(x) $ be the exscribed curvature. These function contain global data and not surprisingly are shaper than the local data, particularly 
+\[ -\rho(x) \le \kappa_{1}(x) \le \dots \le \kappa_{n} \le k(x).\]
+
+Convexity estimates imply that for every $ \epsilon >0  $ there exists a constant $ C_{\epsilon} $ such that 
+\[ \frac{\kappa_{1}}{H} \ge -\epsilon \]
+whenever $ H \ge C_{\epsilon} $. Brendle's result improves this to sharper result that for every $ \epsilon >0 $ there exists a constant $ C_{\epsilon} $ such that 
+
+\[ \frac{\rho}{H} \le \epsilon \quad  \text{ or } \quad  - \frac{\rho}{H} \ge - \epsilon  \]
+whenever $ H \ge C_{\epsilon} $. Asymptotically this means that under MCF the hypersurface is becoming convex and its limit will be weakly convex, as proved by convexity estimates. However we can't conclude convexity estimates from Brendle's results since he needs convexity estimates to prove this. 
+
+Also, the theme of Stampacchia iteration is similar in the spirit of convexity estimates. The function this time is 
+\[ f_{\sigma} = \left(k - (1+ \delta)H\right)H^{\sigma-1} \]
+and with steps similar to the proof of convexity estimates, there exists a constant $ c_{0} $, such that 
+\[ \frac{d}{dt} \left( \int_{M_{t}}f_{\sigma,+}^{p} d \mu\right) \le 0 \]
+whenever $ p \ge c_{0} $ and $ \sigma \le (c_{0}p)^{-\frac{1}{2}} $.
+
+\subsection*{November 2023}
+\quad(5/11/23) Today I learned more about the Brendle's sharp inscribed curvature bound proof. 
+
+\subsection*{January 2024}
+\quad(10/1/24) Today I learned about minimal surfaces from Colding and Minicozzi's book. It started with proving that graphical solution of minimal surfaces is area-minimizing, not just critical of area functional. There are plenty of examples of minimal surfaces mentioned in the book and it seems to be a goal to classify all minimal surfaces under good assumptions.
+
+Another good result covered is that proposition that any compact minimal submanifold in Euclidean space is contained in the convex hull of it's boundary. So for example in reverse if we cut any part of helicoid/catenoid then the minimal surface it is easy to visualize that the minial surface interior is contained in the convex hull of boundary present.
+
+(14/1/24) Today I learned about minimal surfaces. We can define a mean curvature vector for a any general submanifold (not just a hypersurface). It lives on the normal space and the definition matches with classical one when specialized to hypersurface. After calculating the first variation of volume of a submanifold it is easy to see that a submanifold immersed in Euclidean space is minimal if and only if the coordinate functions are harmonic in the induced metric.
 \end{document}
 
 
