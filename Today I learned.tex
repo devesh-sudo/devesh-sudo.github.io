@@ -741,7 +741,7 @@ This function is constant on conjugacy classes of $ G $. One big theorem I got t
 
 (2/6/23) Today I learned about principal bundles over $ S^{n} $. The principal bundles over $ S^{n} $ are in one-to-one correspondence with the homotopy group $ \pi_{n-1}(S^{n}) $. We can do this by covering $ S^{n} $ by two disks covering North and South Pole and having equator $ S^{n-1} $ in the intersection. Then we just need to specify the transition function which will be like a map $ S^{n-1} \to G $. 
 
-(8/6/23) Today I learned about connections on fiber bundles. So connections can be constructed on any fiber bundle with the vector bundle set up I am used to. The fundamental idea is to get a notion of parrallel transport between two fibres. In fact in fiber bundles case one can even avoid smooth structres.
+(8/6/23) Today I learned about connections on fiber bundles. So connections can be constructed on any fiber bundle with the vector bundle set up I am used to. The fundamental idea is to get a notion of parallel transport between two fibres. In fact in fiber bundles case one can even avoid smooth structures.
 
 (13/6/23) Today I went back and learned something about the postulates of Quantum Mechanics. The idea that you need separable Hilbert spaces to specify you physical states and observables are now operators and not functions is so weird.
 
@@ -861,9 +861,67 @@ Another good result covered is that proposition that any compact minimal submani
 \[ \psi_{U} : \pi^{-1}(U) \to U \times \R^{n} .\]
 Then $ \psi (D_{x}) $ is a subspace of $\R^{n}$ at each point. We can consider invertible linear maps $ T_{x} : \R^{n}  \to \R^{n}$ such that $ T_{x}(\psi(D_{x})) = \R^{d} \subset \R^{n} $, with last $ n-d $ coordinates zero.  Then $ (id \times T_{x}) \circ\psi $ can be considered a chart for $ D $.
 
+\subsection*{February 2024}
+\quad(1/2/24) Today I learned about the Yang-Mills functional. Given a vector bundle $ E $ equipped with metric over real manifold $ M $, the Yang-Mills functional operates on the space of all metric connections on $ E $ and is given by 
+\[ YM(D) = \int_{M} \langle F_{D},F_{D} \rangle d \mu, \]
+where $ F_{D} $ denotes the curvature of connection $ D $. Let $ D^{*} $ denote the adjoint of $ D $, then the Euler-Lagrange equation of this functional is 
+\[ D^{*}F_{D} = 0 \]
+which is called the Yang-Mills equation.
 
+(4/2/24) Today I learned the geometric way of combining the Maxwell's equations. Let $ \textbf{E}  $ and $ \textbf{B}  $ denote electric and magnetic field in space respectively. Let $ \rho $ denote the charge density and $ \textbf{j} $ denote the current density. Then the Maxwell equations read 
+\begin{align*}
+   \nabla \cdot \textbf{B}  &= 0 \\
+   \nabla \times \textbf{E} + \frac{\partial \textbf{B}}{ \partial t} &= 0 \\
+   \nabla \cdot \mathbf{E} &= \rho \\
+   \nabla \times \mathbf{B} - \frac{\partial \mathbf{E}}{\partial t} & = \mathbf{j}.
+\end{align*}
+
+The first two can be cast in the language of differential forms by an easy observation. If $ \mathbf{B} = (B_{x}, B_{y},B_{z}) $ and likewise for $ \mathbf{E} $, then 
+\[ B = B_{x}dy\wedge dz+B_{y}dz \wedge dx+ B_{z} dx \wedge dy\]
+is a two-form which satisfies $ dB=0 $ and 
+\[ E = E_{x}dx +E_{y}dy + E_{z}dz \] is a one-form which satisfies $ dE = 0 $. Bringing the time coordinate, we can define an electromagnetic two-form 
+\[ F = B + E \wedge dt. \]
+Then the two equations can be combined to give $ dF = 0 $. Take the diagonal Minkowski metric with $ g(\partial_{0},\partial_{0}) = -1 $ and $ g(\partial_{i},\partial_{i}) = 1 $ for $ i = 1,2,3 $. This defines a Hodge star operator and the last two Maxwell equations are equivalent to 
+\[ \star d \star F = J \]
+where $ J = j_{x}dx+j_{y}dy+j_{z}dz - \rho dt $.
+
+(7/2/24) Today I learned about electromagnetism as a Yang-Mills theory, connecting the last two posts. %Over the flat bundle $ \R^{4} $, any connection can be written as the standard flat connection and a vector potential (the extra $ A $ term is called vector potential by physicists?) %\[ D_{\mu} = \partial_{\mu}+ A_{\mu}.\]%Remember we had gauge freedom in the Yang-Mills equation and the Bianchi identity, that is if $ F=dA $, then we have freedom to add a $ df $ term in $ A $. In the spactime coordinates this allows to choose $ 1 $-form $ A $ such that $ A(\partial_{t}) =0$ which is called temporal gauge.
+The main thing here is that $ F $ as a curvature is $ \R $ valued two-form. I don't completely understand what $ U(1) $ symmetry for electromagnetic field is supposed to be but its Lie algebra is abelian. Hence the second term in the expression 
+\[ F_{\alpha \beta} = \partial_{\alpha}A_{\beta} - \partial_{\beta}A_{\alpha} + [A_{\alpha}, A_{\beta}] = \partial_{\alpha}A_{\beta} - \partial_{\beta}A_{\alpha} \]
+vanishes and $ F = dA $.
+
+(16/2/24) Today I learned about Spin representation. The unit quaternions form a group which is isomorphic to $ SU(2) $ and topologically is $ S^{3} $. It acts on $ \C^{2} $ as the standard representation which is called the spin representation. The name possibly comes from physics I guess. It turns out $ SO(3) $ isn't quite the symmetry group of an electron. The physics explanation comes from Stern-Gerlach experiment which demonstrates need for an additional variable, physicists call \textit{spin}. An electron beam rotated $ 360^{\circ} $ isn't the same but a $ 720^{\circ} $ beam has same properties as the unrotated beam. For some fortunate reason, this can be resolved by considering the group $ SU(2) $ as the symmetry group since its a double cover of $ SO(3) $. Purely mathematically it makes sense to go to $ SU(2) $ but psychologically it gets very difficult to digest. Topology describes that there are two non-homotopic paths to reach any non-identity element $A \in SO(3) $.
+
+(17/2/24) Today I learned about the classification of irreducible $ SU(2) $ representations. They can be completely classified and for every dimension $ n $, there exists only one irreducible representation on $ \C^{n} $. The idea is to consider $ U(1) \hookrightarrow SU(2)$ and break down any $ SU(2) $ rep into the irreducible components of $ U(1) $ rep. Then from the Lie algebra $ \mathfrak{sl}(2,\C) $ which is complexified Lie algebra $ \mathfrak{su}(2) $, we can construct operators which moves the vectors in the eigenstates of $ U(1) $ rep to a higher or lower eigenstate (at Lie algebra level $ U(1) $ rep produces eigenstates of integer values only). The idea of breaking down the components using $ U(1) $ inside Lie groups seems to be important. Infact,  as $ T^{n} = U(1) \times \dots \times U(1) $ is abelian, Schur's lemma tells us that the only irreducible rep are one dimensional so we can look for tori inside Lie groups and use to study representations. The eigenvalues of representation also have some symmetry since there are various ways tori sits inside the Lie group however the eigenvalues are invariant.
+
+(22/2/24) Today I learned about quantization in quantum mechanics. Roughly speaking it is thought as a technique to seek quantum mechanics observables from a classical mechanics satisfying certain rules. Dirac observed that the Poisson bracket of classical mechanics is similar to Heisenberg commutation relations. This led to general philosophy(?) that one should seek a map from set of functions space of phase space to observables on the quantum Hilbert space. After all, the position, momentum and energy (Hamiltonian) operators have such construction.
+
+(23/2/24) Today I learned about Heisenberg lie algebra and Schrödinger representation. Heisenberg commutation relation is given by 
+\[ [X,P] = i \hbar \operatorname{id}_{} \]
+
+(24/2/24) Today I tried to learn about the path integral formulation of quantum mechanics. Woit mentions in his book that the idea is to create a Lagrangian formalism of quantum mechanics. But the whole idea of getting a Lagrangian from the propagator is a little confusing. Assuming a lot of hand-waving he arrives at an action integral which I couldn't understand. 
+
+\subsection*{March 2024}
+\quad(3/3/24) Today I learned about symplectic formulation of classical mechanics. Let $ N $ be the configuration space thought of as the position space for say, $ k $-system of particles. It could be $ \R^{3k} $ or some submanifold of it under constrained motion. Then the cotangent bundle, $ T^{*}N $ is thought of as total phase space where the covectors coordinates is momentum of the system. $ T^{*}N $ naturally comes with a one-form, $ \omega $ defined by 
+\[ \omega(v_{\phi}) = \phi(\pi_{*}v) \]
+where $ \phi \in T^{*}N $ is the point where the vector $ v $ is considered. The two-form $ d \omega $ is closed and non-degenerate, thus $ (T^{*}N, d \omega) $ is a symplectic manifold. Consider a Hamiltonian function on $ T^{*}N $ as 
+\[ H = \frac{1}{2} \langle \phi, \phi \rangle + V(\pi_{*}\phi) \]
+where $ \langle \cdot, \cdot \rangle $ is some Riemannian metric, used for mass units. The Hamiltonian $ H $ generates a Hamiltonian vector field $ X_{H} $ which generates the time-flow of symplectomorphisms. That is, $ \Phi : T^{*}N \times (-\epsilon, \epsilon) \to T^{*}N $ is the time translation function of the phase space so $ \Phi(t,(p,v)) $ is the position-momentum vector of the state after time $ t $.
+
+(4/3/24) Today I learned about the Lagrangian of a particle in an electromagnetic field. The action integral should be Lorentz-invariant, and Folland takes the simplest one as 
+\[ S = \int_{(t_{0},\textbf{x}_{0} )}^{(t_{1},\textbf{x}_{1} )}(-m ds - qA_{\mu}dx^{\mu}) \]
+where $ ds^{2} = c^{2}dt^{2}-dx^{2}-dy^{2}-dz^{2} $ is the Lorentz metric and $ A_{\mu} = (\phi, \textbf{A} ) $ is the electromagnetic $ 4 $-potential. The ratio of the different integrand ($ ds $ and $ A_{\mu} $) is kept to ultimately derive the Lorentz force law. Using $ \textbf{v} = \frac{d \textbf{x} }{dt}  $, we can obtain the Lagrangian as 
+\[ L = -m\sqrt{1-|\textbf{v}|^{2}}+ \textbf{q}\cdot \textbf{v}-q \phi .  \]
+
+Folland then goes on to describing the corresponding Lagrangian for a field.
+
+%(5/3/24) Today I learned why the observables in quantum mechanics are associated with self-adjoint operators. There is a celebrated theorem of von Neumann describing the correspondence between projection valued measures and self-adjoint operators on a Hilbert space. The proof seems out of reach and unmotivated for now but its good to know the correspondence atleast.
+
+\subsection*{April 2024}
+\quad(8/4/24) Today I learned about self-similar solution of the $ \alpha $-Gauss flow. Consider a very general anisotropic flow given by
+\[ \frac{dx}{dt} = - \rho(\nu_{x})K^{\alpha}_{x}\nu_{x}. \]
+Then the self similar solutions are obtained by the formula 
+\[ \left< x,\nu_{x} \right> = c\rho K^{\alpha} \]
+for some $ c>0 $.
 
 \end{document}
-
-
-

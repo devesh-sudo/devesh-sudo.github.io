@@ -57,12 +57,41 @@ aside {
     </div>
     <nav role="navigation" class="toc">
         <ol>
+          <!--<li><a href="#Spin">Spin in Quantum Mechanics</a></li>
+          <li><a href="#QM">Road to Quantum Mechanics</a></li>
+          <li><a href="#Gaugetheory">A look into Gauge Theory</a></li>-->
           <!--<li><a href="#QM">The Postulates of Quantum Mechanics</a></li> -->
           <!--<li><a href="#Heateq">The heat equation</a></li>-->
         <li><a href="#Why-MCF">Why Mean Curvature Flow</a></li>
         <li><a href="#OnGeometry">On Geometry in General</a></li>
         </ol>
-    </nav>
+   <!--</nav><center><h2 id="Spin">Spin in Quantum Mechanics</h2></center>
+    <center><h3>20th Feb 2024</h3></center>
+    <p>The spin variable had confused me for long enough in my undergrad when I studied QM. A majority of it boils down to the fact that \(SO(3)\) has fundamental group \(\mathbb{Z}_2\) and \(SU(2)\) which is topologically \(S^3\) serves as double cover. So given a rotation matrix \(A \in SO(3)\), there are two non-homotopic paths from identity to \(A\). Also, looping a path twice gives a trivial loop in the fundamental group. Stern-Gerlach experiment demonstrates the need to distinguish these paths which leads to hypothesis that electrons have an internal angular momentum </p>
+    <center><h2 id="QM">Road to Quantum Mechanics</h2></center>
+    <center><h3>20th Feb 2024</h3></center>
+    <p>The aim here is to mark my progress in Quantum Mechanics. Again, I have been wanting to back to learn some QM and pick up some QFT. Hopefully I can mark some decent progress this time using my motivation to blog. My primary resource for now is Peter Woit's Quantum Theory, Groups and Representations: An Introduction. The text is good for starting from basics and spends a good amount of space developing prerequisites. Next plan is to use this to go through Folland's QFT for Mathematicians. Lets start with postulates.</p>
+    <p> <b>Axiom</b> (States). The state of a quantum mechanical system is given by a nonzero vector in a complex vector space \(\mathcal{H}\) with Hermitian inner product \(\langle \cdot, \cdot \rangle\).</p>
+    <p><b>Axiom</b> (Quantum observables). The observables of a quantum mechanical system are given by self-adjoint linear operators on \(\mathcal{H}\).</p>
+    <p><b>Axiom</b> (Dynamics). There is a distinguished quantum observable, the Hamiltonian \(\mathcal{H}\). Time evolution of states \( |\psi(t) \rangle \in \mathcal{H} \) is given by the Schrödinger equation 
+    $$ i \hbar \frac{d}{dt}|\psi(t)\rangle = H |\psi(t)\rangle.$$
+    The operator \(H\) has eigenvalues that are bounded below.</p>
+    <p><b>Principle</b> (Observables). States for which the value of an observable can be characterized by a well-defined number are the states that are eigenvectors for the corresponding self-adjoint operator. The value of the observable in such a state will be a real number, the eigenvalue of the operator.</p>
+    <p><b>Principle</b> (The Born rule). Given an observable \(O\) and two unit-norm states \(|\psi_1\rangle\) and \(\psi_2\rangle\) that are eigenvectors of \(O\) with distinct eigenvalues \(\lambda_1\) and \(\lambda_2\)
+      $$O|\psi_1\rangle = \lambda_1|\psi_1\rangle , \qquad O|\psi_2⟩ = \lambda_2|\psi_2 \rangle $$
+      the complex linear combination state \(c_1|\psi_1 \rangle + c_2|\psi_2 \rangle\)
+      will not have a well-defined value for the observable \(O\). If one attempts to measure this observable, one will get either \(\lambda_1\) or \(\lambda_2\), with probabilities
+      $$ \frac{|c_1|^2}{|c_1|^2+|c_2|^2} \quad \text{ and }\quad \frac{|c_2|^2}{|c_1|^2+|c_2|^2}$$
+      respectively.</p>
+    <p>The most radical part of the theory is observable principle for me. It takes a lot of time to get comfortable with it. The new mathematical apparatus of Hilbert spaces and self-adjoint operator feels vastly different from classical mechanics where we are used to real functions describing the measurements. And the next departure is of course the probability one, that there are pure states and mixed states. A particle in mixed state can give two different measurement values with a certain probability. One has to remind themselves that this is still a model of physical reality, a very close one but a mathematical model with great accuracy.</p>
+    <center><h2 id="Gaugetheory">A look into Gauge Theory</h2></center>
+    <center><h3>10th Feb 2024</h3></center>
+    <p>I have been interested in learning preliminaries to gauge theory since sometime and have looked into the basic setup. It can be defined as study of connections on a metric vector bundle with specific interest in invariant connections coming from Yang-Mills functional. Let \(E\) be a vector bundle over a manifold \(M\) equipped with some metric. A connection on \(E\) is a bundle map 
+      $$\nabla : TM \otimes \Gamma(E) \to \Gamma(E) \qquad \text{or} \qquad
+      \nabla : \Gamma(E) \to \Gamma(E) \otimes T^*M.$$ 
+    such that \(\nabla_X(fs) = f\nabla_X(s)+ (Xf)s\).</p>
+
+    <p>This should be thought of as a rule to differentiate a section in a direction (the \(1\)-form eats that direction to give the section on the right side).</p> -->
     <!--<center><h2 id="QM">The Postulates of Quantum Mechanics</h2></center>
     <center><h3>15th June 2023</h3></center>
     <p>Nature threw a big tantrum when she decided fundamental laws of the nature are quantum and not classical. I have always struggled with understanding quantum mechanics at axiomatic level. One big jump was that physical observables are not real functions on phase space but rather linear operators on a Hilbert space whose eigenvalues contain information about states.</p> 
@@ -76,12 +105,12 @@ aside {
     <br>
     <div class="box"><b>Composite systems</b>. The Hilbert space of a composite system is the tensor product of the state spaces.</div>
     <br>
-    <div class="box"><b>Postulate 2</b>. For a quantum state with Hilbert space \(\mathcal{H}\), every observable is identified with a self-adjoint operator \(A : \mathcal{D}(A) \to \mathcal{H}\) and any possible outcome of a measurement of the observable is a real number which must be a eigenvalue of the operator.</div>
+    <div class="box"><b>Postulate 2</b>. For a quantum state with Hilbert space \(\mathcal{H}\), every observable is identified with a self-adjoint operator \(A : \mathcal{D}(A) \to \mathcal{H}\) and any possible outcome of a measurement of the observable is a real number which must be an eigenvalue of the operator.</div>
 
-    <p>Examples of observables include energy, momentum, position etc. Also the operators can be unbounded, so need not be continuous.</p>-->
+    <p>Examples of observables include energy, momentum, position etc. Also, the operators can be unbounded, so need not be continuous.</p>-->
     <!--<center><h2 id="Heateq">The heat equation</h2></center>
     <center><h3>6th June 2023</h3></center>
-    It is surprising how a PDE initially modeleded for measuring the transfer of heat in a metal rod has been so successful in mathematics. 
+    It is surprising how a PDE initially modeled for measuring the transfer of heat in a metal rod has been so successful in mathematics. 
     -->
     <center><h2 id="Why-MCF">Why Mean Curvature Flow</h2></center>
     <center><h3>5th May 2023</h3></center>

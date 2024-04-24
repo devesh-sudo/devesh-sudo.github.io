@@ -2,8 +2,8 @@ PWD /Users/deveshrajpal/Desktop/devesh-sudo.github.io
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I learned.tex
-OUTPUT Today I learned.log
+INPUT /Users/deveshrajpal/Desktop/devesh-sudo.github.io/Today I tried.tex
+OUTPUT Today I tried.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -605,10 +605,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Today I learned.aux
-INPUT Today I learned.aux
-INPUT Today I learned.aux
-OUTPUT Today I learned.aux
+INPUT ./Today I tried.aux
+INPUT Today I tried.aux
+INPUT Today I tried.aux
+OUTPUT Today I tried.aux
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -648,7 +648,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-OUTPUT Today I learned.pdf
+OUTPUT Today I tried.pdf
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -734,15 +734,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
-INPUT Today I learned.aux
+INPUT Today I tried.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
@@ -755,8 +747,5 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb

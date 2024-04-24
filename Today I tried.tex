@@ -1,0 +1,115 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage{courier}
+
+
+%\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs, mathtools, bm}
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue,bookmarks=false,hypertexnames=true]{hyperref} 
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\setlength{\headheight}{0.75in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\voffset}{-1.0in}
+\setlength{\headsep}{10pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\headwidth}{6.5in}
+\setlength{\textheight}{8.75in}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\setlength{\footskip}{0.3in}
+%\fancyhead[L]{\textbf{Devesh Rajpal}}
+%\fancyhead[R]{\nouppercase\leftmark}
+\usepackage{multicol, titletoc, bookmark, parskip}
+%\usepackage{parskip}
+\setlength{\parindent}{0.5cm}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{claim}{Claim}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\half}{\ensuremath{\frac{1}{2}}}
+\newcommand{\pt}{\partial_t}
+\newcommand{\dt}{\frac{\partial}{\partial t}}
+
+
+\newcommand{\fg}{\mathfrak{g}}
+\title{\LARGE Today I Tried}
+\author{\large Devesh Rajpal}
+\date{}
+
+\begin{document}
+
+\maketitle
+\subsection*{April 2024}
+
+\quad(15/4/24) Today I tried to cast the self similar solutions of $ \alpha $-Gauss flow in the Monge ampere type using support function. The equation $ \left< X(x), \nu(x) \right> = cK^{\alpha} $ can be written as 
+\[ h = c \left(\frac{\det(\overline{\nabla}^{2}h+\overline{g}h)}{\det(\overline{g})}\right)^{- \alpha} \]
+where $ \overline{\nabla}^{2}h $ is the $ 2 $-tensor defined using the standard connection on $ S^{n} $. It is easy to calculate
+\[ \overline{\nabla}_{i}\overline{\nabla}_{j}h = \partial_{i}\partial_{j}h- (\overline{\nabla}_{i}\partial_{j})h \]
+
+(16/4/24) Today I tried spherical coordinates on the $ \alpha $-Gauss flow. In the parametrization $ x = \cos \theta \cos \phi, y = \cos \theta \sin \phi, z = \cos \theta $, we have 
+\[ \overline{g} = \begin{bmatrix}
+    1 & 0 \\
+    0 & \cos \theta
+\end{bmatrix} \]
+ and 
+ \[ K^{-1} = \frac{\det \left(\begin{bmatrix}
+    h_{\theta \theta} & h_{\theta \phi} - \frac{\tan \theta}{2}h_{\phi} \\
+    h_{\theta \phi} - \frac{\tan \theta}{2}h_{\phi} & h_{\phi \phi} - \frac{\cos \theta}{2}h_{\theta}
+ \end{bmatrix}
+     + h\begin{bmatrix}
+        1 & 0 \\
+    0 & \cos \theta
+     \end{bmatrix}\right)}{\cos \theta}\]
+which is quite ugly.
+
+(17/4/24) Today I learned about the homogeneous degree 1 extension of the support function. Let $ h : S^{n} \to \R$ be the support function of a strictly convex hypersurface. We extend this to $ H : \R^{n+1} \to \R $ by defining, 
+\[ H(x) = |x| h\left( \frac{x}{|x|}\right).\]
+Note that $ H $ is just continuous but not necessarily differentiable at $ 0 $. It is easy to see that $ DH(\lambda x) = DH(x) $. Let $ x \in \R^{n+1} $ and $ v $ be a unit vector, \begin{align*}
+    D_{v}H(x) &= h\left( \frac{x}{|x|}\right)D_{v}|x| +|x|D_{v}h\left(\frac{x}{|x|}\right) \\
+    & = \frac{v \cdot x}{|x|}h\left( \frac{x}{|x|}\right) + |x|\overline{\nabla}_{v^{T}}h\left( \frac{x}{|x|}\right)
+\end{align*}
+where $ \overline{\nabla}_{v^{T}} $ is the covariant derivative on $ S^{n} $ in the direction $ v^{T} \in T_{x}S^{n} $. Let $ x \in S^{n} $ and substitute $ v \in \{e_{1}, \dots, e_{n+1}\} $ to get
+\[ DH(x) = xh(x)+\overline{\nabla}h(x) \]
+which is the inverse of Gauss map! %($ G^{-1}(x) = xh(x)+ \overline{\nabla}h $ as done in the book EGF)!
+Thus, $ G^{-1}(x) = DH(x) $, and also weirdly $ D_{x}H(x) = DH(x) $ so the steepest accent is in the normal direction.
+
+(18/4/24) Today I learned about a possible reducible symmetric group to try to construct self-similar solutions of the $ \alpha $-Gauss curvature flow. As considered previously the setup is with support functions. The sphere $ h \equiv 1 $ is an equilibrium point of the normalized $ \alpha $-Gauss flow. The construction of $ \Gamma $ symmetric solutions in Ben's paper is using spherical harmonics (eigenfunctions of the Laplacian) and some general version of the stable/unstable manifold theorem. The linearized version of normalized $ \alpha $-Gauss flow at $ h \equiv 1 $ is given by 
+\[ \frac{\partial u}{\partial t} = \alpha( \Delta + n)u+u \]
+so if $ \Delta \psi = - \lambda \psi $, then $ h \equiv 1 $ is strictly unstable in the direction $ \psi $ (what does this really mean?). Another important fact is that entropy is a min for unstable direction, the Hessian of entropy at $ h \equiv 1 $ satisfies 
+\[ D^{2}Z_{h}(\psi, \psi) > 0. \]
+
+The new idea is to use an affine boost along with the spherical harmonics to possible control the isoperimetric ratio. The considered example of a reducible group was generated by $ x \mapsto -x $ and a $ 3 $-fold rotation symmetric group in $ yz $ plane along with reflection of the triangle (so the dihedral group $ D_{3} $ in the $ yz $ plane). Consider a one-parameter family of affine transformations which stretches the $ x $-direction, 
+\[ T_{\lambda} = \begin{bmatrix}
+    e^{2\lambda} & 0 & 0 \\
+    0 & e^{-\lambda} & 0 \\
+    0 & 0 & e^{-\lambda}
+\end{bmatrix}. \]
+Now we can consider a one parameter family of flows produced by the unstable direction $ \epsilon \psi + T_{\lambda} $ and the expectation is that since the entropy of the solutions with $ \lambda = 0, \infty $ is $ \infty $ (to check) one can possibly use a mountain pass theorem (in homotopies of $ \lambda $ variable) to create a critical point which will be a self-similar solution of the flow.
+
+(19/4/24) Today I learned about the $ \alpha $-Gaussin entropy of a bounded convex hypersurface. In the book it is defined as 
+
+\[ E_\alpha(\mathcal{M}) \doteqdot \begin{cases}\left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}} \exp \left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K \log K d \mu\right) & \text { if } \alpha=1 \\ \left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}}\left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K^\alpha d \mu\right)^{\frac{1}{\alpha-1}} & \text { if } \alpha \neq 1\end{cases} \]
+
+It turns out that the $ \alpha $-Gaussian entropy is non-increasing under $ \alpha $-Gauss flow. The next task is to understand its property on normalized $ \alpha $-Gauss flow.
+
+(22/4/24) Today I learned about the Brunn-Minkowski inequality. It states that for convex bodies $ A, B \subset \R^{n} $ and $ \lambda \in [0,1] $, we have 
+\[ \text{Vol}(\lambda A + (1- \lambda)B)^{\frac{1}{n}} \ge \lambda \text{Vol}(A)^{\frac{1}{n}} + (1 - \lambda)\text{Vol}(B)^{\frac{1}{n}} \]
+which is same as saying that $ \text{Vol}(\, \cdot \,)^{\frac{1}{n}} $ is a concave function on the set of convex bodies.
+
+(23/4/24) Today I learned about the proof of monotonicity of $ \alpha $-Gaussian entropy under $ \alpha $-Gaussian flow using Brunn-Minkowski inequality, the proof is really slick.
+
+
+\end{document}
