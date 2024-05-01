@@ -78,3 +78,8 @@ exponentiating
 Rham
 subrepresentations
 isoperimetric
+hypersurface
+homotopies
+Monge
+Devesh
+Rajpal
