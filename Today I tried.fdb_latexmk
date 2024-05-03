@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1714546818 "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.tex" "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.pdf" "Today I tried" 1714546818
+["pdflatex"] 1714711584 "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.tex" "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.pdf" "Today I tried" 1714711588
   "/etc/texmf/web2c/texmf.cnf" 1713934888 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.aux" 1714546818 708 961f8b407925ffb77f190f5de481a85b ""
-  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.tex" 1714546818 7364 1157cb87f24037a8a8eef816ecbda35e ""
+  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.aux" 1714711584 708 961f8b407925ffb77f190f5de481a85b ""
+  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.tex" 1714711588 7454 d5b76262548966fa73bf45927e17b40b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -119,11 +119,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1713936451 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1713936456 4877305 4b6cd38925916c823589160c5db84d76 ""
-  "Today I tried.aux" 1714546818 708 961f8b407925ffb77f190f5de481a85b "pdflatex"
-  "Today I tried.tex" 1714546818 7364 1157cb87f24037a8a8eef816ecbda35e ""
+  "Today I tried.aux" 1714711584 708 961f8b407925ffb77f190f5de481a85b "pdflatex"
+  "Today I tried.tex" 1714711588 7454 d5b76262548966fa73bf45927e17b40b ""
   (generated)
-  "Today I tried.pdf"
-  "Today I tried.log"
-  "Today I tried.aux"
   "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.log"
+  "Today I tried.log"
+  "Today I tried.pdf"
   "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I tried.pdf"
+  "Today I tried.aux"
