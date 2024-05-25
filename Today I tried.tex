@@ -7,6 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage{esint}
 \usepackage{amssymb}
 \usepackage{mathrsfs, mathtools, bm}
 \usepackage[colorlinks,citecolor=blue,urlcolor=blue,bookmarks=false,hypertexnames=true]{hyperref} 
@@ -124,4 +125,53 @@ which is same as saying that $ \text{Vol}(\, \cdot \,)^{\frac{1}{n}} $ is a conc
 Let $ \Omega $ be a domain, a function $ u \in C^{0}(\Omega) $ is said to be \textbf{subharmonic} if for every ball $ B \subset \subset \Omega $ and every harmonic function $ h $ on $ B $ with $ u \le h $ on $ \partial B $, we have 
 \[ u \le h \text{ on } B. \]
 It is easy to see that $ u $ satisfy the mean value property, hence also the strong maximum principle. 
+(7/5/24) Today I am writing equations for nomalized $ \alpha $-Gauss curvature flow for once and all. Let $ X(t) $ be a solution of the $ \alpha $-GCF, so that 
+\[ \partial_{t}X = - K^{\alpha}\nu.\]
+The evolution of volume under $ \alpha $-GCF is given by 
+\[  \frac{d}{dt}V(X(t)) = - \int_{S^{n}}K^{\alpha-1}d \overline{\mu}. \]
+
+We normalize the the equation for the scaled hypersurface to have constant volume $ |B^{n+1}| $, by defining 
+\[ \tilde{X}(\tau(t)) = \left( \frac{|B^{n+1}|}{V(X(t))} \right)^{\frac{1}{n+1}}X(t) \]
+where $ \tau $ is some parametrization of time to be defined later to make equations cleaner. Note that by scaling, the new Gauss curvature is $ \tilde{K} = \left(  \frac{|B^{n+1}|}{V(X(t))} \right)^{ -\frac{n}{n+1}}K $. Differentiating with respect to $ \tau $,
+\begin{align*}
+    \frac{\partial \tilde{X}}{\partial \tau} & = \frac{\partial \tilde{X}}{\partial t} \frac{d t}{d \tau} \\
+    & = \left[-\left( \frac{|B^{n+1}|}{V(X(t))} \right)^{\frac{1}{n+1}}K^{\alpha}\nu+ \frac{\tilde{X}}{(n+1)V}\int_{S^{n}}K^{\alpha-1}d \overline{\mu}\right]\frac{d t}{d \tau} \\
+    & = \left[-\left( \frac{|B^{n+1}|}{V(X(t))} \right)^{ \frac{1+\alpha n}{1+n}} \tilde{K}^{\alpha}\nu+ \frac{\tilde{X}}{(n+1)V}\left(  \frac{|B^{n+1}|}{V(X(t))} \right)^{ \frac{(\alpha-1)n}{n+1}}\int_{S^{n}}\tilde{K}^{\alpha -1}\right]\frac{d t}{d \tau}\\
+    & = \left[-\tilde{K}^{\alpha}\nu + \frac{\tilde{X}}{(n+1)|B^{n+1}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu}\right]\left( \frac{|B^{n+1}|}{V(X(t))} \right)^{ -\frac{(1+\alpha n)}{1+n}} \frac{dt}{d \tau}. 
+\end{align*}
+
+Choose $ \tau(t) $ such that the term outside square bracket is $ 1 $ so that the new evolution equation is 
+
+\begin{align*}
+    \frac{\partial \tilde{X}}{\partial \tau} & = -\tilde{K}^{\alpha}\nu + \frac{\tilde{X}}{(n+1)|B^{n+1}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu} \\ 
+    & =-\tilde{K}^{\alpha}\nu + \frac{\tilde{X}}{|S^{n}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu} =-\tilde{K}^{\alpha}\nu + \tilde{X}\fint_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu}
+\end{align*}
+
+Let $ \tilde{h}(z) = \sup \{p \cdot z : p \in \tilde{X} \} = \left( \frac{|B^{n+1}|}{V(X(t))} \right)^{\frac{1}{n+1}} h(z) $ be the support function of the rescaled hypersurface. Its evolution equation is
+\begin{align*}
+    \frac{\partial \tilde{h}}{\partial \tau} &= - \tilde{K}^{\alpha} + \frac{\tilde{h}}{|S^{n}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu} \\
+    & = - \det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{-\alpha} + \frac{\tilde{h}}{|S^{n}|}\int_{S^{n}}\det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{1-\alpha} d \overline{\mu}
+\end{align*}
+where we have used the fact that Gauss curvature can be determined from the support function by the formula 
+\[ K = \det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{-1} .\]
+
+% Now if we want to linearize the normalized $ \alpha $-GCF at the equilibrium solution $ \tilde{h} \equiv 1 $,
+
+(9/5/24) Today I learned about some rigidity results of ancient solutions of $ \alpha $-GCF. If $ X_{t} = \phi(t)X_{0} $ is a family of hypersurfaces moving homothetically, then under $ \alpha $-GCF it satisfies
+\[ K^{\alpha}[X_{0}] = - \lambda \left<  X_{0}, \nu_{0}  \right> \quad \text{with} \quad \phi'(t)\phi^{n \alpha}(t) = \lambda. \]
+If $ \lambda >0 $ it is called \textbf{expanding solution} and if $ \lambda <0 $ it is called \textbf{contracting/shrinking solution}. 
+
+
+In paper \textit{Complete noncompact self-similar solutions
+of Gauss curvature flows
+I. Positive powers}, Urbas proves that all complete non-compact convex hypersurfaces which move homothetically under $ \alpha $-GCF for some $ \alpha \in (0, \infty) $ satisfy the previous equation and further for contracting solutions $ (\lambda <0) $, $ X_{0} $ is a hyperplane through the origin.
+
+
+(10/5/24) Today I learned about Hersch's theorem on first eigenvalue of the Laplacian on a sphere $ (S^{2},g) $. It states that given a Riemmanian metric $ g $ on sphere, the first non-zero eigenvalue of negative Laplacian $ -\Delta_{g}( = - g^{ij}\nabla_{i}\nabla_{j} $) satisfies 
+\[ \lambda_{1} \le \frac{8 \pi}{\text{Area}(S^{2},g)}. \]
+
+The full proof is present in Schoen, Yau's \textit{Lectures on Differential Geometry}. It centrally use the fact that there is only one conformal class of metrics in $ S^{2} $ (uniformization theorem I guess) and then finds a nice conformal metric of $ g $ where the center of mass is at the origin. 
+
+(14/5/24) Today I learned about stable manifold theorem. The proof is based on Banach contraction theorem like in the case of Picard-Lindelof theorem. In Picard-Lindelof the idea was to define an integral operator which is a contraction and the fixed point of the operator solves the ODE. The idea here is very similar but it takes more effort to the set up the appropriate Banach space and define the operator and then prove that it is a contraction.
+
 \end{document}
