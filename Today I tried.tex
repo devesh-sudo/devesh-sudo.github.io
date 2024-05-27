@@ -174,4 +174,21 @@ The full proof is present in Schoen, Yau's \textit{Lectures on Differential Geom
 
 (14/5/24) Today I learned about stable manifold theorem. The proof is based on Banach contraction theorem like in the case of Picard-Lindelof theorem. In Picard-Lindelof the idea was to define an integral operator which is a contraction and the fixed point of the operator solves the ODE. The idea here is very similar but it takes more effort to the set up the appropriate Banach space and define the operator and then prove that it is a contraction.
 
+(26/5/24) Today I learned about harmonic maps between Riemannian manifolds. A harmonic map $ f: (M,g) \to (N,h) $ (assume $ C^{1} $) is a critical point of the energy functional 
+\[ E(f) = \int_{M}|Df|^{2}d \mu_{g}. \]
+The differential $ Df $ can be thought of as a section of the bundle $ T^{*}M \otimes f^{*}TN $ with the obvious metric. The Euler-Lagrange equation of this functional (assume  $ f $ is $ C^{2}$) is given by 
+\[ \frac{1}{\sqrt{g}} \frac{\partial}{\partial x^{\alpha}}\left(\sqrt{g}g^{\alpha \beta} \frac{\partial f^{i}}{\partial x^{\beta}}\right) + g^{\alpha \beta}\Gamma^{i}_{jk}(f(x)) \frac{\partial f^{j}}{\partial x^{\alpha}} \frac{\partial f^{k}}{\partial x^{\beta}} = 0 \quad \text{ for each } i = 1, \dots, \dim N \]
+where greek indices denote local coordinates in $ M $ and $ g = \det(g_{\alpha \beta}) $.
+
+An interesting case happens when $ M  = \Sigma$ is a Riemann surface. A holomorphic structure on $ \Sigma $ induces a conformal class of metrics given by $ dz \otimes d \overline{z} $. The E-L equation for the metric $ \lambda^{2}(z)dz \otimes d \bar{z} $ takes the form 
+\[ \frac{1}{4\lambda^{2}(z)} \frac{\partial^{2}f^{i}}{\partial z \partial \overline{z}} + \frac{1}{4 \lambda^{2}(z)} \Gamma^{i}_{jk}(f(z)) \frac{\partial f^{j}}{\partial z}\frac{\partial f^{k}}{\partial \bar{z}} = 0\] or 
+
+\[ \frac{\partial^{2}f^{i}}{\partial z \partial \overline{z}} + \Gamma^{i}_{jk}(f(z)) \frac{\partial f^{j}}{\partial z}\frac{\partial f^{k}}{\partial \bar{z}} = 0 \]
+
+which only depends on the conformal structure, not the metic of $\Sigma $ (independent of $ \lambda $). Also the energy functional is given by 
+\begin{align*}
+    E(f) & =\frac{1}{2} \int_{\Sigma} \frac{4}{\lambda^2(z)} g_{i j} \frac{\partial f^i}{\partial z} \frac{\partial f^j}{\partial \bar{z}} \frac{\sqrt{-1}}{2} \lambda^2(z) d z \wedge d \bar{z} \\
+    & =\int_{\Sigma} g_{i j} \frac{\partial f^i}{\partial z} \frac{\partial f^j}{\partial \bar{z}} \sqrt{-1} d z \wedge d \bar{z} .
+    \end{align*}
+
 \end{document}
