@@ -995,6 +995,7 @@ which is same as saying that $ \text{Vol}(\, \cdot \,)^{\frac{1}{n}} $ is a conc
 Let $ \Omega $ be a domain, a function $ u \in C^{0}(\Omega) $ is said to be \textbf{subharmonic} if for every ball $ B \subset \subset \Omega $ and every harmonic function $ h $ on $ B $ with $ u \le h $ on $ \partial B $, we have 
 \[ u \le h \text{ on } B. \]
 It is easy to see that $ u $ satisfy the mean value property, hence also the strong maximum principle. 
+
 (7/5/24) Today I am writing equations for nomalized $ \alpha $-Gauss curvature flow for once and all. Let $ X(t) $ be a solution of the $ \alpha $-GCF, so that 
 \[ \partial_{t}X = - K^{\alpha}\nu.\]
 The evolution of volume under $ \alpha $-GCF is given by 
@@ -1064,4 +1065,26 @@ which only depends on the conformal structure, not the metic of $\Sigma $ (indep
 \quad (10/6/24) Today I learned about Sobolev embedding theorem and Morrey's inequality. Essentialy Sobolev spaces $ W^{1,p}(\R^{n}) $ for large enough $ p $ embed in Holder spaces which is to say that weak derivatives are sufficient to deduce continuous regularity of functions(after possibly redefining on a set of measure $0$). Morrey's inequality states that if $n< p \le \infty$, then there exists a constant depending only on $ p $ and $n$ such that 
     \[ ||u||_{C^{0, 1 - \frac{n}{p}}(\R^{n})} \le C||u||_{W^{1,p}(\R^{n})} \]
 for all $ u \in C^{1}(\R^{n}) \cap L^{p}(\R^{n}) $. It follows that if $  u \in W^{1,p}(\R^{n}) $, then $ u $ is in fact H\"older continuous with exponent $ \gamma  = 1 - \frac{n}{p}$.    
+
+\subsection*{August 2024}
+\quad(12/8/24) Today I learned about connection on frame bundle or more generally principal bundle. While reading Hamilton's paper on Harnack estimates on MCF, he stated the following property of covariant derivative. For a local frame $ \{F_{a}\} $ given by $ F_{a}=F_{a}^{i} \partial_{i} $, and a one-form V, we have 
+\[ D_{a}V_{b} \doteqdot (D_{a}V)_{b} = (F_{a}^{i}F_{b}^{j}D_{i}V)_{j} \doteqdot  F_{a}^{i}F_{b}^{j}D_{i}V_{j}.  \]
+
+The identity has to be interpreted appropriatly using frame bundle and connection on frame bundle as a principal bundle. 
+
+(23/8/24) Today I learned about the equation of self-similar solution of $ \alpha $-GCF in terms of support function for $ \alpha \neq 1 $. The self-similar shrinker is given by 
+\[ \left< X,\nu \right> = c K^{\alpha}\]
+for some $ c>0 $ which can be determined by the volume enclosed by the hypersurface. Recall that the $ \alpha $-Gaussian entropy is given by 
+
+\begin{align*}
+   E_{\alpha}(\mathcal{M}) & = \left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}}\left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K^\alpha d \mu\right)^{\frac{1}{\alpha-1}} \\
+\end{align*}
+which can be written purely in terms of support function, 
+\[ E_{\alpha}(\sigma) = \left( \fint_{S^{n}} \sigma \det A[\sigma] d\bar{\mu}\right)^{\frac{n}{n+1}} \left( \fint_{S^{n}} (\det A[\sigma])^{1-\alpha} d \bar{\mu} \right)^{\frac{1}{\alpha -1}}. \]
+
+The shrinker equation is 
+\[ \sigma = c \det A[\sigma]^{-\alpha}  \Rightarrow \sigma \det A[\sigma]^{\alpha} = \]
+
+
+
 \end{document}
