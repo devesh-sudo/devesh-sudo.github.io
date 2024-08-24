@@ -1021,7 +1021,7 @@ Choose $ \tau(t) $ such that the term outside square bracket is $ 1 $ so that th
 Let $ \tilde{h}(z) = \sup \{p \cdot z : p \in \tilde{X} \} = \left( \frac{|B^{n+1}|}{V(X(t))} \right)^{\frac{1}{n+1}} h(z) $ be the support function of the rescaled hypersurface. Its evolution equation is
 \begin{align*}
     \frac{\partial \tilde{h}}{\partial \tau} &= - \tilde{K}^{\alpha} + \frac{\tilde{h}}{|S^{n}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \overline{\mu} \\
-    & = - \det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{-\alpha} + \frac{\tilde{h}}{|S^{n}|}\int_{S^{n}}\det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{1-\alpha} d \overline{\mu}
+    & = - \det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{-\alpha} + \tilde{h}\fint_{S^{n}}\det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{1-\alpha} d \overline{\mu}
 \end{align*}
 where we have used the fact that Gauss curvature can be determined from the support function by the formula 
 \[ K = \det_{\overline{g}}(\overline{\nabla}^{2}\tilde{h}+\overline{g}\tilde{h})^{-1} .\]
@@ -1080,11 +1080,37 @@ for some $ c>0 $ which can be determined by the volume enclosed by the hypersurf
    E_{\alpha}(\mathcal{M}) & = \left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}}\left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K^\alpha d \mu\right)^{\frac{1}{\alpha-1}} \\
 \end{align*}
 which can be written purely in terms of support function, 
-\[ E_{\alpha}(\sigma) = \left( \fint_{S^{n}} \sigma \det A[\sigma] d\bar{\mu}\right)^{\frac{n}{n+1}} \left( \fint_{S^{n}} (\det A[\sigma])^{1-\alpha} d \bar{\mu} \right)^{\frac{1}{\alpha -1}}. \]
+\begin{align*}
+   E_{\alpha}(\sigma) &= \left( \fint_{S^{n}} \sigma \det_{\overline{g}} A[\sigma] d\bar{\mu}\right)^{\frac{n}{n+1}} \left( \fint_{S^{n}} (\det_{\overline{g}} A[\sigma])^{1-\alpha} d \bar{\mu} \right)^{\frac{1}{\alpha -1}}\\
+   & = \frac{\left( \fint_{S^{n}} \sigma \det_{\overline{g}} A[\sigma] d\bar{\mu}\right)^{\frac{n}{n+1}}}{\left( \fint_{S^{n}} (\det_{\overline{g}} A[\sigma])^{1-\alpha} d \bar{\mu} \right)^{\frac{1}{1-\alpha}}}
+\end{align*}
+where $ A[\sigma]_{ij} = \overline{\nabla}_{i}\overline{\nabla}_{j}\sigma + \overline{g}_{ij}\sigma $ is a differential operator on $ S^{n} $. The eigenvalue of $ A $ with respect to metric $ \overline{g} $ are $ \kappa_{1}^{-1}, \dots, \kappa_{n}^{-1} $ so $ K = \det_{\overline{g}}A[\sigma] = \frac{\det A[\sigma]}{\det \overline{g}}$.
 
-The shrinker equation is 
-\[ \sigma = c \det A[\sigma]^{-\alpha}  \Rightarrow \sigma \det A[\sigma]^{\alpha} = \]
+%Recall that the evolution equation of $ \alpha $-GCF is 
+%\[ \partial_{t} \sigma = - \det_{\overline{g}} A[\sigma]^{-\alpha} \]or 
+%\[ \det_{\overline{g}} A[\sigma]^{\alpha} \partial_{t}\sigma = -1 \]%
+%The shrinker equation is $ \sigma = c \det_{\overline{g}}A[\sigma]^{-\alpha} $\dots
+From the reverse H\"older inequality, we get 
+\[ \fint \sigma \det_{\overline{g}}A[\sigma] \ge \left(\fint \det_{\overline{g}}A[\sigma]^{1-\alpha} \right)^{ \frac{1}{1-\alpha}} \left( \fint \sigma^{- \frac{(1-\alpha)}{\alpha}} \right)^{- \frac{\alpha}{1-\alpha}} \]
+where the equality holds for self-similar solution $ \sigma = c \det_{\overline{g}}A[\sigma]^{-\alpha}. $ %This gives 
+%\[ E_{\alpha}(\sigma) \ge \frac{1}{\left( \fint \sigma^{- \frac{(1-\alpha)}{\alpha}} \right)^{ \frac{\alpha}{1-\alpha}\frac{n}{n+1}} \left(\fint \det_{\overline{g}}A[\sigma]^{1-\alpha} \right)^{ \frac{1}{1-\alpha} \frac{1}{n+1}}}. \]
 
+(24/8/24) Today I calculated the first variation of the $ \alpha $-Gaussian entropy. Let $ \sigma_{s} $ be a family of support functions with constant volume and $ \sigma_{0} = c\det_{\overline{g}}A[\sigma]^{-\alpha} $ a shrinker. Let the variation be $ \partial_{s}\sigma_{s} = \eta $. From the constant volume condition we get, \begin{align*}
+0 = (n+1)\partial_{s}\text{Vol}(\sigma_{s}) & = \partial_{s} 
+\int_{S^{n}} \sigma_{s}\det A[\sigma_{s}] \\
+& = \int_{S^{n}} \eta \det A[\sigma_{0}] + \sigma_{0}\det A[\sigma]A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} \\
+& = \int_{S^{n}} \eta \det A[\sigma_{0}] + c\det A[\sigma_{0}]^{1-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk}.
+\end{align*}
+Now the variation of log of entropy is 
+\begin{align*}
+   \partial_{s}\log E_{\alpha}(\sigma_{s}) & = - \frac{1}{1-\alpha}\partial_{s}\log \left( \fint_{S^{n}} \det A[\sigma_{s}]^{1-\alpha} \right) \\
+   & = - \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk}  \right) \\
+   & = \frac{1}{c} \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right)
+\end{align*}
+%so 
+%\[ \partial_{s}E_{\alpha}(\sigma_{s}) = \frac{1}{c} \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right) \left( \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} \right)^{ \frac{n}{n+1}}  \]
+In the inner product $ L^{2}_{\sigma_{0}} \doteqdot L^{2}\left( \frac{\det A[\sigma_{0}]}{\sigma_{0}}d \bar{\mu}\right) $, this can be written as 
+\[ \partial_{s}(E_{\alpha}(\sigma_{s})) = E_{\alpha}(\sigma_{0}) \frac{ \left< \eta, \sigma_{0} \right>_{\sigma_{0}}}{c \left< \sigma_{0}, \det A[\sigma_{0}]^{-\alpha} \right>_{\sigma_{0}}}. \]
 
 
 \end{document}
