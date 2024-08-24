@@ -1095,7 +1095,7 @@ From the reverse H\"older inequality, we get
 where the equality holds for self-similar solution $ \sigma = c \det_{\overline{g}}A[\sigma]^{-\alpha}. $ %This gives 
 %\[ E_{\alpha}(\sigma) \ge \frac{1}{\left( \fint \sigma^{- \frac{(1-\alpha)}{\alpha}} \right)^{ \frac{\alpha}{1-\alpha}\frac{n}{n+1}} \left(\fint \det_{\overline{g}}A[\sigma]^{1-\alpha} \right)^{ \frac{1}{1-\alpha} \frac{1}{n+1}}}. \]
 
-(24/8/24) Today I calculated the first variation of the $ \alpha $-Gaussian entropy. Let $ \sigma_{s} $ be a family of support functions with constant volume and $ \sigma_{0} = c\det_{\overline{g}}A[\sigma]^{-\alpha} $ a shrinker. Let the variation be $ \partial_{s}\sigma_{s} = \eta $. From the constant volume condition we get, \begin{align*}
+(24/8/24) Today I calculated the first variation of the $ \alpha $-Gaussian entropy. Let $ \sigma_{s} $ be a family of support functions with constant volume and $ \sigma_{0} = c\det_{\overline{g}}A[\sigma]^{-\alpha} $ a shrinker. Let the variation be $ \partial_{s}|_{s=0}\sigma_{s} = \eta $. From the constant volume condition we get, \begin{align*}
 0 = (n+1)\partial_{s}\text{Vol}(\sigma_{s}) & = \partial_{s} 
 \int_{S^{n}} \sigma_{s}\det A[\sigma_{s}] \\
 & = \int_{S^{n}} \eta \det A[\sigma_{0}] + \sigma_{0}\det A[\sigma]A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} \\
@@ -1103,14 +1103,36 @@ where the equality holds for self-similar solution $ \sigma = c \det_{\overline{
 \end{align*}
 Now the variation of log of entropy is 
 \begin{align*}
-   \partial_{s}\log E_{\alpha}(\sigma_{s}) & = - \frac{1}{1-\alpha}\partial_{s}\log \left( \fint_{S^{n}} \det A[\sigma_{s}]^{1-\alpha} \right) \\
+   \partial_{s}\big|_{s=0}\log E_{\alpha}(\sigma_{s}) & = - \frac{1}{1-\alpha}\partial_{s}\log \left( \fint_{S^{n}} \det A[\sigma_{s}]^{1-\alpha} \right) \\
    & = - \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk}  \right) \\
-   & = \frac{1}{c} \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right)
+   & = \frac{1}{c} \left( \fint_{S^{n}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right) \\
+   & = \left( \frac{|B^{n+1}|}{\text{Vol}(\sigma_{0})} \right) \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right)
 \end{align*}
 %so 
 %\[ \partial_{s}E_{\alpha}(\sigma_{s}) = \frac{1}{c} \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right) \left( \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} \right)^{ \frac{n}{n+1}}  \]
 In the inner product $ L^{2}_{\sigma_{0}} \doteqdot L^{2}\left( \frac{\det A[\sigma_{0}]}{\sigma_{0}}d \bar{\mu}\right) $, this can be written as 
-\[ \partial_{s}(E_{\alpha}(\sigma_{s})) = E_{\alpha}(\sigma_{0}) \frac{ \left< \eta, \sigma_{0} \right>_{\sigma_{0}}}{c \left< \sigma_{0}, \det A[\sigma_{0}]^{-\alpha} \right>_{\sigma_{0}}}. \]
+\begin{align*}
+   \partial_{s}(E_{\alpha}(\sigma_{s})) & = E_{\alpha}(\sigma_{0}) \frac{ \left< \eta, \sigma_{0} \right>_{\sigma_{0}}}{c \left< \sigma_{0}, \det A[\sigma_{0}]^{-\alpha} \right>_{\sigma_{0}}} = E_{\alpha}(\sigma_{0}) \left( \frac{|B^{n+1}|}{\text{Vol}(\sigma_{0})} \right)\left< \eta, \sigma_{0} \right>_{\sigma_{0}}. \\
+   % & = c^{ \frac{1}{1-\alpha}} \left( \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} \right)^{ \frac{-1-n \alpha}{(1-\alpha)(1+n)}}.
+\end{align*}
 
+While we are at it, lets calculate the variation of Firey entropy as well. The Firey entropy for $ \alpha \neq 1  $ is defined by 
+\begin{align*}
+   \mathcal{E}_{\alpha}(\mathcal{M}^{n}) & = \left( \frac{|B^{n+1}|}{\text{Vol}(\mathcal{M}^{n})} \right)^{ \frac{1}{n+1}} \left( \fint_{S^{n}}\sigma^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}} \\
+   & = \left( \fint_{S^{n}} \sigma \det_{\overline{g}} A[\sigma] d\bar{\mu}\right)^{\frac{-1}{n+1}} \left( \fint_{S^{n}}\sigma^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}} \\
+   & = \frac{\left( \fint_{S^{n}}\sigma^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}}}{\left( \fint_{S^{n}} \sigma \det_{\overline{g}} A[\sigma] d\bar{\mu}\right)^{\frac{1}{n+1}}}.
+\end{align*}
+
+Let $ \sigma_{s} $ be a variation with same conditions as before. Then, 
+\begin{align*}
+   \partial_{s}\big|_{s=0}\log \mathcal{E}_{\alpha}(\sigma_{s}) & = \left( \fint \sigma_{0}^{ \frac{\alpha-1}{\alpha}} \right)^{-1} \left(  \fint \sigma_{0}^{ \frac{-1}{\alpha}}\eta \right) \\
+   & = \left( \fint  c^{ \frac{ \alpha-1}{\alpha}} \det A[\sigma_{0}]^{1-\alpha} \right)^{-1} \left( \fint c^{ \frac{-1}{\alpha}}  \eta \det A[\sigma] \right) \\
+   & = \left( \frac{|B^{n+1}|}{\text{Vol}(\sigma_{0})} \right) \left(\fint_{S^{n}} \eta \det A[\sigma_{0}] \right)
+\end{align*}
+This imlpies, 
+\[ \partial_{s}\big|_{s=0} \mathcal{E}_{\alpha}(\sigma_{0}) = \mathcal{E}(\sigma_{0}) \left( \frac{|B^{n+1}|}{\text{Vol}(\sigma_{0})} \right)\left< \eta, \sigma_{0} \right>_{\sigma_{0}}. \]
+
+Also another observation yields that for shrinker $ \sigma_{0} = c \det A[\sigma_{0}]^{-\alpha} $, 
+\[ E_{\alpha}(\sigma_{0}) = \mathcal{E}_{\alpha}(\sigma_{0}). \]
 
 \end{document}
