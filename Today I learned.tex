@@ -1168,16 +1168,18 @@ The support function $ \eta $  satisfies the property that its homogenous degree
 or 
 \[ \partial_{\tau} \sigma = -\det A[\sigma]^{-\alpha} + \sigma \fint_{S^{n}}\det A[\sigma]^{1-\alpha} d\bar{\mu} \]
 in terms of the support function. Let $ \sigma_{s} = \sigma_{0}+ s \eta $ be a fixed volume variation for a shrinker $ \sigma_{0} $ with $ 1= \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} =\fint_{S^{n}} \sigma_{0}\det A[\sigma_{0}] $ (i.e. $ \sigma_{0}c = \det A[\sigma_{0}]^{-\alpha} $ for $ c = \fint_{S^{n}}\det A[\sigma_{0}]^{1-\alpha} $), then \begin{align*}
-   \partial_{\tau}(\sigma_{0}+ s \eta) = - \det A[\sigma_{0}+s \eta]^{-\alpha} + (\sigma_{0}+ s \eta)\fint_{S^{n}} \det A[\sigma_{0} + s \eta]^{1-\alpha} d \bar{\mu}
+   \partial_{\tau}(\sigma_{0}+ s \eta) & = - \det A[\sigma_{0}+s \eta]^{-\alpha} + (\sigma_{0}+ s \eta)\fint_{S^{n}} \det A[\sigma_{0} + s \eta]^{1-\alpha} d \bar{\mu} \\
+   & = - \det A[\sigma_{0}+s \eta]^{-\alpha} + c(\sigma_{0}+ s \eta)
 \end{align*}
 Differentiating with respect to $ s $ at $ s = 0 $ gives \begin{align*}
-   \partial_{\tau}\eta & = \alpha \det A[\sigma_{0}]^{-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c + \sigma_{0}\fint_{S^{n}} (1-\alpha)\det A[\sigma_{0}]^{1-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk}d \bar{\mu} \\
-   & = \alpha c A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c + (1-\alpha)\sigma_{0} \fint_{S^{n}} c \sigma_{0} \det A[\sigma_{0}] A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} d \bar{\mu} \\
-   & = c \left( \alpha A^{-1}[\sigma_{0}]A[\eta]_{jk} + \eta + n(1-\alpha) \sigma_{0}\fint_{S^{n}} \eta \det A[\sigma_{0}] \right) \\
-   & = c (\alpha A^{-1}[\sigma_{0}]A[\eta]_{jk}+ \eta).
+   \partial_{\tau}\eta & = \alpha \det A[\sigma_{0}]^{-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c \\
+   & = \alpha c \sigma_{0} A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c  \\
+   & = c \left( \alpha \sigma_{0}A^{-1}[\sigma_{0}]A[\eta]_{jk} + \eta \right).
 \end{align*}
 
-Let $ \mathcal{L} \eta = \alpha A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta $ be the linearized operator for $ \alpha $-NGCF. For $ \sigma_{0} = 1 $, this simplifies to $ \mathcal{L} \eta = \alpha(\Delta \eta + n \eta) + \eta $.
+This proves that $ \mathcal{L} \eta = \alpha \sigma_{0}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta $ is the linearized operator for $ \alpha $-NGCF subject to condition $ \fint_{S^{n}} \eta \det A[\sigma_{0}] d \bar{\mu} = 0 $. 
+
+For $ \sigma_{0} = 1 $, this simplifies to $ \mathcal{L} \eta = \alpha(\Delta \eta + n \eta) + \eta  = \alpha \Delta \eta + ( 1+ \alpha n) \eta$ subject to condition $ \fint_{S^{n}} \eta d \bar{\mu}= 0 $.
 
 
 

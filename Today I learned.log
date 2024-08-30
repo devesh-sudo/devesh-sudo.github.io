@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.4.24)  30 AUG 2024 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.4.24)  30 AUG 2024 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -474,13 +474,13 @@ Overfull \hbox (17.33989pt too wide) detected at line 1152
  []
 
 [51]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1187.
  [52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1187.
  (/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1185.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1185.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1187.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1187.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1187.
  ) 
 Here is how much of TeX's memory you used:
  8671 strings out of 483107
@@ -491,7 +491,7 @@ Here is how much of TeX's memory you used:
  59 hyphenation exceptions out of 8191
  34i,12n,45p,1723b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" (52 pages, 396397 bytes).
+Output written on "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" (52 pages, 396370 bytes).
 PDF statistics:
  401 PDF objects out of 1000 (max. 8388607)
  324 compressed objects within 4 object streams
