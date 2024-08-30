@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1724729357 "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.tex" "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" "Today I learned" 1724729357
+["pdflatex"] 1724991714 "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.tex" "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" "Today I learned" 1724991714
   "/etc/texmf/web2c/texmf.cnf" 1713934888 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.aux" 1724729357 763 599d92c40175c56efa09230a3a320091 ""
-  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.tex" 1724729357 147429 c737cbfbba30e173c0e6dfd5c40c1bb3 ""
+  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.aux" 1724991714 763 599d92c40175c56efa09230a3a320091 ""
+  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.tex" 1724991714 150344 67c6b457ef5acb724beea8ae5606b136 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -131,11 +131,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1713936451 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1713936456 4877305 4b6cd38925916c823589160c5db84d76 ""
-  "Today I learned.aux" 1724729357 763 599d92c40175c56efa09230a3a320091 "pdflatex"
-  "Today I learned.tex" 1724729357 147429 c737cbfbba30e173c0e6dfd5c40c1bb3 ""
+  "Today I learned.aux" 1724991714 763 599d92c40175c56efa09230a3a320091 "pdflatex"
+  "Today I learned.tex" 1724991714 150344 67c6b457ef5acb724beea8ae5606b136 ""
   (generated)
-  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.log"
   "Today I learned.log"
   "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf"
+  "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.log"
   "Today I learned.aux"
   "Today I learned.pdf"

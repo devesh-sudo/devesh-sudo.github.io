@@ -1148,11 +1148,36 @@ By the hypothesis that $ \sigma_{0} = c \det A[\sigma_{0}]^{-\alpha} $ is a shri
 \begin{align*}
    \partial^{2}_{s}\big|_{s=0} E_{\alpha}(\sigma_{s})  & = c^{\frac{(3-2\alpha)}{1-\alpha}} \biggl\{ (2-\alpha)c^{-2} \left< \eta, \sigma_{0} \right>_{\sigma_{0}}^{2} \\
    & - c^{-1} \biggl(c^{-1}\fint (1- \alpha) \sigma_{0}\det A[\sigma_{0}] (A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk})^{2} + \det A[\sigma_{0}]|A[\eta]|_{A[\sigma_{0}]}^{2} \biggr) \biggr\} \\
-   & = c^{\frac{1}{1-\alpha}} \biggl\{ (2-\alpha) \left< \eta, \sigma_{0} \right>_{\sigma_{0}}^{2}  - (1-\alpha) \left< \sigma_{0}^{2}, \operatorname{tr}(A[\sigma_{0}]^{-1} \cdot A[\eta])^{2} \right>_{\sigma_{0}} - \left< \sigma_{0}, A[\eta]|_{A[\sigma_{0}]}^{2} \right>_{\sigma_{0}} \biggr\} 
+   & = c^{\frac{1}{1-\alpha}} \biggl\{ (2-\alpha) \left< \eta, \sigma_{0} \right>_{\sigma_{0}}^{2}  - (1-\alpha) \left< \sigma_{0}^{2}, \operatorname{tr}(A[\sigma_{0}]^{-1} \cdot A[\eta])^{2} \right>_{\sigma_{0}} - \left< \sigma_{0}, A[\eta]|_{A[\sigma_{0}]}^{2} \right>_{\sigma_{0}} \biggr\} .
 \end{align*}
-If $ \sigma_{0} \equiv 1 $ and $ \eta $ is a spherical harmonic, then the second variation becomes \begin{align*}
-   \partial_{s}^{2}\big|_{s=0}E(\sigma_{s}) = c^{ \frac{1}{1-\alpha}} \left\{ \right\}
+
+(29/8/24) The Brunn-Minkowski inequality states that for two  non-empty compact sets $A, B \subset \R^{n+1} $
+\[ \text{Vol}(A+B)^{\frac{1}{n+1}} \le \text{Vol}(A)^{ \frac{1}{n+1}}+ \text{Vol}(B)^{ \frac{1}{n+1}} \]
+which is to say that $ \text{Vol}^{\frac{1}{n+1}} $ is a concave function under Minkowski addition of subsets. This also implies 
+\[ \frac{d^{2}}{dt^{2}}\text{Vol}^{\frac{1}{n+1}}(A+tB) \le 0. \]
+Let $ \sigma , \eta $ be the support functions of $ A $ and $ B $ respectively, then the concavity can be expressed as 
+\[ \left( \fint_{S^{n}}\eta \det A[\sigma_{A}] A^{-1}[\sigma_{A}]^{jk}A[\eta]_{jk} d \bar{\mu}\right) \le n \frac{\left( \fint_{S^{n}} \eta\det A[\sigma_{A}] d \bar{\mu}\right)^{2}}{\left( \fint_{S^{n}} \sigma_{A} \det A[\sigma_{A}] d \bar{\mu}\right)}. \]
+When $ A = S^{n} $ we get 
+\[ \left( \fint_{S^{n}} \eta ( \Delta \eta + n \eta) \right) \le n \left( \fint_{S^{n}} \eta \right)^{2} \]
+or 
+\[ n\left( \fint_{S^{n}} \eta^{2} \right)\le n \left( \fint_{S^{n}}\eta \right)^{2}  + \left( \fint_{S^{n}} |\nabla \eta|^{2} \right).\]
+The support function $ \eta $  satisfies the property that its homogenous degree one extension $ \tilde{\eta}(x) = |x| \eta ( \frac{x}{|x|}) $ is convex.
+
+(30/8/24) The normalized $ \alpha $-Gauss curvature flow ($ \alpha $-NGCF) can be written as 
+\[ \frac{\partial \tilde{X}}{\partial \tau} =-\tilde{K}^{\alpha}\nu + \frac{\tilde{X}}{|S^{n}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \bar{\mu} =-\tilde{K}^{\alpha}\nu + \tilde{X}\fint_{S^{n}}\tilde{K}^{\alpha-1} d \bar{\mu} \]
+or 
+\[ \partial_{\tau} \sigma = -\det A[\sigma]^{-\alpha} + \sigma \fint_{S^{n}}\det A[\sigma]^{1-\alpha} d\bar{\mu} \]
+in terms of the support function. Let $ \sigma_{s} = \sigma_{0}+ s \eta $ be a fixed volume variation for a shrinker $ \sigma_{0} $ with $ 1= \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} =\fint_{S^{n}} \sigma_{0}\det A[\sigma_{0}] $ (i.e. $ \sigma_{0}c = \det A[\sigma_{0}]^{-\alpha} $ for $ c = \fint_{S^{n}}\det A[\sigma_{0}]^{1-\alpha} $), then \begin{align*}
+   \partial_{\tau}(\sigma_{0}+ s \eta) = - \det A[\sigma_{0}+s \eta]^{-\alpha} + (\sigma_{0}+ s \eta)\fint_{S^{n}} \det A[\sigma_{0} + s \eta]^{1-\alpha} d \bar{\mu}
 \end{align*}
+Differentiating with respect to $ s $ at $ s = 0 $ gives \begin{align*}
+   \partial_{\tau}\eta & = \alpha \det A[\sigma_{0}]^{-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c + \sigma_{0}\fint_{S^{n}} (1-\alpha)\det A[\sigma_{0}]^{1-\alpha}A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk}d \bar{\mu} \\
+   & = \alpha c A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta c + (1-\alpha)\sigma_{0} \fint_{S^{n}} c \sigma_{0} \det A[\sigma_{0}] A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} d \bar{\mu} \\
+   & = c \left( \alpha A^{-1}[\sigma_{0}]A[\eta]_{jk} + \eta + n(1-\alpha) \sigma_{0}\fint_{S^{n}} \eta \det A[\sigma_{0}] \right) \\
+   & = c (\alpha A^{-1}[\sigma_{0}]A[\eta]_{jk}+ \eta).
+\end{align*}
+
+Let $ \mathcal{L} \eta = \alpha A^{-1}[\sigma_{0}]^{jk}A[\eta]_{jk} + \eta $ be the linearized operator for $ \alpha $-NGCF. For $ \sigma_{0} = 1 $, this simplifies to $ \mathcal{L} \eta = \alpha(\Delta \eta + n \eta) + \eta $.
 
 
 
