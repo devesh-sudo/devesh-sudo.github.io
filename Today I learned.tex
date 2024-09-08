@@ -972,7 +972,8 @@ Now we can consider a one parameter family of flows produced by the unstable dir
 
 (19/4/24) Today I learned about the $ \alpha $-Gaussin entropy of a bounded convex hypersurface. In the book it is defined as 
 
-\[ E_\alpha(\mathcal{M}) \doteqdot \begin{cases}\left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}} \exp \left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K \log K d \mu\right) & \text { if } \alpha=1 \\ \left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}}\left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K^\alpha d \mu\right)^{\frac{1}{\alpha-1}} & \text { if } \alpha \neq 1\end{cases} \]
+\[ E_\alpha(\mathcal{M}) \doteqdot
+\begin{cases}\left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}} \exp \left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K \log K d \mu\right) & \text { if } \alpha=1 \\ \left(\frac{\operatorname{Vol}\left(\mathcal{M}^n\right)}{\left|B^{n+1}\right|}\right)^{\frac{n}{n+1}}\left(\frac{1}{\left|S^n\right|} \int_{\mathcal{M}^n} K^\alpha d \mu\right)^{\frac{1}{\alpha-1}} & \text { if } \alpha \neq 1\end{cases} \]
 
 It turns out that the $ \alpha $-Gaussian entropy is non-increasing under $ \alpha $-Gauss flow. The next task is to understand its property on normalized $ \alpha $-Gauss flow.
 
@@ -1181,11 +1182,17 @@ This proves that $ \mathcal{L} \eta = \alpha \sigma_{0}A^{-1}[\sigma_{0}]^{jk}A[
 
 For $ \sigma_{0} = 1 $, this simplifies to $ \mathcal{L} \eta = \alpha(\Delta \eta + n \eta) + \eta  = \alpha \Delta \eta + ( 1+ \alpha n) \eta$ subject to condition $ \fint_{S^{n}} \eta d \bar{\mu}= 0 $.
 
-(31/8/24) 
-
 \subsection*{September 2024}
 
-\quad (1/9/24) 
+\quad (1/9/24) The equation of a shrinker for $ \alpha $-CSF is given by 
+\[ h_{\theta \theta} + h = h^{-\frac{1}{\alpha}}. \]
+Linearizing the normalized $ \alpha $-curve shortening flow around $ h $, we get the equation, 
+\[ \partial_{\tau} \eta = \alpha h^{1+ \frac{1}{\alpha}} (\eta_{\theta \theta}+ \eta)+ \eta = \mathcal{L}_{h} \eta. \]
+
+Choi and Sun prove the following theorem about the elliptic operator $ \mathcal{L} $. Let $ \bar{\Gamma}^{k}_{\alpha} $ be the shrinker for $ \alpha $-CSF with $ k $-fold symmetry obtained by Andrews. For $ k \ge 3 $, $ \alpha \in (0, \frac{1}{k^{2}-1}) $ the negative eigenspace of $ -\mathcal{L}_{\bar{\Gamma}^{k}_{\alpha}} $ has dimension $ 2k-1 $.
+
+(5/9/24) The Firey entropy $ \mathcal{E}_{\alpha}(\sigma) = \left( \frac{|B^{n+1}|}{\text{Vol}(\sigma)}\right)^{ \frac{1}{n+1}} \left( \fint_{S^{n}}\sigma^{ \frac{\alpha-1}{\alpha}}d \bar{\mu} \right)^{ \frac{\alpha}{\alpha-1}} $ for $ \alpha \neq 1 $ is non-increasing under normalised $ \alpha $-Gauss curvature flow as well. The proof is the same as done in $ \alpha $-Gauss curvature flow since the time derivative of $ \mathcal{E}_{\alpha} $ comes out to be the same. 
+
 
 (7/9/24) Consider the normalized $ \alpha $-CSF flow in $ \R^{2} $ for convex curves, where the time derivative of the support funtion is given by 
 \[ \partial_{t}\sigma = - \mathfrak{r}[\sigma]^{-\alpha}+ \sigma\fint_{S^{1}} \mathfrak{r}[\sigma]^{1-\alpha}d \theta.\]
@@ -1274,5 +1281,6 @@ For the second equality it is enough to do it for $ f=g $ because of polarizatio
 \end{align*}
 
 This completes the proof of invariance of spectrum of $ L_{\sigma_{s}} $ since the differential change in inner product is zero implying Rayleigh quotient gives same eigenvalues. 
+
 
 \end{document}
