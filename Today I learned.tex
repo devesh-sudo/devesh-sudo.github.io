@@ -1167,7 +1167,7 @@ The support function $ \eta $  satisfies the property that its homogenous degree
 \[ \frac{\partial \tilde{X}}{\partial \tau} =-\tilde{K}^{\alpha}\nu + \frac{\tilde{X}}{|S^{n}|}\int_{S^{n}}\tilde{K}^{\alpha-1} d \bar{\mu} =-\tilde{K}^{\alpha}\nu + \tilde{X}\fint_{S^{n}}\tilde{K}^{\alpha-1} d \bar{\mu} \]
 or 
 \[ \partial_{\tau} \sigma = -\det A[\sigma]^{-\alpha} + \sigma \fint_{S^{n}}\det A[\sigma]^{1-\alpha} d\bar{\mu} \]
-in terms of the support function. Let $ \sigma_{s} = \sigma_{0}+ s \eta $ be a fixed volume variation for a shrinker $ \sigma_{0} $ with $ 1= \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} =\fint_{S^{n}} \sigma_{0}\det A[\sigma_{0}] $ (i.e. $ \sigma_{0}c = \det A[\sigma_{0}]^{-\alpha} $ for $ c = \fint_{S^{n}}\det A[\sigma_{0}]^{1-\alpha} $), then \begin{align*}
+in terms of the support function. Let $ \sigma_{s} = \sigma_{0}+ s \eta $ be a fixed volume variation for a shrinker $ \sigma_{0} $ with $ 1= \frac{\text{Vol}(\sigma_{0})}{|B^{n+1}|} =\fint_{S^{n}} \sigma_{0}\det A[\sigma_{0}] $ (i.e. $ \sigma_{0}c = \det A[\sigma_{0}]^{-\alpha} $ for $ c = \fint_{S^{n}}\det A[\sigma_{0}]^{1-\alpha} = E_{\alpha}(\sigma)^{\alpha-1} = \mathcal{E}_{\alpha}(\sigma)^{\alpha-1}$), then \begin{align*}
    \partial_{\tau}(\sigma_{0}+ s \eta) & = - \det A[\sigma_{0}+s \eta]^{-\alpha} + (\sigma_{0}+ s \eta)\fint_{S^{n}} \det A[\sigma_{0} + s \eta]^{1-\alpha} d \bar{\mu} \\
    & = - \det A[\sigma_{0}+s \eta]^{-\alpha} + c(\sigma_{0}+ s \eta)
 \end{align*}
@@ -1187,5 +1187,92 @@ For $ \sigma_{0} = 1 $, this simplifies to $ \mathcal{L} \eta = \alpha(\Delta \e
 
 \quad (1/9/24) 
 
+(7/9/24) Consider the normalized $ \alpha $-CSF flow in $ \R^{2} $ for convex curves, where the time derivative of the support funtion is given by 
+\[ \partial_{t}\sigma = - \mathfrak{r}[\sigma]^{-\alpha}+ \sigma\fint_{S^{1}} \mathfrak{r}[\sigma]^{1-\alpha}d \theta.\]
+The linearized equation around a shrinker $ \sigma $ with variation $ \eta $ is given by 
+\[ \partial_{t} \eta  = E_{\alpha}(\sigma)^{\alpha-1}\left(\alpha \frac{\sigma}{ \mathfrak{r}[\sigma]} \mathfrak{r}[\eta]+ \eta\right)\]
+where $ \mathfrak{r}[f] = f_{\theta \theta}+f $. Consider the $ L^{2} $ measure space $ L^{2}_{\sigma} = L^{2}( \frac{\mathfrak{r}[\sigma]}{\sigma}d \theta ) $ and $ \mathcal{L}f = \frac{\sigma}{ \mathfrak{r}[\sigma]} \mathfrak{r}[f] $ on $ S^{1} $. Then $ \mathcal{L} $ is a self-adjoint operator on $ L^{2}_{\sigma} $ hence has real eigenvalues and there is an orthonormal eigenbasis. The first three eigenvalues are $ -1, 0, 0 $ for functions $ \sigma, \sin \theta, \cos \theta $ respectively ($ \lambda $ is an eigenvalue if $ \mathcal{L}f+ \lambda f = 0 $). Using Brunn-Minkowski inequality, Andrews proved that there are no other non-positive eigenvalues. Using Rayleigh quotient, the next eigenvalue is given by 
+\begin{align*}
+   \lambda_{4} &  = \inf \left\{ - \frac{\left< f, \mathcal{L}f \right>_{\sigma}}{ \left< f,f \right>_{\sigma}} : f \in C^{\infty}(S^{1}), \left< \sigma, f \right>_{\sigma} = \left< \sin \theta, f \right>_{\sigma} = \left< \cos \theta, f \right>_{\sigma} = 0\right\} \\
+   & = \inf \left\{ \frac{\int_{S^{1}}f_{\theta}^{2}-f^{2}}{\int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f^{2}} : \int_{S^{1}} \mathfrak{r}[\sigma]f = \int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f \sin \theta = \int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f \cos \theta = 0 \right\}.
+\end{align*}
+
+Andrews also proved that the spectrum of $ \mathcal{L} $ is invariant under $ \operatorname{SL}(2, \R) $ transformations using Rayleigh quotient. I will reconstruct the proof here. The lie algebra $ \mathfrak{sl}(2) $ of traceless matrices can be decomposed as 
+\[ \mathfrak{sl}(2) = \left\{ \begin{bmatrix}
+   a & b\\
+   b & -a
+\end{bmatrix} : a, b \in \R\right\} \oplus \left\{\begin{bmatrix}
+   0 & t \\
+   -t & 0
+\end{bmatrix} : t \in \R \right\} \]
+where the second summand generates rotations. To prove the invariance of spectrum, it will be enough to prove that the lie algebra action leaves the inner product and orthogonality to $ \sigma, \cos, \sin $ preserved. More formally, let $ X \in \mathfrak{sl}(2) $, consider the convex curve $ \gamma_{t} = e^{sX} \circ \gamma $ and denote by $ \sigma_{s} $ the support function of $ \gamma_{s} $. Then, 
+\[ \gamma_{s}(\theta) = e^{sX} \gamma(\theta) = e^{sX} \begin{bmatrix}
+   \cos \theta & -\sin \theta \\
+   \sin \theta & \cos \theta
+\end{bmatrix} \begin{bmatrix}
+   s \\
+   s_{\theta}
+\end{bmatrix} \]
+where for $ s \neq 0 $, this is not necessarily the inverse Gauss map parametrization. Since rotations don't change the geometry, we will assume that $ X $ comes from the first summand, i.e. $ X = \begin{bmatrix}
+   a & b \\
+   b & -a
+\end{bmatrix} $. The derivative of support function at $ s=0 $ will be given by the derivative of the action since the inverse Gauss map is continuous at $ s = 0 $, so 
+\begin{align*}
+   \frac{\partial}{\partial s} \bigg|_{s=0} \sigma_{s}(\theta) & = \frac{\partial}{\partial s}\bigg|_{s=0} \left< \gamma_{s}(\theta), e^{i \theta}  \right> \\
+   & = \frac{\partial}{\partial s}\bigg|_{s=0} \left< e^{sX}\gamma(\theta), e^{i \theta}  \right> \\
+   & = \frac{\partial}{\partial s}\bigg|_{s=0} \begin{bmatrix}
+      \cos \theta & \sin \theta
+   \end{bmatrix}e^{sX} \begin{bmatrix}
+      \cos \theta & - \sin \theta \\
+      \sin \theta & \cos \theta
+   \end{bmatrix} \begin{bmatrix}
+      \sigma \\
+      \sigma_{\theta}
+   \end{bmatrix}\\
+   & = \begin{bmatrix}
+      \cos \theta & \sin \theta
+   \end{bmatrix} \begin{bmatrix}
+      a & b \\
+      b & -a
+   \end{bmatrix} \begin{bmatrix}
+      \cos \theta & - \sin \theta \\
+      \sin \theta & \cos \theta
+   \end{bmatrix} \begin{bmatrix}
+      \sigma \\
+      \sigma_{\theta}
+   \end{bmatrix} \\
+   & = R \left( \cos(2 \theta - \theta_{0})\sigma - \sin(2 \theta - \theta_{0})\sigma_{\theta} \right)
+\end{align*}
+where $ R = \sqrt{a^{2}+b^{2}} $ , $ \cos\theta_{0} = \frac{a}{R} $ and $ \sin \theta_{0} = \frac{b}{R} $. Also the induced change in the radius of curvature is given by \begin{align*}
+   \frac{\partial}{\partial s}\bigg|_{s=0} \mathfrak{r}[\sigma_{s}] & = \mathfrak{r}\left[\frac{\partial}{\partial s}\bigg|_{s=0} \sigma_{s}\right] \\
+   & = R\mathfrak{r} [\cos(2 \theta - \theta_{0})\sigma - \sin(2 \theta - \theta_{0})\sigma_{\theta}] \\
+   & = - R (3 \mathfrak{r}[\sigma]\cos(2 \theta-\theta_{0})+ \mathfrak{r}[\sigma]_{\theta}\sin(2 \theta-\theta_{0})).
+\end{align*}
+We will also formally consider this the action on all smooth functions $ C^{\infty}(S^{1}) $, not just support functions. 
+
+To prove the invariance of spectrum, we will prove the following
+\[ \frac{d}{d s}\bigg|_{s=0} \left< \mathcal{L}_{\sigma_{s}} f_{s},g_{s} \right>_{\sigma_{s}} = 0, \quad  \frac{d}{ds}\bigg|_{s=0} \left< f_{s}, g_{s} \right>_{\sigma_{s}} = 0  \]
+where the action $ f_{s} = e^{sX}f $ is formally extended to $ C^{\infty}(S^1) $ using the same formula as for the support functions. For the first equality, \begin{align*}
+   \frac{d}{d s}\bigg|_{s=0} \left< \mathcal{L}_{\sigma_{s}} f_{s},g_{s} \right>_{\sigma_{s}} & = \frac{d}{d s}\bigg|_{s=0} \int_{S^{1}}g_{s} \mathfrak{r}[f_{s}] \\
+   & = \int_{S^{1}} \mathfrak{r}[f]\frac{\partial}{\partial s}\bigg|_{s=0}g_{s} + g \frac{\partial}{\partial s}\bigg|_{s=0}\mathfrak{r}\left[f_{s}\right]  \\
+   & = R\int_{S^{1}} \mathfrak{r}[f](\cos(2 \theta-\theta_0)g - \sin(2 \theta-\theta_{0})g_{\theta}) \\
+   & \quad - R\int_{S^{1}} g(3 \mathfrak{r}[f]\cos(2 \theta-\theta_{0})+ \mathfrak{r}[f]_{\theta}\sin(2 \theta-\theta_{0})) \\
+   & = -R \int_{S^{1}} 2 \cos(2 \theta-\theta_{0})g \mathfrak{r}[f]+ \sin(2 \theta-\theta_{0})(g \mathfrak{r}[f])_{\theta} \\
+   & = - R \int_{S^{1}} (\sin(2 \theta-\theta_{0})g \mathfrak{r}[f])_{\theta} \\
+   & = 0
+\end{align*}
+For the second equality it is enough to do it for $ f=g $ because of polarization identity,\begin{align*}
+   \frac{d}{ds}\bigg|_{s=0} \left< f_{s}, f_{s} \right>_{\sigma_{s}} & = \frac{d}{ds}\bigg|_{s=0} \int_{S^{1}} \frac{ \mathfrak{r}[\sigma_{s}]}{\sigma_{s}}f_{s}^{2} \\
+   & = \int_{S^{1}} f^{2}\frac{\partial}{\partial s}\bigg|_{s=0}\frac{ \mathfrak{r}[\sigma_{s}]}{\sigma_{s}} + 2\frac{f \mathfrak{r}[\sigma]}{\sigma}  \frac{\partial}{\partial s}\bigg|_{s=0}f_{s} \\
+   & = \int_{S^{1}} \frac{f^{2}}{\sigma}\frac{\partial}{\partial s}\bigg|_{s=0} \mathfrak{r}[\sigma_{s}] - \frac{f^{2}\mathfrak{r}[\sigma]}{\sigma^{2}} \frac{\partial}{\partial s}\bigg|_{s=0} \sigma_{s} + 2\frac{f \mathfrak{r}[\sigma]}{\sigma}  \frac{\partial}{\partial s}\bigg|_{s=0}f_{s} \\
+   & = \int_{S^{1}} \frac{f^{2}}{\sigma}(-R)(3\cos(2 \theta- \theta_{0}) \mathfrak{r}[\sigma] + \sin(2 \theta- \theta_{0}) \mathfrak{r}[\sigma]_{\theta}) \\
+   & \quad -\int_{S^{1}} \frac{f^{2} \mathfrak{r}[\sigma]}{\sigma^{2}}R(\cos(2 \theta-\theta_{0})\sigma - \sin(2 \theta-\theta_{0})\sigma_{\theta}) \\
+   & \quad + 2 \int_{S^{1}} \frac{f \mathfrak{r}[\sigma]}{\sigma}R(\cos(2 \theta - \theta_{0})f -\sin(2 \theta-\theta_{0})f_{\theta}) \\
+   & = -R\int_{S^{1}} 2 \cos(2 \theta-\theta_{0}) \left( \frac{f^{2} \mathfrak{r}[\sigma]}{\sigma}\right)  + \sin(2 \theta- \theta_{0}) \left( \frac{f^{2} \mathfrak{r}[\sigma]}{\sigma}\right)_{\theta} \\
+   & = - R \int_{S^{1}} \left(\sin(2 \theta-\theta_{0}) \frac{f^{2} \mathfrak{r}[\sigma]}{\sigma}\right)_{\theta} \\
+   & = 0. 
+\end{align*}
+
+This completes the proof of invariance of spectrum of $ L_{\sigma_{s}} $ since the differential change in inner product is zero implying Rayleigh quotient gives same eigenvalues. 
 
 \end{document}
