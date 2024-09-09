@@ -1198,13 +1198,13 @@ Choi and Sun prove the following theorem about the elliptic operator $ \mathcal{
 \[ \partial_{t}\sigma = - \mathfrak{r}[\sigma]^{-\alpha}+ \sigma\fint_{S^{1}} \mathfrak{r}[\sigma]^{1-\alpha}d \theta.\]
 The linearized equation around a shrinker $ \sigma $ with variation $ \eta $ is given by 
 \[ \partial_{t} \eta  = E_{\alpha}(\sigma)^{\alpha-1}\left(\alpha \frac{\sigma}{ \mathfrak{r}[\sigma]} \mathfrak{r}[\eta]+ \eta\right)\]
-where $ \mathfrak{r}[f] = f_{\theta \theta}+f $. Consider the $ L^{2} $ measure space $ L^{2}_{\sigma} = L^{2}( \frac{\mathfrak{r}[\sigma]}{\sigma}d \theta ) $ and $ \mathcal{L}f = \frac{\sigma}{ \mathfrak{r}[\sigma]} \mathfrak{r}[f] $ on $ S^{1} $. Then $ \mathcal{L} $ is a self-adjoint operator on $ L^{2}_{\sigma} $ hence has real eigenvalues and there is an orthonormal eigenbasis. The first three eigenvalues are $ -1, 0, 0 $ for functions $ \sigma, \sin \theta, \cos \theta $ respectively ($ \lambda $ is an eigenvalue if $ \mathcal{L}f+ \lambda f = 0 $). Using Brunn-Minkowski inequality, Andrews proved that there are no other non-positive eigenvalues. Using Rayleigh quotient, the next eigenvalue is given by 
+where $ \mathfrak{r}[f] = f_{\theta \theta}+f $. Consider the $ L^{2} $ measure space $ L^{2}_{\sigma} = L^{2}( \frac{\mathfrak{r}[\sigma]}{\sigma}d \theta ) $ and $ \mathcal{L}_{\sigma}f = \frac{\sigma}{ \mathfrak{r}[\sigma]} \mathfrak{r}[f] $ on $ S^{1} $. Then $ \mathcal{L}_{\sigma} $ is a self-adjoint operator on $ L^{2}_{\sigma} $ hence has real eigenvalues and there is an orthonormal eigenbasis. The first three eigenvalues are $ -1, 0, 0 $ for functions $ \sigma, \sin \theta, \cos \theta $ respectively ($ \lambda $ is an eigenvalue if $ \mathcal{L}f+ \lambda f = 0 $). Using Brunn-Minkowski inequality, Andrews proved that there are no other non-positive eigenvalues. Using Rayleigh quotient, the next eigenvalue is given by 
 \begin{align*}
-   \lambda_{4} &  = \inf \left\{ - \frac{\left< f, \mathcal{L}f \right>_{\sigma}}{ \left< f,f \right>_{\sigma}} : f \in C^{\infty}(S^{1}), \left< \sigma, f \right>_{\sigma} = \left< \sin \theta, f \right>_{\sigma} = \left< \cos \theta, f \right>_{\sigma} = 0\right\} \\
+   \lambda_{4} &  = \inf \left\{ - \frac{\left< f, \mathcal{L}_{\sigma}f \right>_{\sigma}}{ \left< f,f \right>_{\sigma}} : f \in C^{\infty}(S^{1}), \left< \sigma, f \right>_{\sigma} = \left< \sin \theta, f \right>_{\sigma} = \left< \cos \theta, f \right>_{\sigma} = 0\right\} \\
    & = \inf \left\{ \frac{\int_{S^{1}}f_{\theta}^{2}-f^{2}}{\int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f^{2}} : \int_{S^{1}} \mathfrak{r}[\sigma]f = \int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f \sin \theta = \int_{S^{1}} \frac{ \mathfrak{r}[\sigma]}{\sigma}f \cos \theta = 0 \right\}.
 \end{align*}
 
-Andrews also proved that the spectrum of $ \mathcal{L} $ is invariant under $ \operatorname{SL}(2, \R) $ transformations using Rayleigh quotient. I will reconstruct the proof here. The lie algebra $ \mathfrak{sl}(2) $ of traceless matrices can be decomposed as 
+Andrews also proved that the spectrum of $ \mathcal{L}_{\sigma} $ is invariant under $ \operatorname{SL}(2, \R) $ transformations using Rayleigh quotient. I will reconstruct the proof here. The lie algebra $ \mathfrak{sl}(2) $ of traceless matrices can be decomposed as 
 \[ \mathfrak{sl}(2) = \left\{ \begin{bmatrix}
    a & b\\
    b & -a
@@ -1282,5 +1282,33 @@ For the second equality it is enough to do it for $ f=g $ because of polarizatio
 
 This completes the proof of invariance of spectrum of $ L_{\sigma_{s}} $ since the differential change in inner product is zero implying Rayleigh quotient gives same eigenvalues. 
 
-(8/9/24) Let $ \sigma $ be a shrinker for $ \alpha $-GCF and $ L_{\sigma}f = \sigma A^{-1}[\sigma]^{jk}A[f]_{jk} $ be the associated elliptic self-adjoint operator for $ L^{2}_{\sigma} = L^{2} ( \frac{\det A[\sigma]}{\sigma} d \bar{\mu}) $ on $ S^{n} $. Using similar methods like in the case of curves, we hope to prove that the spectrum of $ L_{\sigma} $ is $ \operatorname{SL}(n+1, \R) $ invariant. 
+(9/9/24) Let $ \sigma $ be a shrinker for $ \alpha $-GCF and $ L_{\sigma}f = \sigma A^{-1}[\sigma]^{jk}A[f]_{jk} $ be the associated elliptic self-adjoint operator for $ L^{2}_{\sigma} = L^{2} ( \frac{\det A[\sigma]}{\sigma} d \bar{\mu}) $ on $ S^{n} $. Using similar methods like in the case of curves, we hope to prove that the spectrum of $ L_{\sigma} $ is $ \operatorname{SL}(n+1, \R) $ invariant. The inverse Gauss map is given by 
+\[ X(z) = \sigma(z)z+ \overline{\nabla}\sigma(z). \]
+Let $ L \in \mathfrak{sl}(n+1, \R) $ be a symmetric zero trace matrix. Let $ X_{s} = e^{sL} \circ X $ denote the affine boosted hypersurfaces. The vairation of the support function is given by 
+\begin{align*}
+   \frac{\partial}{\partial s}\bigg|_{s=0} \sigma_{s}(z) & = \frac{\partial}{\partial s}\bigg|_{s=0}  \left< e^{sL}X(z),z \right> \\
+   & = \left< \sigma(z)L(z) + L(\overline{\nabla}\sigma(z)),z \right> \\
+   & = \sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)
+\end{align*}
+In the basis $ \{\partial_{i},z\} $ we can write $ L $ as 
+\[ L(\partial_{i}) = P^{j}_{i}\partial_{j}+ Q_{i}z;\quad \text{ and }\quad L(z) = R^{i}\partial_{i}+ Sz \]
+for some $ P_{i}^{j},Q_{i},R^{i} $ and $ S $. Observe that $ z^{T}Lz = S $ and $ z^{T}L\overline{\nabla}\sigma(z) = Q_{i}\partial^{i}\sigma $.
+
+Now we calculate the variation in the operator $ A_{ij} $ for the affine boost for an orthonormal basis $ \{\partial_{i}\} $ of $ S^{n} $ at $ z $, \begin{align*}
+   \frac{\partial}{\partial s}\bigg|_{s=0} A[\sigma_{s}]_{ij}(z) & = A \left[\frac{\partial}{\partial s}\bigg|_{s=0} \sigma_{s} \right]_{ij}(z) \\
+   & = \overline{\nabla}_{i}\overline{\nabla}_{j} \left(  \sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)\right) + \delta_{ij} (\sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)) \\
+   %& = \overline{\nabla}_{i}(\overline{\nabla}_{j}\sigma(z)z^{T}Lz + \sigma(z)\overline{\nabla}_{j}(z^{T}Lz)) + \delta_{ij}\left(  \sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)\right) \\
+   & = \left\{z^{T}Lz\overline{\nabla}_{i}\overline{\nabla}_{j} \sigma(z) + 2\overline{\nabla}_{i}\sigma(z) \overline{\nabla}_{j}(z^{T}Lz) + \sigma(z)\overline{\nabla}_{i}\overline{\nabla}_{j}(z^{T}Lz)\right\} \\
+   & \quad +\overline{\nabla}_{i}\overline{\nabla}_{j} z^{T}L \overline{\nabla}\sigma(z) + \delta_{ij}\left(  \sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)\right) \\
+   & = \left\{S\overline{\nabla}_{i}\overline{\nabla}_{j} \sigma(z) + 2 \partial_{i}\sigma \partial_{j}S \sigma(z) + \sigma(z)\overline{\nabla}_{i}\overline{\nabla}_{j}S\right\} + \overline{\nabla}_{i}\overline{\nabla}_{j}Q_{k}\partial^{k}\sigma \\
+   & \quad + \delta_{ij}\left( S\sigma(z) + Q_{k}\partial^{k}\sigma\right)
+\end{align*}
+
+
+
+
+
+
+
+
 \end{document}
