@@ -1311,8 +1311,11 @@ The second variation upto first order is given by \begin{align*}
 \end{align*}
 For $ \sigma = 1 $, we get 
 \begin{align*}
-   \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s}) & = - \left( \fint_{S^{n}} \eta(\Delta \eta + n \eta) + \frac{1}{\alpha}\eta^{2} \right) \\
+   \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s}) & = - \left( \fint_{S^{n}} \eta(\Delta_{S^{n}} \eta + n \eta) + \frac{1}{\alpha}\eta^{2} \right) \\
    & = -\frac{1}{\alpha} \left( \fint_{S^{n}} (1+n \alpha)\eta^{2} - \alpha|\overline{\nabla}\eta|^{2}\right).
 \end{align*}
+For a spherical harmonic $ \eta $ with $ \Delta_{S^{n}} \eta = -\lambda \eta $, this also gives 
+\[ \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s})  = \left( \lambda - n - \frac{1}{\alpha} \right)\fint_{S^{n}} \eta^{2}. \]
+In particular for $ \alpha \in (0,\frac{1}{\lambda-n})  $ the sphere is an minima of the Firey entropy  $ \mathcal{E}_{\alpha} $ in the space of constant volume convex bodies. 
 
 \end{document}
