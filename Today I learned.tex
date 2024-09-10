@@ -1326,16 +1326,18 @@ For a spherical harmonic $ \eta $ with $ \Delta_{S^{n}} \eta = -\lambda \eta $, 
 \[ \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s})  = \left( \lambda - n - \frac{1}{\alpha} \right)\fint_{S^{n}} \eta^{2}. \]
 In particular for $ \alpha \in (0,\frac{1}{\lambda-n})  $ the sphere is a maxima of the Firey entropy  $ \mathcal{E}_{\alpha} $ in the space of constant volume convex bodies with respect to spherical harmonic variation $ \eta $.
 
-We can calculate the same for curvature entropy as well under constant volume variation. The curvature entropy is $ E_{\alpha}(\sigma_{s}) = \left(\fint_{S^{n}} \det A[\sigma]^{1-\alpha} \right)^{\frac{1}{\alpha-1}} $. The first variation is given by \begin{align*}
+We can calculate the same for curvature entropy as well under constant volume variation around a shrinker. The curvature entropy is $ E_{\alpha}(\sigma_{s}) = \left(\fint_{S^{n}} \det A[\sigma]^{1-\alpha} \right)^{\frac{1}{\alpha-1}} $. The first variation is given by \begin{align*}
    \frac{\partial}{\partial s} E_{\alpha}(\sigma_{s}) & = -\left(\fint_{S^{n}} \det A[\sigma]^{1-\alpha} \right)^{\frac{1}{\alpha-1}-1}\fint_{S^{n}} \det A[\sigma]^{1-\alpha}A^{-1}[\sigma]^{jk}A[\eta]_{jk} \\
-   & = -E_{\alpha}^{2-\alpha} \left< \det A[\sigma]^{-\alpha}, \mathcal{L}_{\sigma} \eta \right>.
+   & = - E_{\alpha}^{2-\alpha}\fint_{S^{n}} \eta \det A[\sigma]A^{-1}[\sigma]^{jk}A[\det A[\sigma]^{-\alpha}]_{jk}.
 \end{align*}
 It follows that \begin{align*}
    \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0}E_{\alpha}(\sigma_{s}) & = - E_{\alpha}^{2-\alpha} \fint_{S^{n}} (1-\alpha)\det A[\sigma]^{1-\alpha}(A^{-1}[\sigma]^{jk}A[\eta]_{jk})^{2} \\
    & \quad + E_{\alpha}^{2-\alpha}\fint_{S^{n}} \det A[\sigma]^{1-\alpha}A^{-1}[\sigma]^{jp}A[\eta]_{pq}A^{-1}[\sigma]^{qk}A[\eta]_{jk} \\
    & \quad - E_{\alpha}^{2-\alpha}\fint_{S^{n}} (\partial_{s} \eta)\det A[\sigma]A^{-1}[\sigma]^{jk}A[\det A[\sigma]^{-\alpha}]_{jk} \\
    & = - E_{\alpha} \fint_{S^{n}} (1-\alpha) \sigma \det A[\sigma](A^{-1}[\sigma]^{jk}A[\eta]_{jk})^{2} \\
-   & \quad + E_{\alpha} \fint_{S^{n}} \det A[\sigma]|A[\eta]|_{A[\sigma]}^{2} + nE_{\alpha} \fint_{S^{n}} \eta \det A[\sigma]A^{-1}[\sigma]^{jk}A[\eta]_{jk} \\
-   & = E_{\alpha} \left( (\alpha-1)\left< \sigma^{2}, \operatorname{tr}(A[\eta])_{A[\sigma]}^{2} \right>_{\sigma} + \left< \sigma, |A[\eta]|_{A[\sigma]}^{2} \right>_{\sigma} + n \left< \eta, \mathcal{L}_{\sigma}\eta \right>_{\sigma}\right)
+   & \quad + E_{\alpha} \fint_{S^{n}} \sigma\det A[\sigma]|A[\eta]|_{A[\sigma]}^{2} + nE_{\alpha} \fint_{S^{n}} \eta \det A[\sigma]A^{-1}[\sigma]^{jk}A[\eta]_{jk} \\
+   & = E_{\alpha} \left( (\alpha-1)\left< \sigma^{2}, \operatorname{tr}(A[\eta])_{A[\sigma]}^{2} \right>_{\sigma} + \left< \sigma^{2}, |A[\eta]|_{A[\sigma]}^{2} \right>_{\sigma} + n \left< \eta, \mathcal{L}_{\sigma}\eta \right>_{\sigma}\right).
 \end{align*}
+
+(11/9/24) 
 \end{document}
