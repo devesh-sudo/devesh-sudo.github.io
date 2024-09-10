@@ -1272,8 +1272,9 @@ Let $ L \in \mathfrak{sl}(n+1, \R) $ be a symmetric zero trace matrix. Let $ X_{
 \begin{align*}
    \frac{\partial}{\partial s}\bigg|_{s=0} \sigma_{s}(z) & = \frac{\partial}{\partial s}\bigg|_{s=0}  \left< e^{sL}X(z),z \right> \\
    & = \left< \sigma(z)L(z) + L(\overline{\nabla}\sigma(z)),z \right> \\
-   & = \sigma(z)z^{T}Lz + z^{T}L\overline{\nabla}\sigma(z)
+   & = \sigma(z)z^{T}Lz + \left< \overline{\nabla}\sigma(z),Lz \right>
 \end{align*}
+where in the last line we use that $ L $ is symmetric hence self-adjoint.
 In the basis $ \{\partial_{i},z\} $ we can write $ L $ as 
 \[ L(\partial_{i}) = P^{j}_{i}\partial_{j}+ Q_{i}z;\quad \text{ and }\quad L(z) = R^{i}\partial_{i}+ Sz \]
 for some $ P_{i}^{j},Q_{i},R^{i} $ and $ S $. Observe that $ z^{T}Lz = S $ and $ z^{T}L\overline{\nabla}\sigma(z) = Q_{i}\partial^{i}\sigma $.
@@ -1293,29 +1294,37 @@ Now we calculate the variation in the operator $ A_{ij} $ for the affine boost f
 
 (10/9/24) Let $ \sigma_{s} $ be a variation with $ \sigma_{0} = \sigma $ a shrinker (so $ \mathcal{E}_{\alpha}(\sigma)^{\alpha-1}\sigma = \det A[\sigma]^{-\alpha}$) and $ \text{Vol}(\sigma_{s}) = |B^{n+1}| $. Assume that the variation is given by $ \partial_{s} \sigma = \eta_{s} $. The constant volume condition implies 
 \[ 0 = \partial_{s}\text{Vol}(\sigma_{s}) = \int_{S^{n}} \eta_{s} \det A[\sigma_{s}].\]
-The Firey entropy is given by $ \mathcal{E}_{\alpha}(\sigma_{s}) =  \left( \frac{|B^{n+1}|}{\text{Vol}(\mathcal{M}^{n})} \right)^{ \frac{1}{n+1}} \left( \fint_{S^{n}}\sigma_{s}^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}} = \left( \fint_{S^{n}}\sigma_{s}^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}}$.
 Differentiating this further gives, \begin{align*}
    0 & = \int_{S^{n}}(\partial_{s}\eta_{s}) \det A[\sigma_{s}] + \eta_{s}\det A[\sigma_{s}]A^{-1}[\sigma_{s}]^{jk}A[\eta_{s}]_{jk}.
 \end{align*}
+The Firey entropy is given by $ \mathcal{E}_{\alpha}(\sigma_{s}) =  \left( \frac{|B^{n+1}|}{\text{Vol}(\mathcal{M}^{n})} \right)^{ \frac{1}{n+1}} \left( \fint_{S^{n}}\sigma_{s}^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}} = \left( \fint_{S^{n}}\sigma_{s}^{ \frac{\alpha-1}{\alpha}} d \bar{\mu}\right)^{\frac{\alpha}{\alpha-1}}$.
 The first variation of the Firey entropy is given by \begin{align*}
    \frac{\partial}{\partial s}\mathcal{E}_{\alpha}(\sigma_{s}) & = \frac{\partial}{\partial s} \left( \fint_{S^{n}}\sigma_{s}^{1- \frac{1}{\alpha}} \right)^{ \frac{\alpha}{\alpha-1}} \\
    & = \left( \fint_{S^{n}}\sigma_{s}^{1- \frac{1}{\alpha}} \right)^{\frac{1}{\alpha-1}} \left( \fint_{S^{n}}\sigma_{s}^{-\frac{1}{\alpha}}\eta_{s} \right) (= 0 \text{ at } s=0).
 \end{align*}
-The second variation upto first order is given by \begin{align*}
+The second variation is given by \begin{align*}
    \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s}) & = \frac{1}{\alpha}\left( \fint_{S^{n}} \sigma^{1- \frac{1}{\alpha}} \right)^{\frac{1}{\alpha-1}-1} \left( \fint_{S^{n}}\sigma^{-\frac{1}{\alpha}}\eta \right)^{2} \\
-   & \quad \left( \fint_{S^{n}} \sigma^{1-\frac{1}{\alpha}} \right)^{\frac{1}{\alpha-1}} \left( \fint_{S^{n}}-\frac{1}{\alpha} \sigma^{-\frac{1}{\alpha}-1}\eta^{2}+ \sigma^{-\frac{1}{\alpha}}(\partial_{s}\eta) \right) \\
+   & \quad + \left( \fint_{S^{n}} \sigma^{1-\frac{1}{\alpha}} \right)^{\frac{1}{\alpha-1}} \left( \fint_{S^{n}}-\frac{1}{\alpha} \sigma^{-\frac{1}{\alpha}-1}\eta^{2}+ \sigma^{-\frac{1}{\alpha}}(\partial_{s}\eta) \right) \\
    & = \left( \fint_{S^{n}}\sigma^{1- \frac{1}{\alpha}} \right)^{\frac{1}{\alpha-1}-1} \biggl\{\frac{1}{\alpha}\left( \fint_{S^{n}}\sigma^{-\frac{1}{\alpha}}\eta \right)^{2}\\
    & \quad + \mathcal{E}_{\alpha}(\sigma)^{\frac{\alpha-1}{\alpha}}\left(\fint_{S^{n}} \sigma^{1-\frac{1}{\alpha}} \right) \left( \fint_{S^{n}}(\partial_{s}\eta)\det A[\sigma] - \frac{1}{\alpha}\sigma^{-1}\eta^{2}\det A[\sigma] \right) \biggr\} \\
    & = \mathcal{E}_{\alpha}(\sigma)\left( \fint_{S^{n}}(\partial_{s}\eta)\det A[\sigma] - \frac{1}{\alpha}\sigma^{-1}\eta^{2}\det A[\sigma] \right) \\
-   & = - \mathcal{E}_{\alpha}(\sigma) \left( \fint_{S^{n}}\eta \det A[\sigma]A^{-1}[\sigma]^{jk}A[\eta]_{jk} + \frac{1}{\alpha}\sigma^{-1}\eta^{2}\det A[\sigma] \right).
+   & = - \mathcal{E}_{\alpha}(\sigma) \left( \fint_{S^{n}}\eta \det A[\sigma]A^{-1}[\sigma]^{jk}A[\eta]_{jk} + \frac{1}{\alpha}\sigma^{-1}\eta^{2}\det A[\sigma] \right) \\
+   & = - \mathcal{E}_{\alpha}(\sigma) \left( \left< \eta, \mathcal{L}_{\sigma}\eta \right>_{\sigma} + \left< \eta, \frac{\eta}{\alpha} \right>_{\sigma} \right) \\
+   & = - \frac{\mathcal{E}_{\alpha}(\sigma)}{\alpha}\left< \eta, (\alpha \mathcal{L}_{\sigma} + 1)\eta \right>_{\sigma}.
 \end{align*}
+Thus the stability of a shrinker is decided by the index of $ \alpha L_{\sigma}+ 1 $. Furthermore by Brunn-Minkowski inequality one can prove that 
+\[ \left< \eta, \mathcal{L}_{\sigma} \eta \right>_{\sigma} = \fint_{S^{n}} \eta \det A[\sigma] A^{-1}[\sigma]^{ij}A[\eta]_{ij} \le n \frac{\left(\fint_{S^{n}} \eta \det A [\sigma] \right)^{2}}{\fint_{S^{n}}\sigma \det A[\sigma]} = n \frac{\left< \eta, \sigma \right>_{\sigma}}{\left< \sigma, \sigma \right>_{\sigma}} = 0. \]
+Thus we also have a lower bound, 
+\[ \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma) \ge - \frac{\mathcal{E}_{\alpha}(\sigma)}{\alpha} \left< \eta, \eta \right>_{\sigma}. \]
+
 For $ \sigma = 1 $, we get 
 \begin{align*}
    \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s}) & = - \left( \fint_{S^{n}} \eta(\Delta_{S^{n}} \eta + n \eta) + \frac{1}{\alpha}\eta^{2} \right) \\
-   & = -\frac{1}{\alpha} \left( \fint_{S^{n}} (1+n \alpha)\eta^{2} - \alpha|\overline{\nabla}\eta|^{2}\right).
+   & = -\frac{1}{\alpha} \left( \fint_{S^{n}} (1+n \alpha)\eta^{2} - \alpha|\overline{\nabla}\eta|^{2}\right) \\
+   & \ge -\frac{1}{\alpha} \int_{S^{n}}\eta^{2}.
 \end{align*}
 For a spherical harmonic $ \eta $ with $ \Delta_{S^{n}} \eta = -\lambda \eta $, this also gives 
 \[ \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma_{s})  = \left( \lambda - n - \frac{1}{\alpha} \right)\fint_{S^{n}} \eta^{2}. \]
-In particular for $ \alpha \in (0,\frac{1}{\lambda-n})  $ the sphere is an minima of the Firey entropy  $ \mathcal{E}_{\alpha} $ in the space of constant volume convex bodies. 
+In particular for $ \alpha \in (0,\frac{1}{\lambda-n})  $ the sphere is a maxima of the Firey entropy  $ \mathcal{E}_{\alpha} $ in the space of constant volume convex bodies.
 
 \end{document}
