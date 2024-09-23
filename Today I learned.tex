@@ -1367,5 +1367,19 @@ where we used the mixed volume inequality $ W_{2}^{n+1} \ge |B^{n+1}|^{2}W_{0}^{
 
 The next part is to prove that the inner products $ \left< f_{s}, \mathcal{L}_{\sigma_{s}}g_{s} \right>_{\sigma_{s}} $ and $ \left< f_{s},g_{s} \right>_{\sigma_{s}} $ remains invariant like in the case of curves. 
 
-
+(23/9/24) Consider a variation of support function given by 
+\[ \dot{\sigma} = \sigma \eta + \frac{1}{l}\left< \overline{\nabla}_{S^{n}}\sigma, \overline{\nabla}_{S^{n}} \eta \right> \]
+where $ \eta $ is a spherical harmonic of degree $ l $, i.e. $ \Delta_{S^{n}}\eta = -l(l+n-1)\eta $. Assuming this variation does correspond to a volume preserving variation (may not be true) we check the convexity of the Firey entropy, \begin{align*}
+   \dot{\mathcal{E}}_{\alpha}(\sigma) & = \frac{\partial}{\partial s} \left( \fint_{S^{n}} \sigma^{1-\frac{1}{\alpha}} \right) \\
+   & =  \left( 1-\frac{1}{\alpha} \right) \fint_{S^{n}}\sigma^{-\frac{1}{\alpha}}\left( \sigma \eta + \frac{1}{l}\left< \nabla \sigma, \nabla \eta \right> \right)  \\
+   & = \left(1-\frac{1}{\alpha} \right)\fint_{S^{n}} \sigma^{1-\frac{1}{\alpha}}\eta  + \frac{1}{l}\fint_{S^{n}}\left< \nabla \sigma^{1-\frac{1}{\alpha}}, \nabla \eta \right> \\
+   & = \left( l+n- \frac{1}{\alpha}\right)\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\eta.
+\end{align*}
+This implies, \begin{align*}
+   \ddot{\mathcal{E}}_{\alpha}(\sigma) & = \left( l+n- \frac{1}{\alpha}\right)\fint_{S^{n}}\left(1-\frac{1}{\alpha} \right)\sigma^{-\frac{1}{\alpha}}\eta\left(\sigma \eta+ \frac{1}{l}\left< \nabla \sigma, \nabla \eta \right>\right) \\
+   & = \left(l+n-\frac{1}{\alpha}\right)\left\{\left(1-\frac{1}{\alpha}\right)\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\eta^{2} + \frac{1}{2l}\fint_{S^{n}}\left< \nabla\sigma^{1-\frac{1}{\alpha}}, \nabla \eta^{2} \right>\right\}\\
+   & = \left(l+n-\frac{1}{\alpha}\right)\left\{\left(1-\frac{1}{\alpha}\right)\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\eta^{2} - \frac{1}{2l}\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\Delta \eta^{2}\right\} \\
+   & = \left(l+n-\frac{1}{\alpha}\right)\left\{\left(l+n-\frac{1}{\alpha}\right)\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\eta^{2} - \frac{1}{l}\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}|\nabla \eta|^{2}\right\}.
+\end{align*}
+For $ \alpha < \frac{1}{l+n} $, this implies $ \ddot{\mathcal{E}}_{\alpha}>0 $ which is similar to what we got for the sphere. 
 \end{document}
