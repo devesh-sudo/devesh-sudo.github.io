@@ -1313,7 +1313,7 @@ The second variation is given by \begin{align*}
    & = - \frac{\mathcal{E}_{\alpha}(\sigma)}{\alpha}\left< \eta, (\alpha \mathcal{L}_{\sigma} + 1)\eta \right>_{\sigma}.
 \end{align*}
 Thus the stability of a shrinker is decided by the index of $ \alpha L_{\sigma}+ 1 $. Furthermore by Brunn-Minkowski inequality one can prove that 
-\[ \left< \eta, \mathcal{L}_{\sigma} \eta \right>_{\sigma} = \fint_{S^{n}} \eta \det A[\sigma] A^{-1}[\sigma]^{ij}A[\eta]_{ij} \le n \frac{\left(\fint_{S^{n}} \eta \det A [\sigma] \right)^{2}}{\fint_{S^{n}}\sigma \det A[\sigma]} = n \frac{\left< \eta, \sigma \right>_{\sigma}}{\left< \sigma, \sigma \right>_{\sigma}} = 0. \]
+\[ \left< \eta, \mathcal{L}_{\sigma} \eta \right>_{\sigma} = \fint_{S^{n}} \eta \det A[\sigma] A^{-1}[\sigma]^{ij}A[\eta]_{ij} \le n \frac{\left(\fint_{S^{n}} \eta \det A [\sigma] \right)^{2}}{\fint_{S^{n}}\sigma \det A[\sigma]} = n \frac{\left< \eta, \sigma \right>^{2}_{\sigma}}{\left< \sigma, \sigma \right>_{\sigma}} = 0. \]
 Thus we also have a lower bound, 
 \[ \frac{\partial^{2}}{\partial s^{2}}\bigg|_{s=0} \mathcal{E}_{\alpha}(\sigma) \ge - \frac{\mathcal{E}_{\alpha}(\sigma)}{\alpha} \left< \eta, \eta \right>_{\sigma}. \]
 For $ \sigma = 1 $,
@@ -1382,4 +1382,11 @@ This implies, \begin{align*}
    & = \left(l+n-\frac{1}{\alpha}\right)\left\{\left(l+n-\frac{1}{\alpha}\right)\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}\eta^{2} - \frac{1}{l}\fint_{S^{n}}\sigma^{1-\frac{1}{\alpha}}|\nabla \eta|^{2}\right\}.
 \end{align*}
 For $ \alpha < \frac{1}{l+n} $, this implies $ \ddot{\mathcal{E}}_{\alpha}>0 $ which is similar to what we got for the sphere. 
+
+(25/9/24) Let $ K_{1},\dots, K_{n+1} $ be $ n+1 $ smooth convex bodies in $ \R^{n+1} $ with support functions $ \sigma_{1},\dots, \sigma_{n+1} $. Consider the volume under the Minkowski addition, \begin{align*}
+   \text{Vol}(\lambda_{1}K_{1}+\dots+\lambda_{n+1}K_{n+1}) & = \frac{1}{n+1}\int_{S^{n}}\det A[\lambda_{1}\sigma_{1}+\dots+\lambda_{n+1}\sigma_{n+1}](\lambda_{1}\sigma_{1}+\dots+\lambda_{n+1}\sigma_{n+1}).
+\end{align*}
+It is easy to see that this is a homogeneous polynomial of degree $ n+1 $. Its coefficients give the formula for mixed volume. Expanding the determinant \begin{align*}
+   \det (\lambda_{1}A[\sigma_{1}]+ \dots+ \lambda_{n+1}A[\sigma_{n+1}]) & = 
+\end{align*}
 \end{document}
