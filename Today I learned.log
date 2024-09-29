@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.4.24)  27 SEP 2024 20:37
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.4.24)  27 SEP 2024 10:39
+>>>>>>> parent of ebb011d (Merge branch 'main' of https://github.com/devesh-sudo/devesh-sudo.github.io)
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -468,6 +472,7 @@ Overfull \hbox (14.15315pt too wide) detected at line 1388
 []
  []
 
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1393.
 [59]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1393.
@@ -479,16 +484,38 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1393.
 Here is how much of TeX's memory you used:
  8679 strings out of 483107
  126091 string characters out of 5964630
+=======
+[59]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1398.
+ [60]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1398.
+ (/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1398.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1398.
+ ) 
+Here is how much of TeX's memory you used:
+ 8680 strings out of 483107
+ 126098 string characters out of 5964630
+>>>>>>> parent of ebb011d (Merge branch 'main' of https://github.com/devesh-sudo/devesh-sudo.github.io)
  401692 words of memory out of 5000000
  23392 multiletter control sequences out of 15000+600000
  547858 words of font info for 88 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  34i,14n,45p,1723b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+<<<<<<< HEAD
 Output written on "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" (59 pages, 425472 bytes).
 PDF statistics:
  433 PDF objects out of 1000 (max. 8388607)
  349 compressed objects within 4 object streams
  127 named destinations out of 1000 (max. 500000)
+=======
+Output written on "/home/deveshrajpal/Documents/GitHub/devesh-sudo.github.io/Today I learned.pdf" (60 pages, 427263 bytes).
+PDF statistics:
+ 437 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
+ 128 named destinations out of 1000 (max. 500000)
+>>>>>>> parent of ebb011d (Merge branch 'main' of https://github.com/devesh-sudo/devesh-sudo.github.io)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
