@@ -1395,4 +1395,67 @@ where $ Q(\sigma_{1},\dots,\sigma_{n}) = \sum_{\tau,\nu \in S_{n}}(-1)^{\operato
 The Alexandrov-Fenchel inequality states that for bounded convex bodies $ K_{1},\dots,K_{n+1} $ in $ \R^{n+1} $ the mixed volume satisfy the inequality
 \[ \text{Vol}(K_{1},K_{2},K_{3},\dots,K_{n+1})^{2} \ge \text{Vol}(K_{1},K_{1},K_{3},\dots,K_{n+1}) \cdot \text{Vol}(K_{2},K_{2},K_{3},\dots,K_{n+1}). \]
 
+(28/9/24) Let $ f : R^{n+1} \to \R $ be a $ C^{2} $ function. We want to find a relation between $ \overline{\nabla}^{2}_{ij}f $, the covaraint Hessian of $ f|_{S^{n}} $ and the Euclidean hessian $ D^{2}_{ab}f $. Fix some local coordinate $ \partial_{i} $ on $ S^{n} $, then \begin{align*}
+   \overline{\nabla}_{j}f & = \left< Df, \partial_{j} \right> \\
+   & = D_{a}f\left< e_{a},\partial_{j} \right> \\
+   & = D_{a}f\overline{\nabla}_{j}z^{a}.
+\end{align*}
+It follows that \begin{align*}
+   \overline{\nabla}_{i}\overline{\nabla}_{j}f & = \overline{\nabla}_{j}(D_{a}f) \overline{\nabla}_{i}z^{a} + D_{a}f\overline{\nabla}_{i}\overline{\nabla}_{j}z^{a} \\
+   & = D_{a}D_{b}f\overline{\nabla}_{i}z^{a}\overline{\nabla}_{j}z^{b} + D_{a}f\overline{\nabla}_{i}\overline{\nabla}_{j}z^{a}
+\end{align*}
+and \begin{align*}
+   \overline{\Delta}_{S^{n}}f & = D_{a}D_{b}f \left< \overline{\nabla}z^{a},\overline{\nabla}z^{b} \right> + D_{a}f\overline{\Delta}_{S^{n}}z^{a} \\
+   & = D_{a}D_{b}f(\delta^{ab}-z^{a}z^{b}) - nD_{a}fz^{a} \\
+   & = \Delta_{\R^{n+1}}f-\left< z,D^{2}fz \right> - n \left< Df,z \right>.
+\end{align*}
+If $ f $ is homogeneous of degree $ l $ then we also have $ \left< z,D^{2}fz \right> = l(l-1)f$ and $ \left< Df,z \right> = lf $ so
+\[ \overline{\Delta}_{S^{n}}f = \Delta_{\R^{n+1}}f - l(l+n-1)f. \]
+
+(29/9/24) Let $ f $ be a homogeneous function of degree $ l $ on $ \R^{n+1} $. The gradient flow of $ f $, deforms a hypersurface $ X : S^{n} \to \R^{n+1} $ with support function $ \sigma $ by the equation 
+\begin{align*}
+   \dot{\sigma}(z) & = D_{a}f|_{(\sigma z + \overline{\nabla}\sigma)}z^{a} \\
+   & = \left<  Df|_{X(z)},z \right> \\
+   & = \left< Df|_{X(z)},\frac{X(z)- \overline{\nabla}\sigma}{\sigma} \right> \\
+   & = \frac{lf|_{\sigma z + \overline{\nabla}\sigma}- \left< D_{a}f|_{\sigma z + \overline{\nabla}\sigma},\overline{\nabla}\sigma \right>}{\sigma}
+\end{align*}
+It follows that \begin{align*}
+   \ddot{\sigma} & = D_{b}D_{a}f|_{X(z)}(\dot{\sigma} z + \overline{\nabla}\dot{\sigma})^{b}z^{a} \\
+   & = D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}z^{a}z^{b}z^{c} + D_{b}D_{a}f|_{X(z)}\left< \overline{\nabla}\dot{\sigma}, \overline{\nabla}z^{b} \right>z^{a} \\
+   & = D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}z^{a}z^{b}z^{c} + D_{b}D_{a}f|_{X(z)}\left< \overline{\nabla} D_{c}f|_{X(z)}z^{c}, \overline{\nabla}z^{b}\right>z^{a} \\
+   & = D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}z^{a}z^{b}z^{c} + D_{b}D_{a}f|_{X(z)}\left< D_{d}D_{c}f|_{X(z)}\overline{\nabla}(\sigma z + \overline{\nabla}\sigma)^{d}z^{c} + D_{c}f|_{X(z)}\overline{\nabla}z^{c}, \overline{\nabla}z^{b} \right>z^{a} \\
+   & =  D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}z^{a}z^{b}z^{c} + D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}\left< \overline{\nabla}z^{c}, \overline{\nabla}z^{b} \right>z^{a}\\
+   & \quad + D_{b}D_{a}f|_{X(z)}D_{d}D_{c}f|_{X(z)}\left\{\sigma \left< \overline{\nabla}z^{d}, \overline{\nabla}z^{b}\right> + z^{d}\left< \overline{\nabla}\sigma, \overline{\nabla}z^{b} \right> + \left< \overline{\nabla}(\overline{\nabla}\sigma)^{d}, \overline{\nabla}z^{b} \right>\right\}z^{c}z^{a} \\
+   & =  D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}z^{a}z^{b}z^{c} + D_{b}D_{a}f|_{X(z)}D_{c}f|_{X(z)}(\delta^{cb}-z^{c}z^{b})z^{a} \\
+   & \quad + D_{b}D_{a}f|_{X(z)}D_{d}D_{c}f|_{X(z)} \left\{ \sigma(\delta^{db}-z^{d}z^{b}) + z^{d}\left< \overline{\nabla}\sigma, \overline{\nabla}z^{c} \right> + \left< \overline{\nabla}(\overline{\nabla}\sigma)^{d}, \overline{\nabla}z^{b} \right>\right\}z^{c}z^{a}
+\end{align*}
+
+We will also calculate the second variation of curvature entropy using mixed volume formulation. Let $ \dot{\sigma} $ be a volume preserving variation of $ \sigma $. Then \begin{align*}
+   \dot{V}(\sigma) = \int \dot{\sigma}Q[\sigma, \dots, \sigma] = 0
+\end{align*}
+and \begin{align*}
+   \ddot{V}(\sigma) = \int \ddot{\sigma}Q[\sigma, \dots, \sigma] + n\dot{\sigma}Q[\dot{\sigma}, \sigma,\dots, \sigma] = 0.
+\end{align*}
+Let the curvature entropy of $ \sigma $ be given by 
+\[ E_{\alpha}(\sigma) = \int Q[\sigma,\dots, \sigma]^{1-\alpha}. \]
+The first variation of curvature entropy is given by, \begin{align*}
+   \dot{E}_{\alpha}(\sigma) & = n\left( 1-\alpha \right) \int Q[\sigma,\dots,\sigma]^{-\alpha}Q[\dot{\sigma},\sigma,\dots,\sigma].
+\end{align*}
+Calculating the second variation at a shrinker $ \sigma = c Q[\sigma, \dots, \sigma]^{-\alpha} $, \begin{align*}
+   \ddot{E}_{\alpha}(\sigma) & = n(1-\alpha) \int n(-\alpha)Q[\sigma, \dots, \sigma]^{-\alpha-1}Q[\dot{\sigma}, \sigma,\dots, \sigma]^{2}\\
+   & \quad  + n(1-\alpha)\int Q[\sigma, \dots, \sigma]^{-\alpha}(Q[\ddot{\sigma}, \sigma, \dots, \sigma]+(n-1) Q[\dot{\sigma}, \dot{\sigma}, \sigma,\dots, \sigma]) \\
+   & = n(1-\alpha)c \int n(-\alpha)\sigma Q[\sigma,\dots, \sigma]^{-1}Q[\dot{\sigma}, \sigma,\dots, \sigma]^{2} - n(1-\alpha)c \int \sigma Q[\dot{\sigma}, \dot{\sigma}, \sigma,\dots, \sigma] \\
+   & = -n(1-\alpha)c \int n \alpha \frac{\sigma Q[\dot{\sigma}, \sigma,\dots, \sigma]^{2}}{Q[\sigma, \dots, \sigma]} + \dot{\sigma} Q[\dot{\sigma}, \sigma, \sigma,\dots, \sigma] \\
+   & = -n(1-\alpha)c \int Q[\dot{\sigma}, \sigma, \dots, \sigma](\alpha \mathcal{L}\dot{\sigma} + \dot{\sigma}) \\
+   & = -n(1-\alpha)c \int \frac{Q[\sigma, \dots, \sigma]}{n\sigma} \mathcal{L}\dot{\sigma}(\alpha \mathcal{L}\dot{\sigma} + \dot{\sigma}) \\
+   & = -(1-\alpha)c \left< \mathcal{L}\dot \sigma, (\alpha \mathcal{L}+1)\dot{\sigma}\right>_{\sigma} \\
+   & = -(1-\alpha)c ( \alpha\left< \mathcal{L}\dot \sigma, \mathcal{L}\dot{\sigma} \right>_{\sigma} + \left< \dot{\sigma}, \mathcal{L}\dot{\sigma} \right>_{\sigma})
+\end{align*}
+
+With similar calculations for the Firey entropy $ \mathcal{E}_{\alpha}(\sigma) = \int \sigma^{1-\frac{1}{\alpha}} $ we get the second variation as \begin{align*}
+   \ddot{\mathcal{E}}_{\alpha}(\sigma) & = \frac{1-\alpha}{\alpha} \int n \alpha \dot{\sigma}Q[\dot{\sigma}, \sigma,\dots, \sigma] + \frac{\dot{\sigma}^{2}Q[\sigma, \dots, \sigma]}{\sigma} \\
+   & = \frac{1-\alpha}{\alpha} \int \frac{Q[\sigma,\dots, \sigma]}{\sigma}\dot{\sigma}(\alpha \mathcal{L}\dot{\sigma}+ \dot{\sigma}) \\
+   & = \frac{1-\alpha}{\alpha}\left< \dot{\sigma}, (\alpha \mathcal{L} + 1)\dot{\sigma}\right>_{\sigma} \\
+   & = \frac{1-\alpha}{\alpha} (\alpha \left< \dot{\sigma}, \mathcal{L}\dot{\sigma} \right>_{\sigma} + \left< \dot{\sigma}, \dot{\sigma} \right>_{\sigma}).
+\end{align*}
 \end{document}
