@@ -39,8 +39,8 @@ aside {
 }
 
 </style>
-<link rel="stylesheet" href="https://latex.now.sh/style.css">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<!--<link rel="stylesheet" href="https://latex.now.sh/style.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <head>
@@ -57,6 +57,7 @@ aside {
     </div>
     <nav role="navigation" class="toc">
         <ol>
+          <!--<li><a href="#Symmetric">Symmetric sums of eigenvalues</a></li>-->
           <li><a href="#MixedVolume">Adventures in convex geometry</a></li>
           <!--<li><a href="#Spin">Spin in Quantum Mechanics</a></li>
           <li><a href="#QM">Road to Quantum Mechanics</a></li>
@@ -66,6 +67,12 @@ aside {
         <li><a href="#Why-MCF">Why Mean Curvature Flow</a></li>
         <li><a href="#OnGeometry">On Geometry in General</a></li>
         </ol>
+      <!--</nav><center><h2 id="Symmetric">Symmetric sums of eigenvalues</h2></center>
+      <center><h3>20th March 2025</h3></center>
+
+      For flows with arbitrary symmetric functions of curvature I need to understand symmetric polynomials of eigenvalues of a matrix. Let \(S(n)\) denote the set of \(n \times n\) symmetric matrices. Let  \(M \in S(n)\) be a symmetric matrix with eigenvalues \(\lambda_1, \ldots, \lambda_n\). Also denote the elementary \(k\)-th symmetric polynomial by \(S_k(\vec{\lambda}) = \frac{1}{\binom{n}{k}} \sum_{1 \le i_1 < \ldots < i_k\le n}\lambda_{i_1}\cdots \lambda_{i_k}\). Let \(f : \Gamma \to \mathbb{R}\) be a symmetric function with domain \(\Gamma\) containing the positive cone. Then any symmetric function \(f (\vec{\lambda}) = G(\) -->
+
+      
       </nav><center><h2 id="MixedVolume">Adventures in convex geometry</h2></center>
       <center><h3>5th March 2025</h3></center>
 
@@ -83,7 +90,7 @@ aside {
       where \(Q[\sigma_{K_1}, \ldots, \sigma_{K_n}] = \sum_{\tau, \eta \in S_n}\text{sgn}(\tau)\text{sgn}(\eta)A[\sigma_{K_1}]_{\tau(1)}^{\eta(1)} \ldots A[\sigma_{K_n}]_{\tau(n)}^{\eta(n)} \).</p>
 
       <p>A special case of this formula gives quermassintegrals. The \(j\)-th quermassintegral is defined as \(W_j(K) = V(\underbrace{K,\cdots, K}_{n-j \text{ times}}, \underbrace{B, \cdots, B}_{j \text{ times}})\) which make up the other coefficients in Steiner formula. A grand generalization of Brunn-Minkowski inequality is the Alexandrov-Fenchel inequality \[V(K_0,K_1, \cdots , K_{n})^2 \ge V(K_0,K_0,K_2, \cdots, K_{n}) V(K_1,K_1,K_2, \cdots, K_{n})\]
-      which is like a reverse Cauchy-Schwartz. Minkowski inequality \(V(K,L, \cdots L) \ge V(K)^{\frac{1}{n+1}} V(L)^{\frac{n}{n+1}} \) also follows. Schneider in his book <i>Convex Bodies: The Brunn-Minkowski Theory</i> mentions that Alexandrov gave two proofs (one only for \(C^2_+\) bodies) while Fenchel independently stated and proved but his proof was sketchy. Alexandrov-Fenchel inequality also appears in algebraic geometry somehow as Hodge index theorem. Also, the fun doesn't stop here. Convex geometers have pushed the definition of mixed volumes for \(L^p\) additions (even for \( 0< p < 1\)) and proved Minkowski inequalities in \(L^p\)-Brunn-Minkowski theory as well.</p>
+      which is like a reverse Cauchy-Schwartz. Minkowski inequality \(V(K,L, \cdots L) \ge V(K)^{\frac{1}{n+1}} V(L)^{\frac{n}{n+1}} \) also follows. Schneider in his book <i>Convex Bodies: The Brunn-Minkowski Theory</i> mentions that Alexandrov gave two proofs (one only for \(C^2_+\) bodies) while Fenchel independently stated and proved but his proof was sketchy (IMO it should be called Alexandrov-Alexandrov inequality for this reason). Alexandrov-Fenchel inequality also appears in algebraic geometry somehow as Hodge index theorem. Also, the fun doesn't stop here. Convex geometers have pushed the definition of mixed volumes for \(L^p\) additions of symmetric support functions (even for \( 0 < p < 1\)) and proved Minkowski inequalities in \(L^p\)-Brunn-Minkowski theory as well.</p>
 
    <!--</nav><center><h2 id="Spin">Spin in Quantum Mechanics</h2></center>
     <center><h3>20th Feb 2024</h3></center>
