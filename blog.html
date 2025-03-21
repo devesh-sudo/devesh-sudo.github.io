@@ -57,7 +57,7 @@ aside {
     </div>
     <nav role="navigation" class="toc">
         <ol>
-          <!--<li><a href="#Symmetric">Symmetric sums of eigenvalues</a></li>-->
+          <li><a href="#Symmetric">Symmetric sums of eigenvalues</a></li>
           <li><a href="#MixedVolume">Adventures in convex geometry</a></li>
           <!--<li><a href="#Spin">Spin in Quantum Mechanics</a></li>
           <li><a href="#QM">Road to Quantum Mechanics</a></li>
@@ -67,11 +67,24 @@ aside {
         <li><a href="#Why-MCF">Why Mean Curvature Flow</a></li>
         <li><a href="#OnGeometry">On Geometry in General</a></li>
         </ol>
-      <!--</nav><center><h2 id="Symmetric">Symmetric sums of eigenvalues</h2></center>
+      </nav><center><h2 id="Symmetric">Symmetric sums of eigenvalues</h2></center>
       <center><h3>20th March 2025</h3></center>
 
-      For flows with arbitrary symmetric functions of curvature I need to understand symmetric polynomials of eigenvalues of a matrix. Let \(S(n)\) denote the set of \(n \times n\) symmetric matrices. Let  \(M \in S(n)\) be a symmetric matrix with eigenvalues \(\lambda_1, \ldots, \lambda_n\). Also denote the elementary \(k\)-th symmetric polynomial by \(S_k(\vec{\lambda}) = \frac{1}{\binom{n}{k}} \sum_{1 \le i_1 < \ldots < i_k\le n}\lambda_{i_1}\cdots \lambda_{i_k}\). Let \(f : \Gamma \to \mathbb{R}\) be a symmetric function with domain \(\Gamma\) containing the positive cone. Then any symmetric function \(f (\vec{\lambda}) = G(\) -->
-
+      <p>For flows with arbitrary symmetric functions of curvature I need to understand symmetric polynomials of eigenvalues of a matrix. Let \(S(n)\) denote the set of \(n \times n\) symmetric matrices. Let  \(M \in S(n)\) be a symmetric matrix with eigenvalues \(\lambda_1, \ldots, \lambda_n\). Also denote the elementary \(k\)-th symmetric polynomial by \(S_k(\vec{\lambda}) = \sum_{1 \le i_1 < \ldots < i_k\le n}\lambda_{i_1}\cdots \lambda_{i_k}\). Let \(f : \mathbb{R}^n \to \mathbb{R}\) be a smooth symmetric function (invariant under permutaion of coordinates). Then there exists a function \(G\) such that \(f (\vec{\lambda}) = G(S_1, ... , S_n )\) because eigenvalues satisfy the polynomial equation \(\det(\lambda I - M) = 0\) which is completely determined by the symmetric sums.</p> 
+      <p>A convenient way to get \(S_i\)'s as a function of \(M\) is the following. Recall that the coeffiecient of \(\lambda^{n-k}\) in \(\det(\lambda I - M) \) is \((-1)^k S_k\). Now the expansion for eigenvalue polynomial reads \[ \begin{aligned}\det(\lambda I - M) & = \sum_{\sigma \in \text{Perm}(n)}(-1)^{|\sigma|}(\lambda \delta_{1 \sigma(1)} - M_{1 \sigma(1)})\cdots (\lambda \delta_{n \sigma(n)} - M_{n \sigma(n)}) \\
+        & = \sum_{k=0}^{n}\lambda^{n-k} \sum_{\substack{1\le i_1 < \cdots < i_k \le n \\ \{j_1, ...,  j_{n-k}\} = \{1,...,n\} \backslash \{i_1, ..., i_k\}}}(-1)^{k}\sum_{\sigma \in \text{Perm}(n)}(-1)^{|\sigma|}M_{i_1 \sigma(i_1)} \cdots M_{i_{k} \sigma(j_{k})}\delta_{j_1\sigma(j_1)} ... \delta_{j_k \sigma(j_{n-k})} \\
+        & = \sum_{k=0}^{n}\lambda^{n-k} \sum_{1\le i_1 < \cdots < i_k \le n}(-1)^{k}\sum_{\sigma \in \text{Perm}(k)}(-1)^{|\sigma| }M_{i_1 \sigma(i_1)} \cdots M_{i_{k} \sigma(i_{k})}.
+      \end{aligned} \]
+      
+      Thus, \[ S_{k}(\lambda) = \sum_{1\le i_1 < \cdots < i_k \le n}\sum_{\sigma \in \text{Perm}(k)}(-1)^{|\sigma| }M_{i_1 \sigma(i_1)} \cdots M_{i_{k} \sigma(i_{k})}. \] </p> <p>Another way to do this which looks much more cooler is to use exterior algebra. The map \(M : \mathbb{R}^n \to \mathbb{R}^n \) induces a map \(M^k : \bigwedge^k \mathbb{R}^n \to \bigwedge^k \mathbb{R}^n \) in the \(k\)-th exterior algebra . For a basis element \(e_{i_1} \wedge ... \wedge e_{i_k}\) with \(1\le i_1 < \cdots < i_k \le n \), the induced map is
+      \[ \begin{aligned}  M^k(e_{i_1} \wedge \cdots \wedge e_{i_k}) & = M e_{i_1} \wedge \cdots \wedge M e_{i_k} \\
+      & = M_{i_1}^{j_1}e_{j_1} \wedge \cdots \wedge M_{i_k}^{j_k}e_{j_k} \\
+      & = \sum_{\sigma \in \text{Perm}(k)} (-1)^{|\sigma|} M_{i_1}^{j_1} \cdots M_{i_k}^{j_k} e_{\sigma(j_k)}\wedge \cdots \wedge e_{\sigma(j_1)}
+      \end{aligned} \]
+      where \(\sigma\) in the last line is used to order \(\sigma(j_1) < \cdots < \sigma(j_k)\). It is easy to see that we will hit every permutation while doing so. Notice that \(\text{tr}(M^k) = S_k(\lambda)\) and its not a coincidence; the reason is that trace is preserved after diagonalization and trace of the diagonal matrix \(\text{diag}[\lambda_1 , ..., \lambda_n] \) in the exterior algebra is the symmetric sum \(S_k(\lambda)\).</p>
+      <p>A third way to do this is to polarize the determinant and let mixed discriminant come into the picture. Let \(M^1, ..., M^n\) be fixed matrices, the mixed discriminant of the set is denoted by \(\det(M^1,...,M^m)\) and is the coefficient of \(t_1 \cdots t_n\) in \(\det(t_1M^1 + ... + t_nM^n)\). As was hinted in the last post, this can be evaluated as \[\det (M^1,...,M^n) = \sum_{\sigma, \tau \in \text{Perm}(n)}(-1)^{|\sigma| + |\tau|}M_{\sigma(1)\tau(1)}^1 \cdots M_{\sigma(n)\tau(n)}^n\] </p>
+      <p>The main purpose of the above exercise was to find out how \(S_k\)'s perturb under a perturbation of \(M\) in \(S(n)\). Consider a basis of \(S(n)\) given by elementary matrices \(e_{ii}\) and \(e_{ij} + e_{ji}\) (\( j \neq i\)). We will only be concerned with perturbation around a diagonal matrix \(M = \text{diag}[\lambda_1, ..., \lambda_n]\). Let \(M_{\epsilon} = M + \epsilon e_{ii}\), then \[\frac{d S_k}{d \epsilon}\bigg|_{\epsilon = 0} = S_{k-1}((\lambda_1, ...,\hat{\lambda}_i,..., \lambda_n))\] and for \(M_\eta = M+ \eta (e_{ij} + e_{ji})\) the expansion of \(S_k\) will have no linear term implying \[\frac{d S_k}{d \eta}\bigg|_{\eta = 0} = 0\]</p>
+    
       
       </nav><center><h2 id="MixedVolume">Adventures in convex geometry</h2></center>
       <center><h3>5th March 2025</h3></center>
